@@ -6,4 +6,4 @@ export default {
         // Without this, the Worker will error andno assets will be served.
         // return env.ASSETS.fetch(request);
     },
-  }
+}
