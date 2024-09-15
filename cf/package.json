@@ -10,8 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@cloudflare/workers-types": "^4.20240909.0",
-    "esbuild": "^0.23.1",
-    "i": "^0.3.7",
-    "npm": "^10.8.3"
+    "esbuild": "^0.23.1"
   }
 }
