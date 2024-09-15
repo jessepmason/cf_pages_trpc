@@ -3,7 +3,7 @@
       "target": "esnext",
       "module": "esnext",
       "lib": ["esnext"],
-
+      "moduleResolution": "bundler",
       "types": ["@cloudflare/workers-types"]
     },
     // "include":["./functions/**/*","src/**/*", "Env.ts"],

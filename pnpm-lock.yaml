@@ -13,6 +13,9 @@ importers:
       '@cloudflare/workers-types':
         specifier: ^4.20240909.0
         version: 4.20240909.0
+      '@trpc/server':
+        specifier: ^10.45.2
+        version: 10.45.2
       esbuild:
         specifier: ^0.23.1
         version: 0.23.1
@@ -166,6 +169,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@trpc/server@10.45.2':
+    resolution: {integrity: sha512-wOrSThNNE4HUnuhJG6PfDRp4L2009KDVxsd+2VYH8ro6o/7/jwYZ8Uu5j+VaW+mOmc8EHerHzGcdbGNQSAUPgg==}
+
   esbuild@0.23.1:
     resolution: {integrity: sha512-VVNz/9Sa0bs5SELtn3f7qhJCDPCF5oMEl5cO9/SSinpE9hbPVvxbd572HH5AKiP7WD8INO53GgfDDhRjkylHEg==}
     engines: {node: '>=18'}
@@ -246,6 +252,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.23.1':
     optional: true
+
+  '@trpc/server@10.45.2': {}
 
   esbuild@0.23.1:
     optionalDependencies:
