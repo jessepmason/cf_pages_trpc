@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "esbuild src/worker.js  --bundle --outfile=_dist/_worker.js"
+    "build": "esbuild src/worker.ts  --bundle --outfile=_dist/_worker.js"
   },
   "keywords": [],
   "author": "",
