@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "lib": ["es6","dom"],
+      "jsx": "react",
+      "moduleResolution": "bundler",
+      "types": []
+    },
+    // "include":["./functions/**/*","src/**/*", "Env.ts"],
+}
