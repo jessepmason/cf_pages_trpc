@@ -2,17 +2,20 @@
 
 import {fetchRequestHandler} from "@trpc/server/adapters/fetch"
 import { appRouter } from "./trpc_router";
+
 export default {
-    async fetch(request, env, context) {
+    async fetch(request :Request, env, context) {
         const url = new URL(request.url);
         if(url.pathname == "/"){
             return new Response('Hello FHome');
         }
         const trpcResults = await fetchRequestHandler({
             endpoint:"/api",
-            req:context.request,
+            req:request,
             router:appRouter,
-            createContext: ()=>({})
+            createContext: ()=>({
+
+            })
         })
         if(trpcResults.ok){
             return new Response('Hello TRPC');
