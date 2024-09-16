@@ -1,0 +1,529 @@
+{
+  "inputs": {
+    "../node_modules/.pnpm/react@18.3.1/node_modules/react/cjs/react.development.js": {
+      "bytes": 87593,
+      "imports": [],
+      "format": "cjs"
+    },
+    "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js": {
+      "bytes": 190,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/cjs/react.development.js",
+          "kind": "require-call",
+          "original": "./cjs/react.development.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "../node_modules/.pnpm/scheduler@0.23.2/node_modules/scheduler/cjs/scheduler.development.js": {
+      "bytes": 17497,
+      "imports": [],
+      "format": "cjs"
+    },
+    "../node_modules/.pnpm/scheduler@0.23.2/node_modules/scheduler/index.js": {
+      "bytes": 198,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/scheduler@0.23.2/node_modules/scheduler/cjs/scheduler.development.js",
+          "kind": "require-call",
+          "original": "./cjs/scheduler.development.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/cjs/react-dom.development.js": {
+      "bytes": 1029622,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "require-call",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/scheduler@0.23.2/node_modules/scheduler/index.js",
+          "kind": "require-call",
+          "original": "scheduler"
+        }
+      ],
+      "format": "cjs"
+    },
+    "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/index.js": {
+      "bytes": 1363,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/cjs/react-dom.development.js",
+          "kind": "require-call",
+          "original": "./cjs/react-dom.development.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/client.js": {
+      "bytes": 619,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/index.js",
+          "kind": "require-call",
+          "original": "react-dom"
+        }
+      ],
+      "format": "cjs"
+    },
+    "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js": {
+      "bytes": 209354,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/assertEnvironment.js": {
+      "bytes": 327,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js",
+          "kind": "import-statement",
+          "original": "mobx"
+        },
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/reactBatchedUpdates.js": {
+      "bytes": 100,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/index.js",
+          "kind": "import-statement",
+          "original": "react-dom"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/observerBatching.js": {
+      "bytes": 667,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js",
+          "kind": "import-statement",
+          "original": "mobx"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/utils.js": {
+      "bytes": 217,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/printDebugValue.js": {
+      "bytes": 157,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js",
+          "kind": "import-statement",
+          "original": "mobx"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/staticRendering.js": {
+      "bytes": 264,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/UniversalFinalizationRegistry.js": {
+      "bytes": 3446,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/observerFinalizationRegistry.js": {
+      "bytes": 346,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/UniversalFinalizationRegistry.js",
+          "kind": "import-statement",
+          "original": "./UniversalFinalizationRegistry"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/use-sync-external-store@1.2.2_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js": {
+      "bytes": 8420,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "require-call",
+          "original": "react"
+        }
+      ],
+      "format": "cjs"
+    },
+    "../node_modules/.pnpm/use-sync-external-store@1.2.2_react@18.3.1/node_modules/use-sync-external-store/shim/index.js": {
+      "bytes": 238,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/use-sync-external-store@1.2.2_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js",
+          "kind": "require-call",
+          "original": "../cjs/use-sync-external-store-shim.development.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useObserver.js": {
+      "bytes": 3974,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js",
+          "kind": "import-statement",
+          "original": "mobx"
+        },
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/printDebugValue.js",
+          "kind": "import-statement",
+          "original": "./utils/printDebugValue"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/staticRendering.js",
+          "kind": "import-statement",
+          "original": "./staticRendering"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/observerFinalizationRegistry.js",
+          "kind": "import-statement",
+          "original": "./utils/observerFinalizationRegistry"
+        },
+        {
+          "path": "../node_modules/.pnpm/use-sync-external-store@1.2.2_react@18.3.1/node_modules/use-sync-external-store/shim/index.js",
+          "kind": "import-statement",
+          "original": "use-sync-external-store/shim"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/observer.js": {
+      "bytes": 4869,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/staticRendering.js",
+          "kind": "import-statement",
+          "original": "./staticRendering"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useObserver.js",
+          "kind": "import-statement",
+          "original": "./useObserver"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/ObserverComponent.js": {
+      "bytes": 1262,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useObserver.js",
+          "kind": "import-statement",
+          "original": "./useObserver"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useLocalObservable.js": {
+      "bytes": 288,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js",
+          "kind": "import-statement",
+          "original": "mobx"
+        },
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useAsObservableSource.js": {
+      "bytes": 994,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/utils.js",
+          "kind": "import-statement",
+          "original": "./utils/utils"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js",
+          "kind": "import-statement",
+          "original": "mobx"
+        },
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useLocalStore.js": {
+      "bytes": 614,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js",
+          "kind": "import-statement",
+          "original": "mobx"
+        },
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/utils.js",
+          "kind": "import-statement",
+          "original": "./utils/utils"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useAsObservableSource.js",
+          "kind": "import-statement",
+          "original": "./useAsObservableSource"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/index.js": {
+      "bytes": 1791,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/assertEnvironment.js",
+          "kind": "import-statement",
+          "original": "./utils/assertEnvironment"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/reactBatchedUpdates.js",
+          "kind": "import-statement",
+          "original": "./utils/reactBatchedUpdates"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/observerBatching.js",
+          "kind": "import-statement",
+          "original": "./utils/observerBatching"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/utils.js",
+          "kind": "import-statement",
+          "original": "./utils/utils"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useObserver.js",
+          "kind": "import-statement",
+          "original": "./useObserver"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/staticRendering.js",
+          "kind": "import-statement",
+          "original": "./staticRendering"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/observerFinalizationRegistry.js",
+          "kind": "import-statement",
+          "original": "./utils/observerFinalizationRegistry"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/staticRendering.js",
+          "kind": "import-statement",
+          "original": "./staticRendering"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/observer.js",
+          "kind": "import-statement",
+          "original": "./observer"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/ObserverComponent.js",
+          "kind": "import-statement",
+          "original": "./ObserverComponent"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useLocalObservable.js",
+          "kind": "import-statement",
+          "original": "./useLocalObservable"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useLocalStore.js",
+          "kind": "import-statement",
+          "original": "./useLocalStore"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useAsObservableSource.js",
+          "kind": "import-statement",
+          "original": "./useAsObservableSource"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/observerBatching.js",
+          "kind": "import-statement",
+          "original": "./utils/observerBatching"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/mobx-react@9.1.1_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react/dist/mobxreact.esm.js": {
+      "bytes": 29596,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js",
+          "kind": "import-statement",
+          "original": "mobx"
+        },
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/index.js",
+          "kind": "import-statement",
+          "original": "mobx-react-lite"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/index.js",
+          "kind": "import-statement",
+          "original": "mobx-react-lite"
+        }
+      ],
+      "format": "esm"
+    },
+    "../editor/app.tsx": {
+      "bytes": 695,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/client.js",
+          "kind": "import-statement",
+          "original": "react-dom/client"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js",
+          "kind": "import-statement",
+          "original": "mobx"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react@9.1.1_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react/dist/mobxreact.esm.js",
+          "kind": "import-statement",
+          "original": "mobx-react"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/public/app.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 2103382
+    },
+    "dist/public/app.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "../editor/app.tsx",
+      "inputs": {
+        "../node_modules/.pnpm/react@18.3.1/node_modules/react/cjs/react.development.js": {
+          "bytesInOutput": 77133
+        },
+        "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js": {
+          "bytesInOutput": 262
+        },
+        "../node_modules/.pnpm/scheduler@0.23.2/node_modules/scheduler/cjs/scheduler.development.js": {
+          "bytesInOutput": 16938
+        },
+        "../node_modules/.pnpm/scheduler@0.23.2/node_modules/scheduler/index.js": {
+          "bytesInOutput": 278
+        },
+        "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/cjs/react-dom.development.js": {
+          "bytesInOutput": 910397
+        },
+        "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/index.js": {
+          "bytesInOutput": 309
+        },
+        "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/client.js": {
+          "bytesInOutput": 830
+        },
+        "../node_modules/.pnpm/use-sync-external-store@1.2.2_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js": {
+          "bytesInOutput": 5128
+        },
+        "../node_modules/.pnpm/use-sync-external-store@1.2.2_react@18.3.1/node_modules/use-sync-external-store/shim/index.js": {
+          "bytesInOutput": 337
+        },
+        "../editor/app.tsx": {
+          "bytesInOutput": 633
+        },
+        "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js": {
+          "bytesInOutput": 151386
+        },
+        "../node_modules/.pnpm/mobx-react@9.1.1_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react/dist/mobxreact.esm.js": {
+          "bytesInOutput": 12021
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/assertEnvironment.js": {
+          "bytesInOutput": 263
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/reactBatchedUpdates.js": {
+          "bytesInOutput": 53
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/observerBatching.js": {
+          "bytesInOutput": 357
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useObserver.js": {
+          "bytesInOutput": 1955
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/printDebugValue.js": {
+          "bytesInOutput": 63
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/staticRendering.js": {
+          "bytesInOutput": 119
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/UniversalFinalizationRegistry.js": {
+          "bytesInOutput": 2806
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/observerFinalizationRegistry.js": {
+          "bytesInOutput": 199
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/index.js": {
+          "bytesInOutput": 201
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/observer.js": {
+          "bytesInOutput": 3537
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/ObserverComponent.js": {
+          "bytesInOutput": 992
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useLocalObservable.js": {
+          "bytesInOutput": 46
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useLocalStore.js": {
+          "bytesInOutput": 46
+        },
+        "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useAsObservableSource.js": {
+          "bytesInOutput": 46
+        }
+      },
+      "bytes": 1193060
+    }
+  }
+}
