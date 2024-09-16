@@ -1,1 +1,4 @@
+# prod
+dist/
+!dist/public
 node_modules
