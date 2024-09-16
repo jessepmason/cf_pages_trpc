@@ -5,7 +5,7 @@ import { appRouter } from "./trpc_router";
 export default {
     async fetch(request, env, context) {
         const url = new URL(request.url);
-        if(request.path == "/"){
+        if(url.pathname == "/"){
             return new Response('Hello FHome');
         }
         const trpcResults = await fetchRequestHandler({
