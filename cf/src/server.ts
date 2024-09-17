@@ -6,15 +6,8 @@ import { appRouter } from "./trpc_router";
 export default {
     async fetch(request :Request, env : Env) {
         const url = new URL(request.url);
-        if(url.pathname == "/"){
+        if(url.pathname == "/" || url.pathname == "/timer"){
 
-            return new Response('Hello FHome');
-
-        }else if (url.pathname.startsWith("/public")){
-                
-            return await env.ASSETS.fetch(request);
-
-        }else if (url.pathname == "/react"){
             const html =  `<!DOCTYPE html>
                         <html>
                         <body>
@@ -29,6 +22,13 @@ export default {
                     "content-type": "text/html;charset=UTF-8",
                 },
             });
+            
+        }else if (url.pathname.startsWith("/public")){
+                
+            return await env.ASSETS.fetch(request);
+
+        }else if (url.pathname == "/other"){
+            return new Response('Hello Other');
         }
 
         const trpcResults = await fetchRequestHandler({

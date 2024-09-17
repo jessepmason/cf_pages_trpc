@@ -70,6 +70,68 @@
       ],
       "format": "cjs"
     },
+    "../node_modules/.pnpm/@remix-run+router@1.19.2/node_modules/@remix-run/router/dist/router.js": {
+      "bytes": 195729,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/react-router@6.26.2_react@18.3.1/node_modules/react-router/dist/index.js": {
+      "bytes": 58308,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/@remix-run+router@1.19.2/node_modules/@remix-run/router/dist/router.js",
+          "kind": "import-statement",
+          "original": "@remix-run/router"
+        },
+        {
+          "path": "../node_modules/.pnpm/@remix-run+router@1.19.2/node_modules/@remix-run/router/dist/router.js",
+          "kind": "import-statement",
+          "original": "@remix-run/router"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/react-router-dom@6.26.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/react-router-dom/dist/index.js": {
+      "bytes": 56529,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/index.js",
+          "kind": "import-statement",
+          "original": "react-dom"
+        },
+        {
+          "path": "../node_modules/.pnpm/react-router@6.26.2_react@18.3.1/node_modules/react-router/dist/index.js",
+          "kind": "import-statement",
+          "original": "react-router"
+        },
+        {
+          "path": "../node_modules/.pnpm/react-router@6.26.2_react@18.3.1/node_modules/react-router/dist/index.js",
+          "kind": "import-statement",
+          "original": "react-router"
+        },
+        {
+          "path": "../node_modules/.pnpm/@remix-run+router@1.19.2/node_modules/@remix-run/router/dist/router.js",
+          "kind": "import-statement",
+          "original": "@remix-run/router"
+        },
+        {
+          "path": "../node_modules/.pnpm/@remix-run+router@1.19.2/node_modules/@remix-run/router/dist/router.js",
+          "kind": "import-statement",
+          "original": "@remix-run/router"
+        }
+      ],
+      "format": "esm"
+    },
     "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js": {
       "bytes": 209354,
       "imports": [],
@@ -405,8 +467,39 @@
       ],
       "format": "esm"
     },
+    "../editor/pages/Counter.tsx": {
+      "bytes": 2451,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "react-dom/client",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js",
+          "kind": "import-statement",
+          "original": "mobx"
+        },
+        {
+          "path": "../node_modules/.pnpm/mobx-react@9.1.1_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react/dist/mobxreact.esm.js",
+          "kind": "import-statement",
+          "original": "mobx-react"
+        },
+        {
+          "path": "react-router-dom",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
     "../editor/app.tsx": {
-      "bytes": 695,
+      "bytes": 643,
       "imports": [
         {
           "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
@@ -419,14 +512,24 @@
           "original": "react-dom/client"
         },
         {
-          "path": "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js",
+          "path": "mobx",
           "kind": "import-statement",
-          "original": "mobx"
+          "external": true
         },
         {
-          "path": "../node_modules/.pnpm/mobx-react@9.1.1_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react/dist/mobxreact.esm.js",
+          "path": "mobx-react",
           "kind": "import-statement",
-          "original": "mobx-react"
+          "external": true
+        },
+        {
+          "path": "../node_modules/.pnpm/react-router-dom@6.26.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/react-router-dom/dist/index.js",
+          "kind": "import-statement",
+          "original": "react-router-dom"
+        },
+        {
+          "path": "../editor/pages/Counter.tsx",
+          "kind": "import-statement",
+          "original": "./pages/Counter"
         }
       ],
       "format": "esm"
@@ -437,7 +540,7 @@
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 2103382
+      "bytes": 2658375
     },
     "dist/public/app.js": {
       "imports": [],
@@ -445,7 +548,7 @@
       "entryPoint": "../editor/app.tsx",
       "inputs": {
         "../node_modules/.pnpm/react@18.3.1/node_modules/react/cjs/react.development.js": {
-          "bytesInOutput": 77133
+          "bytesInOutput": 77158
         },
         "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js": {
           "bytesInOutput": 262
@@ -457,7 +560,7 @@
           "bytesInOutput": 278
         },
         "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/cjs/react-dom.development.js": {
-          "bytesInOutput": 910397
+          "bytesInOutput": 910409
         },
         "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/index.js": {
           "bytesInOutput": 309
@@ -466,19 +569,31 @@
           "bytesInOutput": 830
         },
         "../node_modules/.pnpm/use-sync-external-store@1.2.2_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js": {
-          "bytesInOutput": 5128
+          "bytesInOutput": 5132
         },
         "../node_modules/.pnpm/use-sync-external-store@1.2.2_react@18.3.1/node_modules/use-sync-external-store/shim/index.js": {
           "bytesInOutput": 337
         },
         "../editor/app.tsx": {
-          "bytesInOutput": 633
+          "bytesInOutput": 663
+        },
+        "../node_modules/.pnpm/react-router-dom@6.26.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/react-router-dom/dist/index.js": {
+          "bytesInOutput": 31421
+        },
+        "../node_modules/.pnpm/react-router@6.26.2_react@18.3.1/node_modules/react-router/dist/index.js": {
+          "bytesInOutput": 24650
+        },
+        "../node_modules/.pnpm/@remix-run+router@1.19.2/node_modules/@remix-run/router/dist/router.js": {
+          "bytesInOutput": 117299
+        },
+        "../editor/pages/Counter.tsx": {
+          "bytesInOutput": 2453
         },
         "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js": {
-          "bytesInOutput": 151386
+          "bytesInOutput": 151397
         },
         "../node_modules/.pnpm/mobx-react@9.1.1_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react/dist/mobxreact.esm.js": {
-          "bytesInOutput": 12021
+          "bytesInOutput": 12025
         },
         "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/utils/assertEnvironment.js": {
           "bytesInOutput": 263
@@ -523,7 +638,7 @@
           "bytesInOutput": 46
         }
       },
-      "bytes": 1193060
+      "bytes": 1370439
     }
   }
 }
