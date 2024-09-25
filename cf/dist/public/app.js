@@ -509,7 +509,7 @@ var require_react_development = __commonJS({
           }
           return element;
         };
-        function createElement3(type, config, children) {
+        function createElement4(type, config, children) {
           var propName;
           var props = {};
           var key = null;
@@ -783,7 +783,7 @@ var require_react_development = __commonJS({
           }
           return children;
         }
-        function createContext3(defaultValue) {
+        function createContext7(defaultValue) {
           var context = {
             $$typeof: REACT_CONTEXT_TYPE,
             // As a workaround to support multiple concurrent renderers, we categorize
@@ -1069,7 +1069,7 @@ var require_react_development = __commonJS({
           }
           return dispatcher;
         }
-        function useContext3(Context) {
+        function useContext7(Context) {
           var dispatcher = resolveDispatcher();
           {
             if (Context._context !== void 0) {
@@ -1083,7 +1083,7 @@ var require_react_development = __commonJS({
           }
           return dispatcher.useContext(Context);
         }
-        function useState7(initialState) {
+        function useState14(initialState) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useState(initialState);
         }
@@ -1091,11 +1091,11 @@ var require_react_development = __commonJS({
           var dispatcher = resolveDispatcher();
           return dispatcher.useReducer(reducer, initialArg, init);
         }
-        function useRef3(initialValue) {
+        function useRef4(initialValue) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useRef(initialValue);
         }
-        function useEffect3(create, deps) {
+        function useEffect9(create, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useEffect(create, deps);
         }
@@ -1107,11 +1107,11 @@ var require_react_development = __commonJS({
           var dispatcher = resolveDispatcher();
           return dispatcher.useLayoutEffect(create, deps);
         }
-        function useCallback3(callback, deps) {
+        function useCallback6(callback, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useCallback(callback, deps);
         }
-        function useMemo3(create, deps) {
+        function useMemo7(create, deps) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useMemo(create, deps);
         }
@@ -1137,7 +1137,7 @@ var require_react_development = __commonJS({
           var dispatcher = resolveDispatcher();
           return dispatcher.useId();
         }
-        function useSyncExternalStore2(subscribe, getSnapshot, getServerSnapshot) {
+        function useSyncExternalStore5(subscribe, getSnapshot, getServerSnapshot) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
         }
@@ -1608,7 +1608,7 @@ var require_react_development = __commonJS({
               error("React.createElement: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
             }
           }
-          var element = createElement3.apply(this, arguments);
+          var element = createElement4.apply(this, arguments);
           if (element == null) {
             return element;
           }
@@ -1864,7 +1864,7 @@ var require_react_development = __commonJS({
         exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals;
         exports.act = act;
         exports.cloneElement = cloneElement$1;
-        exports.createContext = createContext3;
+        exports.createContext = createContext7;
         exports.createElement = createElement$1;
         exports.createFactory = createFactory;
         exports.createRef = createRef;
@@ -1874,20 +1874,20 @@ var require_react_development = __commonJS({
         exports.memo = memo3;
         exports.startTransition = startTransition;
         exports.unstable_act = act;
-        exports.useCallback = useCallback3;
-        exports.useContext = useContext3;
+        exports.useCallback = useCallback6;
+        exports.useContext = useContext7;
         exports.useDebugValue = useDebugValue;
         exports.useDeferredValue = useDeferredValue;
-        exports.useEffect = useEffect3;
+        exports.useEffect = useEffect9;
         exports.useId = useId;
         exports.useImperativeHandle = useImperativeHandle;
         exports.useInsertionEffect = useInsertionEffect;
         exports.useLayoutEffect = useLayoutEffect3;
-        exports.useMemo = useMemo3;
+        exports.useMemo = useMemo7;
         exports.useReducer = useReducer;
-        exports.useRef = useRef3;
-        exports.useState = useState7;
-        exports.useSyncExternalStore = useSyncExternalStore2;
+        exports.useRef = useRef4;
+        exports.useState = useState14;
+        exports.useSyncExternalStore = useSyncExternalStore5;
         exports.useTransition = useTransition;
         exports.version = ReactVersion;
         if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") {
@@ -2382,9 +2382,9 @@ var require_react_dom_development = __commonJS({
         if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
           __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
         }
-        var React6 = require_react();
+        var React19 = require_react();
         var Scheduler = require_scheduler();
-        var ReactSharedInternals = React6.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+        var ReactSharedInternals = React19.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
         var suppressWarning = false;
         function setSuppressWarning(newSuppressWarning) {
           {
@@ -3989,7 +3989,7 @@ var require_react_dom_development = __commonJS({
           {
             if (props.value == null) {
               if (typeof props.children === "object" && props.children !== null) {
-                React6.Children.forEach(props.children, function(child) {
+                React19.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -6146,14 +6146,14 @@ var require_react_dom_development = __commonJS({
         }
         function getLaneLabelMap() {
           {
-            var map2 = /* @__PURE__ */ new Map();
+            var map3 = /* @__PURE__ */ new Map();
             var lane = 1;
             for (var index2 = 0; index2 < TotalLanes; index2++) {
               var label = getLabelForLane(lane);
-              map2.set(lane, label);
+              map3.set(lane, label);
               lane *= 2;
             }
-            return map2;
+            return map3;
           }
         }
         function markCommitStarted(lanes) {
@@ -7250,9 +7250,9 @@ var require_react_dom_development = __commonJS({
           }
           return true;
         }
-        function attemptReplayContinuousQueuedEventInMap(queuedEvent, key, map2) {
+        function attemptReplayContinuousQueuedEventInMap(queuedEvent, key, map3) {
           if (attemptReplayContinuousQueuedEvent(queuedEvent)) {
-            map2.delete(key);
+            map3.delete(key);
           }
         }
         function replayUnblockedEvents() {
@@ -9323,10 +9323,10 @@ var require_react_dom_development = __commonJS({
         function getOwnerDocumentFromRootContainer(rootContainerElement) {
           return rootContainerElement.nodeType === DOCUMENT_NODE ? rootContainerElement : rootContainerElement.ownerDocument;
         }
-        function noop3() {
+        function noop6() {
         }
         function trapClickOnNonInteractiveElement(node) {
-          node.onclick = noop3;
+          node.onclick = noop6;
         }
         function setInitialDOMProperties(tag, domElement, rootContainerElement, nextProps, isCustomComponentTag) {
           for (var propKey in nextProps) {
@@ -9388,7 +9388,7 @@ var require_react_dom_development = __commonJS({
             }
           }
         }
-        function createElement3(type, props, rootContainerElement, parentNamespace) {
+        function createElement4(type, props, rootContainerElement, parentNamespace) {
           var isCustomComponentTag;
           var ownerDocument = getOwnerDocumentFromRootContainer(rootContainerElement);
           var domElement;
@@ -10249,7 +10249,7 @@ var require_react_dom_development = __commonJS({
             }
             parentNamespace = hostContextDev.namespace;
           }
-          var domElement = createElement3(type, props, rootContainerInstance, parentNamespace);
+          var domElement = createElement4(type, props, rootContainerInstance, parentNamespace);
           precacheFiberNode(internalInstanceHandle, domElement);
           updateFiberProps(domElement, props);
           return domElement;
@@ -16996,7 +16996,7 @@ var require_react_dom_development = __commonJS({
         function updateSuspenseComponent(current2, workInProgress2, renderLanes2) {
           var nextProps = workInProgress2.pendingProps;
           {
-            if (shouldSuspend(workInProgress2)) {
+            if (shouldSuspend2(workInProgress2)) {
               workInProgress2.flags |= DidCapture;
             }
           }
@@ -22801,7 +22801,7 @@ var require_react_dom_development = __commonJS({
         var shouldSuspendImpl = function(fiber) {
           return false;
         };
-        function shouldSuspend(fiber) {
+        function shouldSuspend2(fiber) {
           return shouldSuspendImpl(fiber);
         }
         var overrideHookState = null;
@@ -23561,8 +23561,8 @@ var require_use_sync_external_store_shim_development = __commonJS({
         if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
           __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
         }
-        var React6 = require_react();
-        var ReactSharedInternals = React6.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+        var React19 = require_react();
+        var ReactSharedInternals = React19.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
         function error(format) {
           {
             {
@@ -23592,13 +23592,13 @@ var require_use_sync_external_store_shim_development = __commonJS({
           return x === y && (x !== 0 || 1 / x === 1 / y) || x !== x && y !== y;
         }
         var objectIs = typeof Object.is === "function" ? Object.is : is2;
-        var useState7 = React6.useState, useEffect3 = React6.useEffect, useLayoutEffect3 = React6.useLayoutEffect, useDebugValue = React6.useDebugValue;
+        var useState14 = React19.useState, useEffect9 = React19.useEffect, useLayoutEffect3 = React19.useLayoutEffect, useDebugValue = React19.useDebugValue;
         var didWarnOld18Alpha = false;
         var didWarnUncachedGetSnapshot = false;
-        function useSyncExternalStore2(subscribe, getSnapshot, getServerSnapshot) {
+        function useSyncExternalStore5(subscribe, getSnapshot, getServerSnapshot) {
           {
             if (!didWarnOld18Alpha) {
-              if (React6.startTransition !== void 0) {
+              if (React19.startTransition !== void 0) {
                 didWarnOld18Alpha = true;
                 error("You are using an outdated, pre-release alpha of React 18 that does not support useSyncExternalStore. The use-sync-external-store shim will not work correctly. Upgrade to a newer pre-release.");
               }
@@ -23614,7 +23614,7 @@ var require_use_sync_external_store_shim_development = __commonJS({
               }
             }
           }
-          var _useState = useState7({
+          var _useState = useState14({
             inst: {
               value,
               getSnapshot
@@ -23629,7 +23629,7 @@ var require_use_sync_external_store_shim_development = __commonJS({
               });
             }
           }, [subscribe, value, getSnapshot]);
-          useEffect3(function() {
+          useEffect9(function() {
             if (checkIfSnapshotChanged(inst)) {
               forceUpdate({
                 inst
@@ -23662,8 +23662,8 @@ var require_use_sync_external_store_shim_development = __commonJS({
         }
         var canUseDOM = !!(typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined");
         var isServerEnvironment = !canUseDOM;
-        var shim = isServerEnvironment ? useSyncExternalStore$1 : useSyncExternalStore2;
-        var useSyncExternalStore$2 = React6.useSyncExternalStore !== void 0 ? React6.useSyncExternalStore : shim;
+        var shim = isServerEnvironment ? useSyncExternalStore$1 : useSyncExternalStore5;
+        var useSyncExternalStore$2 = React19.useSyncExternalStore !== void 0 ? React19.useSyncExternalStore : shim;
         exports.useSyncExternalStore = useSyncExternalStore$2;
         if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") {
           __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
@@ -23685,9 +23685,914 @@ var require_shim = __commonJS({
   }
 });
 
+// ../node_modules/.pnpm/react@18.3.1/node_modules/react/cjs/react-jsx-runtime.development.js
+var require_react_jsx_runtime_development = __commonJS({
+  "../node_modules/.pnpm/react@18.3.1/node_modules/react/cjs/react-jsx-runtime.development.js"(exports) {
+    "use strict";
+    if (true) {
+      (function() {
+        "use strict";
+        var React19 = require_react();
+        var REACT_ELEMENT_TYPE = Symbol.for("react.element");
+        var REACT_PORTAL_TYPE = Symbol.for("react.portal");
+        var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+        var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
+        var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+        var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
+        var REACT_CONTEXT_TYPE = Symbol.for("react.context");
+        var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
+        var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
+        var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
+        var REACT_MEMO_TYPE = Symbol.for("react.memo");
+        var REACT_LAZY_TYPE = Symbol.for("react.lazy");
+        var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
+        var MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
+        var FAUX_ITERATOR_SYMBOL = "@@iterator";
+        function getIteratorFn(maybeIterable) {
+          if (maybeIterable === null || typeof maybeIterable !== "object") {
+            return null;
+          }
+          var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];
+          if (typeof maybeIterator === "function") {
+            return maybeIterator;
+          }
+          return null;
+        }
+        var ReactSharedInternals = React19.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+        function error(format) {
+          {
+            {
+              for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+                args[_key2 - 1] = arguments[_key2];
+              }
+              printWarning("error", format, args);
+            }
+          }
+        }
+        function printWarning(level, format, args) {
+          {
+            var ReactDebugCurrentFrame2 = ReactSharedInternals.ReactDebugCurrentFrame;
+            var stack = ReactDebugCurrentFrame2.getStackAddendum();
+            if (stack !== "") {
+              format += "%s";
+              args = args.concat([stack]);
+            }
+            var argsWithFormat = args.map(function(item) {
+              return String(item);
+            });
+            argsWithFormat.unshift("Warning: " + format);
+            Function.prototype.apply.call(console[level], console, argsWithFormat);
+          }
+        }
+        var enableScopeAPI = false;
+        var enableCacheElement = false;
+        var enableTransitionTracing = false;
+        var enableLegacyHidden = false;
+        var enableDebugTracing = false;
+        var REACT_MODULE_REFERENCE;
+        {
+          REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
+        }
+        function isValidElementType(type) {
+          if (typeof type === "string" || typeof type === "function") {
+            return true;
+          }
+          if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) {
+            return true;
+          }
+          if (typeof type === "object" && type !== null) {
+            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
+            // types supported by any Flight configuration anywhere since
+            // we don't know which Flight build this will end up being used
+            // with.
+            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== void 0) {
+              return true;
+            }
+          }
+          return false;
+        }
+        function getWrappedName(outerType, innerType, wrapperName) {
+          var displayName = outerType.displayName;
+          if (displayName) {
+            return displayName;
+          }
+          var functionName = innerType.displayName || innerType.name || "";
+          return functionName !== "" ? wrapperName + "(" + functionName + ")" : wrapperName;
+        }
+        function getContextName(type) {
+          return type.displayName || "Context";
+        }
+        function getComponentNameFromType(type) {
+          if (type == null) {
+            return null;
+          }
+          {
+            if (typeof type.tag === "number") {
+              error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue.");
+            }
+          }
+          if (typeof type === "function") {
+            return type.displayName || type.name || null;
+          }
+          if (typeof type === "string") {
+            return type;
+          }
+          switch (type) {
+            case REACT_FRAGMENT_TYPE:
+              return "Fragment";
+            case REACT_PORTAL_TYPE:
+              return "Portal";
+            case REACT_PROFILER_TYPE:
+              return "Profiler";
+            case REACT_STRICT_MODE_TYPE:
+              return "StrictMode";
+            case REACT_SUSPENSE_TYPE:
+              return "Suspense";
+            case REACT_SUSPENSE_LIST_TYPE:
+              return "SuspenseList";
+          }
+          if (typeof type === "object") {
+            switch (type.$$typeof) {
+              case REACT_CONTEXT_TYPE:
+                var context = type;
+                return getContextName(context) + ".Consumer";
+              case REACT_PROVIDER_TYPE:
+                var provider = type;
+                return getContextName(provider._context) + ".Provider";
+              case REACT_FORWARD_REF_TYPE:
+                return getWrappedName(type, type.render, "ForwardRef");
+              case REACT_MEMO_TYPE:
+                var outerName = type.displayName || null;
+                if (outerName !== null) {
+                  return outerName;
+                }
+                return getComponentNameFromType(type.type) || "Memo";
+              case REACT_LAZY_TYPE: {
+                var lazyComponent = type;
+                var payload = lazyComponent._payload;
+                var init = lazyComponent._init;
+                try {
+                  return getComponentNameFromType(init(payload));
+                } catch (x) {
+                  return null;
+                }
+              }
+            }
+          }
+          return null;
+        }
+        var assign2 = Object.assign;
+        var disabledDepth = 0;
+        var prevLog;
+        var prevInfo;
+        var prevWarn;
+        var prevError;
+        var prevGroup;
+        var prevGroupCollapsed;
+        var prevGroupEnd;
+        function disabledLog() {
+        }
+        disabledLog.__reactDisabledLog = true;
+        function disableLogs() {
+          {
+            if (disabledDepth === 0) {
+              prevLog = console.log;
+              prevInfo = console.info;
+              prevWarn = console.warn;
+              prevError = console.error;
+              prevGroup = console.group;
+              prevGroupCollapsed = console.groupCollapsed;
+              prevGroupEnd = console.groupEnd;
+              var props = {
+                configurable: true,
+                enumerable: true,
+                value: disabledLog,
+                writable: true
+              };
+              Object.defineProperties(console, {
+                info: props,
+                log: props,
+                warn: props,
+                error: props,
+                group: props,
+                groupCollapsed: props,
+                groupEnd: props
+              });
+            }
+            disabledDepth++;
+          }
+        }
+        function reenableLogs() {
+          {
+            disabledDepth--;
+            if (disabledDepth === 0) {
+              var props = {
+                configurable: true,
+                enumerable: true,
+                writable: true
+              };
+              Object.defineProperties(console, {
+                log: assign2({}, props, {
+                  value: prevLog
+                }),
+                info: assign2({}, props, {
+                  value: prevInfo
+                }),
+                warn: assign2({}, props, {
+                  value: prevWarn
+                }),
+                error: assign2({}, props, {
+                  value: prevError
+                }),
+                group: assign2({}, props, {
+                  value: prevGroup
+                }),
+                groupCollapsed: assign2({}, props, {
+                  value: prevGroupCollapsed
+                }),
+                groupEnd: assign2({}, props, {
+                  value: prevGroupEnd
+                })
+              });
+            }
+            if (disabledDepth < 0) {
+              error("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+            }
+          }
+        }
+        var ReactCurrentDispatcher = ReactSharedInternals.ReactCurrentDispatcher;
+        var prefix;
+        function describeBuiltInComponentFrame(name, source, ownerFn) {
+          {
+            if (prefix === void 0) {
+              try {
+                throw Error();
+              } catch (x) {
+                var match = x.stack.trim().match(/\n( *(at )?)/);
+                prefix = match && match[1] || "";
+              }
+            }
+            return "\n" + prefix + name;
+          }
+        }
+        var reentry = false;
+        var componentFrameCache;
+        {
+          var PossiblyWeakMap = typeof WeakMap === "function" ? WeakMap : Map;
+          componentFrameCache = new PossiblyWeakMap();
+        }
+        function describeNativeComponentFrame(fn, construct) {
+          if (!fn || reentry) {
+            return "";
+          }
+          {
+            var frame = componentFrameCache.get(fn);
+            if (frame !== void 0) {
+              return frame;
+            }
+          }
+          var control;
+          reentry = true;
+          var previousPrepareStackTrace = Error.prepareStackTrace;
+          Error.prepareStackTrace = void 0;
+          var previousDispatcher;
+          {
+            previousDispatcher = ReactCurrentDispatcher.current;
+            ReactCurrentDispatcher.current = null;
+            disableLogs();
+          }
+          try {
+            if (construct) {
+              var Fake = function() {
+                throw Error();
+              };
+              Object.defineProperty(Fake.prototype, "props", {
+                set: function() {
+                  throw Error();
+                }
+              });
+              if (typeof Reflect === "object" && Reflect.construct) {
+                try {
+                  Reflect.construct(Fake, []);
+                } catch (x) {
+                  control = x;
+                }
+                Reflect.construct(fn, [], Fake);
+              } else {
+                try {
+                  Fake.call();
+                } catch (x) {
+                  control = x;
+                }
+                fn.call(Fake.prototype);
+              }
+            } else {
+              try {
+                throw Error();
+              } catch (x) {
+                control = x;
+              }
+              fn();
+            }
+          } catch (sample) {
+            if (sample && control && typeof sample.stack === "string") {
+              var sampleLines = sample.stack.split("\n");
+              var controlLines = control.stack.split("\n");
+              var s = sampleLines.length - 1;
+              var c = controlLines.length - 1;
+              while (s >= 1 && c >= 0 && sampleLines[s] !== controlLines[c]) {
+                c--;
+              }
+              for (; s >= 1 && c >= 0; s--, c--) {
+                if (sampleLines[s] !== controlLines[c]) {
+                  if (s !== 1 || c !== 1) {
+                    do {
+                      s--;
+                      c--;
+                      if (c < 0 || sampleLines[s] !== controlLines[c]) {
+                        var _frame = "\n" + sampleLines[s].replace(" at new ", " at ");
+                        if (fn.displayName && _frame.includes("<anonymous>")) {
+                          _frame = _frame.replace("<anonymous>", fn.displayName);
+                        }
+                        {
+                          if (typeof fn === "function") {
+                            componentFrameCache.set(fn, _frame);
+                          }
+                        }
+                        return _frame;
+                      }
+                    } while (s >= 1 && c >= 0);
+                  }
+                  break;
+                }
+              }
+            }
+          } finally {
+            reentry = false;
+            {
+              ReactCurrentDispatcher.current = previousDispatcher;
+              reenableLogs();
+            }
+            Error.prepareStackTrace = previousPrepareStackTrace;
+          }
+          var name = fn ? fn.displayName || fn.name : "";
+          var syntheticFrame = name ? describeBuiltInComponentFrame(name) : "";
+          {
+            if (typeof fn === "function") {
+              componentFrameCache.set(fn, syntheticFrame);
+            }
+          }
+          return syntheticFrame;
+        }
+        function describeFunctionComponentFrame(fn, source, ownerFn) {
+          {
+            return describeNativeComponentFrame(fn, false);
+          }
+        }
+        function shouldConstruct(Component3) {
+          var prototype = Component3.prototype;
+          return !!(prototype && prototype.isReactComponent);
+        }
+        function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
+          if (type == null) {
+            return "";
+          }
+          if (typeof type === "function") {
+            {
+              return describeNativeComponentFrame(type, shouldConstruct(type));
+            }
+          }
+          if (typeof type === "string") {
+            return describeBuiltInComponentFrame(type);
+          }
+          switch (type) {
+            case REACT_SUSPENSE_TYPE:
+              return describeBuiltInComponentFrame("Suspense");
+            case REACT_SUSPENSE_LIST_TYPE:
+              return describeBuiltInComponentFrame("SuspenseList");
+          }
+          if (typeof type === "object") {
+            switch (type.$$typeof) {
+              case REACT_FORWARD_REF_TYPE:
+                return describeFunctionComponentFrame(type.render);
+              case REACT_MEMO_TYPE:
+                return describeUnknownElementTypeFrameInDEV(type.type, source, ownerFn);
+              case REACT_LAZY_TYPE: {
+                var lazyComponent = type;
+                var payload = lazyComponent._payload;
+                var init = lazyComponent._init;
+                try {
+                  return describeUnknownElementTypeFrameInDEV(init(payload), source, ownerFn);
+                } catch (x) {
+                }
+              }
+            }
+          }
+          return "";
+        }
+        var hasOwnProperty = Object.prototype.hasOwnProperty;
+        var loggedTypeFailures = {};
+        var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+        function setCurrentlyValidatingElement(element) {
+          {
+            if (element) {
+              var owner = element._owner;
+              var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
+              ReactDebugCurrentFrame.setExtraStackFrame(stack);
+            } else {
+              ReactDebugCurrentFrame.setExtraStackFrame(null);
+            }
+          }
+        }
+        function checkPropTypes(typeSpecs, values, location, componentName, element) {
+          {
+            var has2 = Function.call.bind(hasOwnProperty);
+            for (var typeSpecName in typeSpecs) {
+              if (has2(typeSpecs, typeSpecName)) {
+                var error$1 = void 0;
+                try {
+                  if (typeof typeSpecs[typeSpecName] !== "function") {
+                    var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                    err.name = "Invariant Violation";
+                    throw err;
+                  }
+                  error$1 = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+                } catch (ex) {
+                  error$1 = ex;
+                }
+                if (error$1 && !(error$1 instanceof Error)) {
+                  setCurrentlyValidatingElement(element);
+                  error("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", componentName || "React class", location, typeSpecName, typeof error$1);
+                  setCurrentlyValidatingElement(null);
+                }
+                if (error$1 instanceof Error && !(error$1.message in loggedTypeFailures)) {
+                  loggedTypeFailures[error$1.message] = true;
+                  setCurrentlyValidatingElement(element);
+                  error("Failed %s type: %s", location, error$1.message);
+                  setCurrentlyValidatingElement(null);
+                }
+              }
+            }
+          }
+        }
+        var isArrayImpl = Array.isArray;
+        function isArray(a) {
+          return isArrayImpl(a);
+        }
+        function typeName(value) {
+          {
+            var hasToStringTag = typeof Symbol === "function" && Symbol.toStringTag;
+            var type = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
+            return type;
+          }
+        }
+        function willCoercionThrow(value) {
+          {
+            try {
+              testStringCoercion(value);
+              return false;
+            } catch (e) {
+              return true;
+            }
+          }
+        }
+        function testStringCoercion(value) {
+          return "" + value;
+        }
+        function checkKeyStringCoercion(value) {
+          {
+            if (willCoercionThrow(value)) {
+              error("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", typeName(value));
+              return testStringCoercion(value);
+            }
+          }
+        }
+        var ReactCurrentOwner = ReactSharedInternals.ReactCurrentOwner;
+        var RESERVED_PROPS = {
+          key: true,
+          ref: true,
+          __self: true,
+          __source: true
+        };
+        var specialPropKeyWarningShown;
+        var specialPropRefWarningShown;
+        var didWarnAboutStringRefs;
+        {
+          didWarnAboutStringRefs = {};
+        }
+        function hasValidRef(config) {
+          {
+            if (hasOwnProperty.call(config, "ref")) {
+              var getter = Object.getOwnPropertyDescriptor(config, "ref").get;
+              if (getter && getter.isReactWarning) {
+                return false;
+              }
+            }
+          }
+          return config.ref !== void 0;
+        }
+        function hasValidKey(config) {
+          {
+            if (hasOwnProperty.call(config, "key")) {
+              var getter = Object.getOwnPropertyDescriptor(config, "key").get;
+              if (getter && getter.isReactWarning) {
+                return false;
+              }
+            }
+          }
+          return config.key !== void 0;
+        }
+        function warnIfStringRefCannotBeAutoConverted(config, self2) {
+          {
+            if (typeof config.ref === "string" && ReactCurrentOwner.current && self2 && ReactCurrentOwner.current.stateNode !== self2) {
+              var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
+              if (!didWarnAboutStringRefs[componentName]) {
+                error('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', getComponentNameFromType(ReactCurrentOwner.current.type), config.ref);
+                didWarnAboutStringRefs[componentName] = true;
+              }
+            }
+          }
+        }
+        function defineKeyPropWarningGetter(props, displayName) {
+          {
+            var warnAboutAccessingKey = function() {
+              if (!specialPropKeyWarningShown) {
+                specialPropKeyWarningShown = true;
+                error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
+              }
+            };
+            warnAboutAccessingKey.isReactWarning = true;
+            Object.defineProperty(props, "key", {
+              get: warnAboutAccessingKey,
+              configurable: true
+            });
+          }
+        }
+        function defineRefPropWarningGetter(props, displayName) {
+          {
+            var warnAboutAccessingRef = function() {
+              if (!specialPropRefWarningShown) {
+                specialPropRefWarningShown = true;
+                error("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
+              }
+            };
+            warnAboutAccessingRef.isReactWarning = true;
+            Object.defineProperty(props, "ref", {
+              get: warnAboutAccessingRef,
+              configurable: true
+            });
+          }
+        }
+        var ReactElement = function(type, key, ref, self2, source, owner, props) {
+          var element = {
+            // This tag allows us to uniquely identify this as a React Element
+            $$typeof: REACT_ELEMENT_TYPE,
+            // Built-in properties that belong on the element
+            type,
+            key,
+            ref,
+            props,
+            // Record the component responsible for creating this element.
+            _owner: owner
+          };
+          {
+            element._store = {};
+            Object.defineProperty(element._store, "validated", {
+              configurable: false,
+              enumerable: false,
+              writable: true,
+              value: false
+            });
+            Object.defineProperty(element, "_self", {
+              configurable: false,
+              enumerable: false,
+              writable: false,
+              value: self2
+            });
+            Object.defineProperty(element, "_source", {
+              configurable: false,
+              enumerable: false,
+              writable: false,
+              value: source
+            });
+            if (Object.freeze) {
+              Object.freeze(element.props);
+              Object.freeze(element);
+            }
+          }
+          return element;
+        };
+        function jsxDEV(type, config, maybeKey, source, self2) {
+          {
+            var propName;
+            var props = {};
+            var key = null;
+            var ref = null;
+            if (maybeKey !== void 0) {
+              {
+                checkKeyStringCoercion(maybeKey);
+              }
+              key = "" + maybeKey;
+            }
+            if (hasValidKey(config)) {
+              {
+                checkKeyStringCoercion(config.key);
+              }
+              key = "" + config.key;
+            }
+            if (hasValidRef(config)) {
+              ref = config.ref;
+              warnIfStringRefCannotBeAutoConverted(config, self2);
+            }
+            for (propName in config) {
+              if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
+                props[propName] = config[propName];
+              }
+            }
+            if (type && type.defaultProps) {
+              var defaultProps = type.defaultProps;
+              for (propName in defaultProps) {
+                if (props[propName] === void 0) {
+                  props[propName] = defaultProps[propName];
+                }
+              }
+            }
+            if (key || ref) {
+              var displayName = typeof type === "function" ? type.displayName || type.name || "Unknown" : type;
+              if (key) {
+                defineKeyPropWarningGetter(props, displayName);
+              }
+              if (ref) {
+                defineRefPropWarningGetter(props, displayName);
+              }
+            }
+            return ReactElement(type, key, ref, self2, source, ReactCurrentOwner.current, props);
+          }
+        }
+        var ReactCurrentOwner$1 = ReactSharedInternals.ReactCurrentOwner;
+        var ReactDebugCurrentFrame$1 = ReactSharedInternals.ReactDebugCurrentFrame;
+        function setCurrentlyValidatingElement$1(element) {
+          {
+            if (element) {
+              var owner = element._owner;
+              var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
+              ReactDebugCurrentFrame$1.setExtraStackFrame(stack);
+            } else {
+              ReactDebugCurrentFrame$1.setExtraStackFrame(null);
+            }
+          }
+        }
+        var propTypesMisspellWarningShown;
+        {
+          propTypesMisspellWarningShown = false;
+        }
+        function isValidElement2(object2) {
+          {
+            return typeof object2 === "object" && object2 !== null && object2.$$typeof === REACT_ELEMENT_TYPE;
+          }
+        }
+        function getDeclarationErrorAddendum() {
+          {
+            if (ReactCurrentOwner$1.current) {
+              var name = getComponentNameFromType(ReactCurrentOwner$1.current.type);
+              if (name) {
+                return "\n\nCheck the render method of `" + name + "`.";
+              }
+            }
+            return "";
+          }
+        }
+        function getSourceInfoErrorAddendum(source) {
+          {
+            if (source !== void 0) {
+              var fileName = source.fileName.replace(/^.*[\\\/]/, "");
+              var lineNumber = source.lineNumber;
+              return "\n\nCheck your code at " + fileName + ":" + lineNumber + ".";
+            }
+            return "";
+          }
+        }
+        var ownerHasKeyUseWarning = {};
+        function getCurrentComponentErrorInfo(parentType) {
+          {
+            var info = getDeclarationErrorAddendum();
+            if (!info) {
+              var parentName = typeof parentType === "string" ? parentType : parentType.displayName || parentType.name;
+              if (parentName) {
+                info = "\n\nCheck the top-level render call using <" + parentName + ">.";
+              }
+            }
+            return info;
+          }
+        }
+        function validateExplicitKey(element, parentType) {
+          {
+            if (!element._store || element._store.validated || element.key != null) {
+              return;
+            }
+            element._store.validated = true;
+            var currentComponentErrorInfo = getCurrentComponentErrorInfo(parentType);
+            if (ownerHasKeyUseWarning[currentComponentErrorInfo]) {
+              return;
+            }
+            ownerHasKeyUseWarning[currentComponentErrorInfo] = true;
+            var childOwner = "";
+            if (element && element._owner && element._owner !== ReactCurrentOwner$1.current) {
+              childOwner = " It was passed a child from " + getComponentNameFromType(element._owner.type) + ".";
+            }
+            setCurrentlyValidatingElement$1(element);
+            error('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', currentComponentErrorInfo, childOwner);
+            setCurrentlyValidatingElement$1(null);
+          }
+        }
+        function validateChildKeys(node, parentType) {
+          {
+            if (typeof node !== "object") {
+              return;
+            }
+            if (isArray(node)) {
+              for (var i = 0; i < node.length; i++) {
+                var child = node[i];
+                if (isValidElement2(child)) {
+                  validateExplicitKey(child, parentType);
+                }
+              }
+            } else if (isValidElement2(node)) {
+              if (node._store) {
+                node._store.validated = true;
+              }
+            } else if (node) {
+              var iteratorFn = getIteratorFn(node);
+              if (typeof iteratorFn === "function") {
+                if (iteratorFn !== node.entries) {
+                  var iterator = iteratorFn.call(node);
+                  var step;
+                  while (!(step = iterator.next()).done) {
+                    if (isValidElement2(step.value)) {
+                      validateExplicitKey(step.value, parentType);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        function validatePropTypes(element) {
+          {
+            var type = element.type;
+            if (type === null || type === void 0 || typeof type === "string") {
+              return;
+            }
+            var propTypes;
+            if (typeof type === "function") {
+              propTypes = type.propTypes;
+            } else if (typeof type === "object" && (type.$$typeof === REACT_FORWARD_REF_TYPE || // Note: Memo only checks outer props here.
+            // Inner props are checked in the reconciler.
+            type.$$typeof === REACT_MEMO_TYPE)) {
+              propTypes = type.propTypes;
+            } else {
+              return;
+            }
+            if (propTypes) {
+              var name = getComponentNameFromType(type);
+              checkPropTypes(propTypes, element.props, "prop", name, element);
+            } else if (type.PropTypes !== void 0 && !propTypesMisspellWarningShown) {
+              propTypesMisspellWarningShown = true;
+              var _name = getComponentNameFromType(type);
+              error("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", _name || "Unknown");
+            }
+            if (typeof type.getDefaultProps === "function" && !type.getDefaultProps.isReactClassApproved) {
+              error("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+            }
+          }
+        }
+        function validateFragmentProps(fragment) {
+          {
+            var keys = Object.keys(fragment.props);
+            for (var i = 0; i < keys.length; i++) {
+              var key = keys[i];
+              if (key !== "children" && key !== "key") {
+                setCurrentlyValidatingElement$1(fragment);
+                error("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", key);
+                setCurrentlyValidatingElement$1(null);
+                break;
+              }
+            }
+            if (fragment.ref !== null) {
+              setCurrentlyValidatingElement$1(fragment);
+              error("Invalid attribute `ref` supplied to `React.Fragment`.");
+              setCurrentlyValidatingElement$1(null);
+            }
+          }
+        }
+        var didWarnAboutKeySpread = {};
+        function jsxWithValidation(type, props, key, isStaticChildren, source, self2) {
+          {
+            var validType = isValidElementType(type);
+            if (!validType) {
+              var info = "";
+              if (type === void 0 || typeof type === "object" && type !== null && Object.keys(type).length === 0) {
+                info += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.";
+              }
+              var sourceInfo = getSourceInfoErrorAddendum(source);
+              if (sourceInfo) {
+                info += sourceInfo;
+              } else {
+                info += getDeclarationErrorAddendum();
+              }
+              var typeString;
+              if (type === null) {
+                typeString = "null";
+              } else if (isArray(type)) {
+                typeString = "array";
+              } else if (type !== void 0 && type.$$typeof === REACT_ELEMENT_TYPE) {
+                typeString = "<" + (getComponentNameFromType(type.type) || "Unknown") + " />";
+                info = " Did you accidentally export a JSX literal instead of a component?";
+              } else {
+                typeString = typeof type;
+              }
+              error("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
+            }
+            var element = jsxDEV(type, props, key, source, self2);
+            if (element == null) {
+              return element;
+            }
+            if (validType) {
+              var children = props.children;
+              if (children !== void 0) {
+                if (isStaticChildren) {
+                  if (isArray(children)) {
+                    for (var i = 0; i < children.length; i++) {
+                      validateChildKeys(children[i], type);
+                    }
+                    if (Object.freeze) {
+                      Object.freeze(children);
+                    }
+                  } else {
+                    error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                  }
+                } else {
+                  validateChildKeys(children, type);
+                }
+              }
+            }
+            {
+              if (hasOwnProperty.call(props, "key")) {
+                var componentName = getComponentNameFromType(type);
+                var keys = Object.keys(props).filter(function(k) {
+                  return k !== "key";
+                });
+                var beforeExample = keys.length > 0 ? "{key: someKey, " + keys.join(": ..., ") + ": ...}" : "{key: someKey}";
+                if (!didWarnAboutKeySpread[componentName + beforeExample]) {
+                  var afterExample = keys.length > 0 ? "{" + keys.join(": ..., ") + ": ...}" : "{}";
+                  error('A props object containing a "key" prop is being spread into JSX:\n  let props = %s;\n  <%s {...props} />\nReact keys must be passed directly to JSX without using spread:\n  let props = %s;\n  <%s key={someKey} {...props} />', beforeExample, componentName, afterExample, componentName);
+                  didWarnAboutKeySpread[componentName + beforeExample] = true;
+                }
+              }
+            }
+            if (type === REACT_FRAGMENT_TYPE) {
+              validateFragmentProps(element);
+            } else {
+              validatePropTypes(element);
+            }
+            return element;
+          }
+        }
+        function jsxWithValidationStatic(type, props, key) {
+          {
+            return jsxWithValidation(type, props, key, true);
+          }
+        }
+        function jsxWithValidationDynamic(type, props, key) {
+          {
+            return jsxWithValidation(type, props, key, false);
+          }
+        }
+        var jsx3 = jsxWithValidationDynamic;
+        var jsxs = jsxWithValidationStatic;
+        exports.Fragment = REACT_FRAGMENT_TYPE;
+        exports.jsx = jsx3;
+        exports.jsxs = jsxs;
+      })();
+    }
+  }
+});
+
+// ../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js
+var require_jsx_runtime = __commonJS({
+  "../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js"(exports, module) {
+    "use strict";
+    if (false) {
+      module.exports = null;
+    } else {
+      module.exports = require_react_jsx_runtime_development();
+    }
+  }
+});
+
 // ../editor/app.tsx
-var import_react9 = __toESM(require_react());
-var import_client = __toESM(require_client());
+var import_react12 = __toESM(require_react());
+var import_client7 = __toESM(require_client());
 
 // ../node_modules/.pnpm/react-router-dom@6.26.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/react-router-dom/dist/index.js
 var React2 = __toESM(require_react());
@@ -24402,7 +25307,7 @@ var TRANSITIONS_STORAGE_KEY = "remix-router-transitions";
 function createRouter(init) {
   const routerWindow = init.window ? init.window : typeof window !== "undefined" ? window : void 0;
   const isBrowser2 = typeof routerWindow !== "undefined" && typeof routerWindow.document !== "undefined" && typeof routerWindow.document.createElement !== "undefined";
-  const isServer = !isBrowser2;
+  const isServer2 = !isBrowser2;
   invariant(init.routes.length > 0, "You must provide a non-empty routes array to createRouter");
   let mapRouteProperties2;
   if (init.mapRouteProperties) {
@@ -25189,8 +26094,8 @@ function createRouter(init) {
     });
     return new Map(state.fetchers);
   }
-  function fetch(key, routeId, href, opts) {
-    if (isServer) {
+  function fetch2(key, routeId, href, opts) {
+    if (isServer2) {
       throw new Error("router.fetch() was called during the server render, but it shouldn't be. You are likely calling a useFetcher() method in the body of your component. Try moving it to a useEffect or a callback.");
     }
     if (fetchControllers.has(key))
@@ -25940,7 +26845,7 @@ function createRouter(init) {
     subscribe,
     enableScrollRestoration,
     navigate,
-    fetch,
+    fetch: fetch2,
     revalidate,
     // Passthrough to history-aware createHref used by useHref so we get proper
     // hash-aware URLs in DOM paths
@@ -29479,8 +30384,8 @@ function decorate_20223_$4(desc, context) {
   function initializeObservable(target, value) {
     var _ann$options_$enhance, _ann$options_;
     var adm = asObservableObject(target)[$mobx];
-    var observable2 = new ObservableValue(value, (_ann$options_$enhance = (_ann$options_ = ann.options_) == null ? void 0 : _ann$options_.enhancer) != null ? _ann$options_$enhance : deepEnhancer, true ? adm.name_ + "." + name.toString() : "ObservableObject." + name.toString(), false);
-    adm.values_.set(name, observable2);
+    var observable3 = new ObservableValue(value, (_ann$options_$enhance = (_ann$options_ = ann.options_) == null ? void 0 : _ann$options_.enhancer) != null ? _ann$options_$enhance : deepEnhancer, true ? adm.name_ + "." + name.toString() : "ObservableObject." + name.toString(), false);
+    adm.values_.set(name, observable3);
     initializedObjects.add(target);
   }
   if (kind == "accessor") {
@@ -30268,9 +31173,9 @@ function checkIfStateModificationsAreAllowed(atom) {
     console.warn("[MobX] " + (globalState.enforceActions ? "Since strict-mode is enabled, changing (observed) observable values without using an action is not allowed. Tried to modify: " : "Side effects like changing state are not allowed at this point. Are you trying to modify state from, for example, a computed value or the render function of a React component? You can wrap side effects in 'runInAction' (or decorate functions with 'action') if needed. Tried to modify: ") + atom.name_);
   }
 }
-function checkIfStateReadsAreAllowed(observable2) {
+function checkIfStateReadsAreAllowed(observable3) {
   if (!globalState.allowStateReads && globalState.observableRequiresReaction) {
-    console.warn("[mobx] Observable '" + observable2.name_ + "' being read outside a reactive context.");
+    console.warn("[mobx] Observable '" + observable3.name_ + "' being read outside a reactive context.");
   }
 }
 function trackDerivedFunction(derivation, f, context) {
@@ -30467,22 +31372,22 @@ function isolateGlobalState() {
 function getGlobalState() {
   return globalState;
 }
-function addObserver(observable2, node) {
-  observable2.observers_.add(node);
-  if (observable2.lowestObserverState_ > node.dependenciesState_) {
-    observable2.lowestObserverState_ = node.dependenciesState_;
+function addObserver(observable3, node) {
+  observable3.observers_.add(node);
+  if (observable3.lowestObserverState_ > node.dependenciesState_) {
+    observable3.lowestObserverState_ = node.dependenciesState_;
   }
 }
-function removeObserver(observable2, node) {
-  observable2.observers_["delete"](node);
-  if (observable2.observers_.size === 0) {
-    queueForUnobservation(observable2);
+function removeObserver(observable3, node) {
+  observable3.observers_["delete"](node);
+  if (observable3.observers_.size === 0) {
+    queueForUnobservation(observable3);
   }
 }
-function queueForUnobservation(observable2) {
-  if (observable2.isPendingUnobservation === false) {
-    observable2.isPendingUnobservation = true;
-    globalState.pendingUnobservations.push(observable2);
+function queueForUnobservation(observable3) {
+  if (observable3.isPendingUnobservation === false) {
+    observable3.isPendingUnobservation = true;
+    globalState.pendingUnobservations.push(observable3);
   }
 }
 function startBatch() {
@@ -30493,88 +31398,88 @@ function endBatch() {
     runReactions();
     var list = globalState.pendingUnobservations;
     for (var i = 0; i < list.length; i++) {
-      var observable2 = list[i];
-      observable2.isPendingUnobservation = false;
-      if (observable2.observers_.size === 0) {
-        if (observable2.isBeingObserved) {
-          observable2.isBeingObserved = false;
-          observable2.onBUO();
+      var observable3 = list[i];
+      observable3.isPendingUnobservation = false;
+      if (observable3.observers_.size === 0) {
+        if (observable3.isBeingObserved) {
+          observable3.isBeingObserved = false;
+          observable3.onBUO();
         }
-        if (observable2 instanceof ComputedValue) {
-          observable2.suspend_();
+        if (observable3 instanceof ComputedValue) {
+          observable3.suspend_();
         }
       }
     }
     globalState.pendingUnobservations = [];
   }
 }
-function reportObserved(observable2) {
-  checkIfStateReadsAreAllowed(observable2);
+function reportObserved(observable3) {
+  checkIfStateReadsAreAllowed(observable3);
   var derivation = globalState.trackingDerivation;
   if (derivation !== null) {
-    if (derivation.runId_ !== observable2.lastAccessedBy_) {
-      observable2.lastAccessedBy_ = derivation.runId_;
-      derivation.newObserving_[derivation.unboundDepsCount_++] = observable2;
-      if (!observable2.isBeingObserved && globalState.trackingContext) {
-        observable2.isBeingObserved = true;
-        observable2.onBO();
+    if (derivation.runId_ !== observable3.lastAccessedBy_) {
+      observable3.lastAccessedBy_ = derivation.runId_;
+      derivation.newObserving_[derivation.unboundDepsCount_++] = observable3;
+      if (!observable3.isBeingObserved && globalState.trackingContext) {
+        observable3.isBeingObserved = true;
+        observable3.onBO();
       }
     }
-    return observable2.isBeingObserved;
-  } else if (observable2.observers_.size === 0 && globalState.inBatch > 0) {
-    queueForUnobservation(observable2);
+    return observable3.isBeingObserved;
+  } else if (observable3.observers_.size === 0 && globalState.inBatch > 0) {
+    queueForUnobservation(observable3);
   }
   return false;
 }
-function propagateChanged(observable2) {
-  if (observable2.lowestObserverState_ === IDerivationState_.STALE_) {
+function propagateChanged(observable3) {
+  if (observable3.lowestObserverState_ === IDerivationState_.STALE_) {
     return;
   }
-  observable2.lowestObserverState_ = IDerivationState_.STALE_;
-  observable2.observers_.forEach(function(d) {
+  observable3.lowestObserverState_ = IDerivationState_.STALE_;
+  observable3.observers_.forEach(function(d) {
     if (d.dependenciesState_ === IDerivationState_.UP_TO_DATE_) {
       if (d.isTracing_ !== TraceMode.NONE) {
-        logTraceInfo(d, observable2);
+        logTraceInfo(d, observable3);
       }
       d.onBecomeStale_();
     }
     d.dependenciesState_ = IDerivationState_.STALE_;
   });
 }
-function propagateChangeConfirmed(observable2) {
-  if (observable2.lowestObserverState_ === IDerivationState_.STALE_) {
+function propagateChangeConfirmed(observable3) {
+  if (observable3.lowestObserverState_ === IDerivationState_.STALE_) {
     return;
   }
-  observable2.lowestObserverState_ = IDerivationState_.STALE_;
-  observable2.observers_.forEach(function(d) {
+  observable3.lowestObserverState_ = IDerivationState_.STALE_;
+  observable3.observers_.forEach(function(d) {
     if (d.dependenciesState_ === IDerivationState_.POSSIBLY_STALE_) {
       d.dependenciesState_ = IDerivationState_.STALE_;
       if (d.isTracing_ !== TraceMode.NONE) {
-        logTraceInfo(d, observable2);
+        logTraceInfo(d, observable3);
       }
     } else if (d.dependenciesState_ === IDerivationState_.UP_TO_DATE_) {
-      observable2.lowestObserverState_ = IDerivationState_.UP_TO_DATE_;
+      observable3.lowestObserverState_ = IDerivationState_.UP_TO_DATE_;
     }
   });
 }
-function propagateMaybeChanged(observable2) {
-  if (observable2.lowestObserverState_ !== IDerivationState_.UP_TO_DATE_) {
+function propagateMaybeChanged(observable3) {
+  if (observable3.lowestObserverState_ !== IDerivationState_.UP_TO_DATE_) {
     return;
   }
-  observable2.lowestObserverState_ = IDerivationState_.POSSIBLY_STALE_;
-  observable2.observers_.forEach(function(d) {
+  observable3.lowestObserverState_ = IDerivationState_.POSSIBLY_STALE_;
+  observable3.observers_.forEach(function(d) {
     if (d.dependenciesState_ === IDerivationState_.UP_TO_DATE_) {
       d.dependenciesState_ = IDerivationState_.POSSIBLY_STALE_;
       d.onBecomeStale_();
     }
   });
 }
-function logTraceInfo(derivation, observable2) {
-  console.log("[mobx.trace] '" + derivation.name_ + "' is invalidated due to a change in: '" + observable2.name_ + "'");
+function logTraceInfo(derivation, observable3) {
+  console.log("[mobx.trace] '" + derivation.name_ + "' is invalidated due to a change in: '" + observable3.name_ + "'");
   if (derivation.isTracing_ === TraceMode.BREAK) {
     var lines = [];
     printDepTree(getDependencyTree(derivation), lines, 1);
-    new Function("debugger;\n/*\nTracing '" + derivation.name_ + "'\n\nYou are entering this break point because derivation '" + derivation.name_ + "' is being traced and '" + observable2.name_ + "' is now forcing it to update.\nJust follow the stacktrace you should now see in the devtools to see precisely what piece of your code is causing this update\nThe stackframe you are looking for is at least ~6-8 stack-frames up.\n\n" + (derivation instanceof ComputedValue ? derivation.derivation.toString().replace(/[*]\//g, "/") : "") + "\n\nThe dependencies for this derivation are:\n\n" + lines.join("\n") + "\n*/\n    ")();
+    new Function("debugger;\n/*\nTracing '" + derivation.name_ + "'\n\nYou are entering this break point because derivation '" + derivation.name_ + "' is being traced and '" + observable3.name_ + "' is now forcing it to update.\nJust follow the stacktrace you should now see in the devtools to see precisely what piece of your code is causing this update\nThe stackframe you are looking for is at least ~6-8 stack-frames up.\n\n" + (derivation instanceof ComputedValue ? derivation.derivation.toString().replace(/[*]\//g, "/") : "") + "\n\nThe dependencies for this derivation are:\n\n" + lines.join("\n") + "\n*/\n    ")();
   }
 }
 function printDepTree(tree, lines, depth) {
@@ -31950,8 +32855,8 @@ var ObservableMap = /* @__PURE__ */ function() {
         var _this3$hasMap_$get;
         _this3.keysAtom_.reportChanged();
         (_this3$hasMap_$get = _this3.hasMap_.get(key)) == null || _this3$hasMap_$get.setNewValue_(false);
-        var observable2 = _this3.data_.get(key);
-        observable2.setNewValue_(void 0);
+        var observable3 = _this3.data_.get(key);
+        observable3.setNewValue_(void 0);
         _this3.data_["delete"](key);
       });
       if (notify) {
@@ -31965,8 +32870,8 @@ var ObservableMap = /* @__PURE__ */ function() {
     return false;
   };
   _proto.updateValue_ = function updateValue_(key, newValue) {
-    var observable2 = this.data_.get(key);
-    newValue = observable2.prepareNewValue_(newValue);
+    var observable3 = this.data_.get(key);
+    newValue = observable3.prepareNewValue_(newValue);
     if (newValue !== globalState.UNCHANGED) {
       var notifySpy = isSpyEnabled();
       var notify = hasListeners(this);
@@ -31975,14 +32880,14 @@ var ObservableMap = /* @__PURE__ */ function() {
         debugObjectName: this.name_,
         type: UPDATE,
         object: this,
-        oldValue: observable2.value_,
+        oldValue: observable3.value_,
         name: key,
         newValue
       } : null;
       if (notifySpy) {
         spyReportStart(change);
       }
-      observable2.setNewValue_(newValue);
+      observable3.setNewValue_(newValue);
       if (notify) {
         notifyListeners(this, change);
       }
@@ -31996,9 +32901,9 @@ var ObservableMap = /* @__PURE__ */ function() {
     checkIfStateModificationsAreAllowed(this.keysAtom_);
     transaction(function() {
       var _this4$hasMap_$get;
-      var observable2 = new ObservableValue(newValue, _this4.enhancer_, true ? _this4.name_ + "." + stringifyKey(key) : "ObservableMap.key", false);
-      _this4.data_.set(key, observable2);
-      newValue = observable2.value_;
+      var observable3 = new ObservableValue(newValue, _this4.enhancer_, true ? _this4.name_ + "." + stringifyKey(key) : "ObservableMap.key", false);
+      _this4.data_.set(key, observable3);
+      newValue = observable3.value_;
       (_this4$hasMap_$get = _this4.hasMap_.get(key)) == null || _this4$hasMap_$get.setNewValue_(true);
       _this4.keysAtom_.reportChanged();
     });
@@ -32199,11 +33104,11 @@ function convertToMap(dataStructure) {
   } else if (Array.isArray(dataStructure)) {
     return new Map(dataStructure);
   } else if (isPlainObject(dataStructure)) {
-    var map2 = /* @__PURE__ */ new Map();
+    var map3 = /* @__PURE__ */ new Map();
     for (var key in dataStructure) {
-      map2.set(key, dataStructure[key]);
+      map3.set(key, dataStructure[key]);
     }
-    return map2;
+    return map3;
   } else {
     return die(21, dataStructure);
   }
@@ -32398,7 +33303,7 @@ var ObservableSet = /* @__PURE__ */ function() {
       return dehancedSet.union(otherSet);
     }
   };
-  _proto.difference = function difference(otherSet) {
+  _proto.difference = function difference2(otherSet) {
     return new Set(this).difference(otherSet);
   };
   _proto.symmetricDifference = function symmetricDifference(otherSet) {
@@ -32516,9 +33421,9 @@ var ObservableObjectAdministration = /* @__PURE__ */ function() {
     return this.values_.get(key).get();
   };
   _proto.setObservablePropValue_ = function setObservablePropValue_(key, newValue) {
-    var observable2 = this.values_.get(key);
-    if (observable2 instanceof ComputedValue) {
-      observable2.set(newValue);
+    var observable3 = this.values_.get(key);
+    if (observable3 instanceof ComputedValue) {
+      observable3.set(newValue);
       return true;
     }
     if (hasInterceptors(this)) {
@@ -32533,7 +33438,7 @@ var ObservableObjectAdministration = /* @__PURE__ */ function() {
       }
       newValue = change.newValue;
     }
-    newValue = observable2.prepareNewValue_(newValue);
+    newValue = observable3.prepareNewValue_(newValue);
     if (newValue !== globalState.UNCHANGED) {
       var notify = hasListeners(this);
       var notifySpy = isSpyEnabled();
@@ -32542,14 +33447,14 @@ var ObservableObjectAdministration = /* @__PURE__ */ function() {
         observableKind: "object",
         debugObjectName: this.name_,
         object: this.proxy_ || this.target_,
-        oldValue: observable2.value_,
+        oldValue: observable3.value_,
         name: key,
         newValue
       } : null;
       if (notifySpy) {
         spyReportStart(_change);
       }
-      observable2.setNewValue_(newValue);
+      observable3.setNewValue_(newValue);
       if (notify) {
         notifyListeners(this, _change);
       }
@@ -32726,9 +33631,9 @@ var ObservableObjectAdministration = /* @__PURE__ */ function() {
       } else {
         defineProperty(this.target_, key, descriptor);
       }
-      var observable2 = new ObservableValue(value, enhancer, true ? this.name_ + "." + key.toString() : "ObservableObject.key", false);
-      this.values_.set(key, observable2);
-      this.notifyPropertyAddition_(key, observable2.value_);
+      var observable3 = new ObservableValue(value, enhancer, true ? this.name_ + "." + key.toString() : "ObservableObject.key", false);
+      this.values_.set(key, observable3);
+      this.notifyPropertyAddition_(key, observable3.value_);
     } finally {
       endBatch();
     }
@@ -32802,9 +33707,9 @@ var ObservableObjectAdministration = /* @__PURE__ */ function() {
       startBatch();
       var notify = hasListeners(this);
       var notifySpy = isSpyEnabled();
-      var observable2 = this.values_.get(key);
+      var observable3 = this.values_.get(key);
       var value = void 0;
-      if (!observable2 && (notify || notifySpy)) {
+      if (!observable3 && (notify || notifySpy)) {
         var _getDescriptor2;
         value = (_getDescriptor2 = getDescriptor(this.target_, key)) == null ? void 0 : _getDescriptor2.value;
       }
@@ -32818,12 +33723,12 @@ var ObservableObjectAdministration = /* @__PURE__ */ function() {
       if (true) {
         delete this.appliedAnnotations_[key];
       }
-      if (observable2) {
+      if (observable3) {
         this.values_["delete"](key);
-        if (observable2 instanceof ObservableValue) {
-          value = observable2.value_;
+        if (observable3 instanceof ObservableValue) {
+          value = observable3.value_;
         }
-        propagateChanged(observable2);
+        propagateChanged(observable3);
       }
       this.keysAtom_.reportChanged();
       (_this$pendingKeys_ = this.pendingKeys_) == null || (_this$pendingKeys_ = _this$pendingKeys_.get(key)) == null || _this$pendingKeys_.set(key in this.target_);
@@ -33091,11 +33996,11 @@ function getAtom(thing, property) {
       if (property === void 0) {
         return thing.keysAtom_;
       }
-      var observable2 = thing.data_.get(property) || thing.hasMap_.get(property);
-      if (!observable2) {
+      var observable3 = thing.data_.get(property) || thing.hasMap_.get(property);
+      if (!observable3) {
         die(25, property, getDebugName(thing));
       }
-      return observable2;
+      return observable3;
     }
     if (isObservableObject(thing)) {
       if (!property) {
@@ -34020,19 +34925,5208 @@ var Timers = () => {
   return /* @__PURE__ */ import_react8.default.createElement("div", { style: { display: "flex", flexDirection: "column" } }, /* @__PURE__ */ import_react8.default.createElement(TimerViewByProps, null), /* @__PURE__ */ import_react8.default.createElement(TimerViewByGblVar, null), /* @__PURE__ */ import_react8.default.createElement(TimerViewWithState, null), /* @__PURE__ */ import_react8.default.createElement(TimerContext.Provider, { value: contextTimer }, /* @__PURE__ */ import_react8.default.createElement(TimerContextView, null)));
 };
 
+// ../editor/pages/ReactQuery.tsx
+var import_react9 = __toESM(require_react());
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/subscribable.js
+var Subscribable = class {
+  constructor() {
+    this.listeners = /* @__PURE__ */ new Set();
+    this.subscribe = this.subscribe.bind(this);
+  }
+  subscribe(listener) {
+    this.listeners.add(listener);
+    this.onSubscribe();
+    return () => {
+      this.listeners.delete(listener);
+      this.onUnsubscribe();
+    };
+  }
+  hasListeners() {
+    return this.listeners.size > 0;
+  }
+  onSubscribe() {
+  }
+  onUnsubscribe() {
+  }
+};
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js
+var isServer = typeof window === "undefined" || "Deno" in globalThis;
+function noop3() {
+  return void 0;
+}
+function functionalUpdate(updater, input) {
+  return typeof updater === "function" ? updater(input) : updater;
+}
+function isValidTimeout(value) {
+  return typeof value === "number" && value >= 0 && value !== Infinity;
+}
+function timeUntilStale(updatedAt, staleTime) {
+  return Math.max(updatedAt + (staleTime || 0) - Date.now(), 0);
+}
+function resolveStaleTime(staleTime, query) {
+  return typeof staleTime === "function" ? staleTime(query) : staleTime;
+}
+function resolveEnabled(enabled, query) {
+  return typeof enabled === "function" ? enabled(query) : enabled;
+}
+function matchQuery(filters, query) {
+  const {
+    type = "all",
+    exact,
+    fetchStatus,
+    predicate,
+    queryKey,
+    stale
+  } = filters;
+  if (queryKey) {
+    if (exact) {
+      if (query.queryHash !== hashQueryKeyByOptions(queryKey, query.options)) {
+        return false;
+      }
+    } else if (!partialMatchKey(query.queryKey, queryKey)) {
+      return false;
+    }
+  }
+  if (type !== "all") {
+    const isActive = query.isActive();
+    if (type === "active" && !isActive) {
+      return false;
+    }
+    if (type === "inactive" && isActive) {
+      return false;
+    }
+  }
+  if (typeof stale === "boolean" && query.isStale() !== stale) {
+    return false;
+  }
+  if (fetchStatus && fetchStatus !== query.state.fetchStatus) {
+    return false;
+  }
+  if (predicate && !predicate(query)) {
+    return false;
+  }
+  return true;
+}
+function matchMutation(filters, mutation) {
+  const { exact, status, predicate, mutationKey } = filters;
+  if (mutationKey) {
+    if (!mutation.options.mutationKey) {
+      return false;
+    }
+    if (exact) {
+      if (hashKey(mutation.options.mutationKey) !== hashKey(mutationKey)) {
+        return false;
+      }
+    } else if (!partialMatchKey(mutation.options.mutationKey, mutationKey)) {
+      return false;
+    }
+  }
+  if (status && mutation.state.status !== status) {
+    return false;
+  }
+  if (predicate && !predicate(mutation)) {
+    return false;
+  }
+  return true;
+}
+function hashQueryKeyByOptions(queryKey, options) {
+  const hashFn = options?.queryKeyHashFn || hashKey;
+  return hashFn(queryKey);
+}
+function hashKey(queryKey) {
+  return JSON.stringify(
+    queryKey,
+    (_14, val) => isPlainObject2(val) ? Object.keys(val).sort().reduce((result, key) => {
+      result[key] = val[key];
+      return result;
+    }, {}) : val
+  );
+}
+function partialMatchKey(a, b) {
+  if (a === b) {
+    return true;
+  }
+  if (typeof a !== typeof b) {
+    return false;
+  }
+  if (a && b && typeof a === "object" && typeof b === "object") {
+    return !Object.keys(b).some((key) => !partialMatchKey(a[key], b[key]));
+  }
+  return false;
+}
+function replaceEqualDeep(a, b) {
+  if (a === b) {
+    return a;
+  }
+  const array2 = isPlainArray(a) && isPlainArray(b);
+  if (array2 || isPlainObject2(a) && isPlainObject2(b)) {
+    const aItems = array2 ? a : Object.keys(a);
+    const aSize = aItems.length;
+    const bItems = array2 ? b : Object.keys(b);
+    const bSize = bItems.length;
+    const copy = array2 ? [] : {};
+    let equalItems = 0;
+    for (let i = 0; i < bSize; i++) {
+      const key = array2 ? i : bItems[i];
+      if ((!array2 && aItems.includes(key) || array2) && a[key] === void 0 && b[key] === void 0) {
+        copy[key] = void 0;
+        equalItems++;
+      } else {
+        copy[key] = replaceEqualDeep(a[key], b[key]);
+        if (copy[key] === a[key] && a[key] !== void 0) {
+          equalItems++;
+        }
+      }
+    }
+    return aSize === bSize && equalItems === aSize ? a : copy;
+  }
+  return b;
+}
+function shallowEqualObjects(a, b) {
+  if (!b || Object.keys(a).length !== Object.keys(b).length) {
+    return false;
+  }
+  for (const key in a) {
+    if (a[key] !== b[key]) {
+      return false;
+    }
+  }
+  return true;
+}
+function isPlainArray(value) {
+  return Array.isArray(value) && value.length === Object.keys(value).length;
+}
+function isPlainObject2(o) {
+  if (!hasObjectPrototype(o)) {
+    return false;
+  }
+  const ctor = o.constructor;
+  if (ctor === void 0) {
+    return true;
+  }
+  const prot = ctor.prototype;
+  if (!hasObjectPrototype(prot)) {
+    return false;
+  }
+  if (!prot.hasOwnProperty("isPrototypeOf")) {
+    return false;
+  }
+  if (Object.getPrototypeOf(o) !== Object.prototype) {
+    return false;
+  }
+  return true;
+}
+function hasObjectPrototype(o) {
+  return Object.prototype.toString.call(o) === "[object Object]";
+}
+function sleep(timeout) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, timeout);
+  });
+}
+function replaceData(prevData, data, options) {
+  if (typeof options.structuralSharing === "function") {
+    return options.structuralSharing(prevData, data);
+  } else if (options.structuralSharing !== false) {
+    if (true) {
+      try {
+        return replaceEqualDeep(prevData, data);
+      } catch (error) {
+        console.error(
+          `Structural sharing requires data to be JSON serializable. To fix this, turn off structuralSharing or return JSON-serializable data from your queryFn. [${options.queryHash}]: ${error}`
+        );
+      }
+    }
+    return replaceEqualDeep(prevData, data);
+  }
+  return data;
+}
+function addToEnd(items, item, max = 0) {
+  const newItems = [...items, item];
+  return max && newItems.length > max ? newItems.slice(1) : newItems;
+}
+function addToStart(items, item, max = 0) {
+  const newItems = [item, ...items];
+  return max && newItems.length > max ? newItems.slice(0, -1) : newItems;
+}
+var skipToken = Symbol();
+function ensureQueryFn(options, fetchOptions) {
+  if (true) {
+    if (options.queryFn === skipToken) {
+      console.error(
+        `Attempted to invoke queryFn when set to skipToken. This is likely a configuration error. Query hash: '${options.queryHash}'`
+      );
+    }
+  }
+  if (!options.queryFn && fetchOptions?.initialPromise) {
+    return () => fetchOptions.initialPromise;
+  }
+  if (!options.queryFn || options.queryFn === skipToken) {
+    return () => Promise.reject(new Error(`Missing queryFn: '${options.queryHash}'`));
+  }
+  return options.queryFn;
+}
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/focusManager.js
+var FocusManager = class extends Subscribable {
+  #focused;
+  #cleanup;
+  #setup;
+  constructor() {
+    super();
+    this.#setup = (onFocus) => {
+      if (!isServer && window.addEventListener) {
+        const listener = () => onFocus();
+        window.addEventListener("visibilitychange", listener, false);
+        return () => {
+          window.removeEventListener("visibilitychange", listener);
+        };
+      }
+      return;
+    };
+  }
+  onSubscribe() {
+    if (!this.#cleanup) {
+      this.setEventListener(this.#setup);
+    }
+  }
+  onUnsubscribe() {
+    if (!this.hasListeners()) {
+      this.#cleanup?.();
+      this.#cleanup = void 0;
+    }
+  }
+  setEventListener(setup) {
+    this.#setup = setup;
+    this.#cleanup?.();
+    this.#cleanup = setup((focused) => {
+      if (typeof focused === "boolean") {
+        this.setFocused(focused);
+      } else {
+        this.onFocus();
+      }
+    });
+  }
+  setFocused(focused) {
+    const changed = this.#focused !== focused;
+    if (changed) {
+      this.#focused = focused;
+      this.onFocus();
+    }
+  }
+  onFocus() {
+    const isFocused = this.isFocused();
+    this.listeners.forEach((listener) => {
+      listener(isFocused);
+    });
+  }
+  isFocused() {
+    if (typeof this.#focused === "boolean") {
+      return this.#focused;
+    }
+    return globalThis.document?.visibilityState !== "hidden";
+  }
+};
+var focusManager = new FocusManager();
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/onlineManager.js
+var OnlineManager = class extends Subscribable {
+  #online = true;
+  #cleanup;
+  #setup;
+  constructor() {
+    super();
+    this.#setup = (onOnline) => {
+      if (!isServer && window.addEventListener) {
+        const onlineListener = () => onOnline(true);
+        const offlineListener = () => onOnline(false);
+        window.addEventListener("online", onlineListener, false);
+        window.addEventListener("offline", offlineListener, false);
+        return () => {
+          window.removeEventListener("online", onlineListener);
+          window.removeEventListener("offline", offlineListener);
+        };
+      }
+      return;
+    };
+  }
+  onSubscribe() {
+    if (!this.#cleanup) {
+      this.setEventListener(this.#setup);
+    }
+  }
+  onUnsubscribe() {
+    if (!this.hasListeners()) {
+      this.#cleanup?.();
+      this.#cleanup = void 0;
+    }
+  }
+  setEventListener(setup) {
+    this.#setup = setup;
+    this.#cleanup?.();
+    this.#cleanup = setup(this.setOnline.bind(this));
+  }
+  setOnline(online) {
+    const changed = this.#online !== online;
+    if (changed) {
+      this.#online = online;
+      this.listeners.forEach((listener) => {
+        listener(online);
+      });
+    }
+  }
+  isOnline() {
+    return this.#online;
+  }
+};
+var onlineManager = new OnlineManager();
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/retryer.js
+function defaultRetryDelay(failureCount) {
+  return Math.min(1e3 * 2 ** failureCount, 3e4);
+}
+function canFetch(networkMode) {
+  return (networkMode ?? "online") === "online" ? onlineManager.isOnline() : true;
+}
+var CancelledError = class extends Error {
+  constructor(options) {
+    super("CancelledError");
+    this.revert = options?.revert;
+    this.silent = options?.silent;
+  }
+};
+function isCancelledError(value) {
+  return value instanceof CancelledError;
+}
+function createRetryer(config) {
+  let isRetryCancelled = false;
+  let failureCount = 0;
+  let isResolved = false;
+  let continueFn;
+  let promiseResolve;
+  let promiseReject;
+  const promise = new Promise((outerResolve, outerReject) => {
+    promiseResolve = outerResolve;
+    promiseReject = outerReject;
+  });
+  const cancel = (cancelOptions) => {
+    if (!isResolved) {
+      reject(new CancelledError(cancelOptions));
+      config.abort?.();
+    }
+  };
+  const cancelRetry = () => {
+    isRetryCancelled = true;
+  };
+  const continueRetry = () => {
+    isRetryCancelled = false;
+  };
+  const canContinue = () => focusManager.isFocused() && (config.networkMode === "always" || onlineManager.isOnline()) && config.canRun();
+  const canStart = () => canFetch(config.networkMode) && config.canRun();
+  const resolve = (value) => {
+    if (!isResolved) {
+      isResolved = true;
+      config.onSuccess?.(value);
+      continueFn?.();
+      promiseResolve(value);
+    }
+  };
+  const reject = (value) => {
+    if (!isResolved) {
+      isResolved = true;
+      config.onError?.(value);
+      continueFn?.();
+      promiseReject(value);
+    }
+  };
+  const pause = () => {
+    return new Promise((continueResolve) => {
+      continueFn = (value) => {
+        if (isResolved || canContinue()) {
+          continueResolve(value);
+        }
+      };
+      config.onPause?.();
+    }).then(() => {
+      continueFn = void 0;
+      if (!isResolved) {
+        config.onContinue?.();
+      }
+    });
+  };
+  const run4 = () => {
+    if (isResolved) {
+      return;
+    }
+    let promiseOrValue;
+    const initialPromise = failureCount === 0 ? config.initialPromise : void 0;
+    try {
+      promiseOrValue = initialPromise ?? config.fn();
+    } catch (error) {
+      promiseOrValue = Promise.reject(error);
+    }
+    Promise.resolve(promiseOrValue).then(resolve).catch((error) => {
+      if (isResolved) {
+        return;
+      }
+      const retry = config.retry ?? (isServer ? 0 : 3);
+      const retryDelay = config.retryDelay ?? defaultRetryDelay;
+      const delay = typeof retryDelay === "function" ? retryDelay(failureCount, error) : retryDelay;
+      const shouldRetry = retry === true || typeof retry === "number" && failureCount < retry || typeof retry === "function" && retry(failureCount, error);
+      if (isRetryCancelled || !shouldRetry) {
+        reject(error);
+        return;
+      }
+      failureCount++;
+      config.onFail?.(failureCount, error);
+      sleep(delay).then(() => {
+        return canContinue() ? void 0 : pause();
+      }).then(() => {
+        if (isRetryCancelled) {
+          reject(error);
+        } else {
+          run4();
+        }
+      });
+    });
+  };
+  return {
+    promise,
+    cancel,
+    continue: () => {
+      continueFn?.();
+      return promise;
+    },
+    cancelRetry,
+    continueRetry,
+    canStart,
+    start: () => {
+      if (canStart()) {
+        run4();
+      } else {
+        pause().then(run4);
+      }
+      return promise;
+    }
+  };
+}
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/notifyManager.js
+function createNotifyManager() {
+  let queue = [];
+  let transactions = 0;
+  let notifyFn = (callback) => {
+    callback();
+  };
+  let batchNotifyFn = (callback) => {
+    callback();
+  };
+  let scheduleFn = (cb) => setTimeout(cb, 0);
+  const schedule = (callback) => {
+    if (transactions) {
+      queue.push(callback);
+    } else {
+      scheduleFn(() => {
+        notifyFn(callback);
+      });
+    }
+  };
+  const flush = () => {
+    const originalQueue = queue;
+    queue = [];
+    if (originalQueue.length) {
+      scheduleFn(() => {
+        batchNotifyFn(() => {
+          originalQueue.forEach((callback) => {
+            notifyFn(callback);
+          });
+        });
+      });
+    }
+  };
+  return {
+    batch: (callback) => {
+      let result;
+      transactions++;
+      try {
+        result = callback();
+      } finally {
+        transactions--;
+        if (!transactions) {
+          flush();
+        }
+      }
+      return result;
+    },
+    /**
+     * All calls to the wrapped function will be batched.
+     */
+    batchCalls: (callback) => {
+      return (...args) => {
+        schedule(() => {
+          callback(...args);
+        });
+      };
+    },
+    schedule,
+    /**
+     * Use this method to set a custom notify function.
+     * This can be used to for example wrap notifications with `React.act` while running tests.
+     */
+    setNotifyFunction: (fn) => {
+      notifyFn = fn;
+    },
+    /**
+     * Use this method to set a custom function to batch notifications together into a single tick.
+     * By default React Query will use the batch function provided by ReactDOM or React Native.
+     */
+    setBatchNotifyFunction: (fn) => {
+      batchNotifyFn = fn;
+    },
+    setScheduler: (fn) => {
+      scheduleFn = fn;
+    }
+  };
+}
+var notifyManager = createNotifyManager();
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/removable.js
+var Removable = class {
+  #gcTimeout;
+  destroy() {
+    this.clearGcTimeout();
+  }
+  scheduleGc() {
+    this.clearGcTimeout();
+    if (isValidTimeout(this.gcTime)) {
+      this.#gcTimeout = setTimeout(() => {
+        this.optionalRemove();
+      }, this.gcTime);
+    }
+  }
+  updateGcTime(newGcTime) {
+    this.gcTime = Math.max(
+      this.gcTime || 0,
+      newGcTime ?? (isServer ? Infinity : 5 * 60 * 1e3)
+    );
+  }
+  clearGcTimeout() {
+    if (this.#gcTimeout) {
+      clearTimeout(this.#gcTimeout);
+      this.#gcTimeout = void 0;
+    }
+  }
+};
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/query.js
+var Query = class extends Removable {
+  #initialState;
+  #revertState;
+  #cache;
+  #retryer;
+  #defaultOptions;
+  #abortSignalConsumed;
+  constructor(config) {
+    super();
+    this.#abortSignalConsumed = false;
+    this.#defaultOptions = config.defaultOptions;
+    this.setOptions(config.options);
+    this.observers = [];
+    this.#cache = config.cache;
+    this.queryKey = config.queryKey;
+    this.queryHash = config.queryHash;
+    this.#initialState = getDefaultState(this.options);
+    this.state = config.state ?? this.#initialState;
+    this.scheduleGc();
+  }
+  get meta() {
+    return this.options.meta;
+  }
+  get promise() {
+    return this.#retryer?.promise;
+  }
+  setOptions(options) {
+    this.options = { ...this.#defaultOptions, ...options };
+    this.updateGcTime(this.options.gcTime);
+  }
+  optionalRemove() {
+    if (!this.observers.length && this.state.fetchStatus === "idle") {
+      this.#cache.remove(this);
+    }
+  }
+  setData(newData, options) {
+    const data = replaceData(this.state.data, newData, this.options);
+    this.#dispatch({
+      data,
+      type: "success",
+      dataUpdatedAt: options?.updatedAt,
+      manual: options?.manual
+    });
+    return data;
+  }
+  setState(state, setStateOptions) {
+    this.#dispatch({ type: "setState", state, setStateOptions });
+  }
+  cancel(options) {
+    const promise = this.#retryer?.promise;
+    this.#retryer?.cancel(options);
+    return promise ? promise.then(noop3).catch(noop3) : Promise.resolve();
+  }
+  destroy() {
+    super.destroy();
+    this.cancel({ silent: true });
+  }
+  reset() {
+    this.destroy();
+    this.setState(this.#initialState);
+  }
+  isActive() {
+    return this.observers.some(
+      (observer3) => resolveEnabled(observer3.options.enabled, this) !== false
+    );
+  }
+  isDisabled() {
+    return this.getObserversCount() > 0 && !this.isActive();
+  }
+  isStale() {
+    if (this.state.isInvalidated) {
+      return true;
+    }
+    if (this.getObserversCount() > 0) {
+      return this.observers.some(
+        (observer3) => observer3.getCurrentResult().isStale
+      );
+    }
+    return this.state.data === void 0;
+  }
+  isStaleByTime(staleTime = 0) {
+    return this.state.isInvalidated || this.state.data === void 0 || !timeUntilStale(this.state.dataUpdatedAt, staleTime);
+  }
+  onFocus() {
+    const observer3 = this.observers.find((x) => x.shouldFetchOnWindowFocus());
+    observer3?.refetch({ cancelRefetch: false });
+    this.#retryer?.continue();
+  }
+  onOnline() {
+    const observer3 = this.observers.find((x) => x.shouldFetchOnReconnect());
+    observer3?.refetch({ cancelRefetch: false });
+    this.#retryer?.continue();
+  }
+  addObserver(observer3) {
+    if (!this.observers.includes(observer3)) {
+      this.observers.push(observer3);
+      this.clearGcTimeout();
+      this.#cache.notify({ type: "observerAdded", query: this, observer: observer3 });
+    }
+  }
+  removeObserver(observer3) {
+    if (this.observers.includes(observer3)) {
+      this.observers = this.observers.filter((x) => x !== observer3);
+      if (!this.observers.length) {
+        if (this.#retryer) {
+          if (this.#abortSignalConsumed) {
+            this.#retryer.cancel({ revert: true });
+          } else {
+            this.#retryer.cancelRetry();
+          }
+        }
+        this.scheduleGc();
+      }
+      this.#cache.notify({ type: "observerRemoved", query: this, observer: observer3 });
+    }
+  }
+  getObserversCount() {
+    return this.observers.length;
+  }
+  invalidate() {
+    if (!this.state.isInvalidated) {
+      this.#dispatch({ type: "invalidate" });
+    }
+  }
+  fetch(options, fetchOptions) {
+    if (this.state.fetchStatus !== "idle") {
+      if (this.state.data !== void 0 && fetchOptions?.cancelRefetch) {
+        this.cancel({ silent: true });
+      } else if (this.#retryer) {
+        this.#retryer.continueRetry();
+        return this.#retryer.promise;
+      }
+    }
+    if (options) {
+      this.setOptions(options);
+    }
+    if (!this.options.queryFn) {
+      const observer3 = this.observers.find((x) => x.options.queryFn);
+      if (observer3) {
+        this.setOptions(observer3.options);
+      }
+    }
+    if (true) {
+      if (!Array.isArray(this.options.queryKey)) {
+        console.error(
+          `As of v4, queryKey needs to be an Array. If you are using a string like 'repoData', please change it to an Array, e.g. ['repoData']`
+        );
+      }
+    }
+    const abortController = new AbortController();
+    const addSignalProperty = (object2) => {
+      Object.defineProperty(object2, "signal", {
+        enumerable: true,
+        get: () => {
+          this.#abortSignalConsumed = true;
+          return abortController.signal;
+        }
+      });
+    };
+    const fetchFn = () => {
+      const queryFn = ensureQueryFn(this.options, fetchOptions);
+      const queryFnContext = {
+        queryKey: this.queryKey,
+        meta: this.meta
+      };
+      addSignalProperty(queryFnContext);
+      this.#abortSignalConsumed = false;
+      if (this.options.persister) {
+        return this.options.persister(
+          queryFn,
+          queryFnContext,
+          this
+        );
+      }
+      return queryFn(queryFnContext);
+    };
+    const context = {
+      fetchOptions,
+      options: this.options,
+      queryKey: this.queryKey,
+      state: this.state,
+      fetchFn
+    };
+    addSignalProperty(context);
+    this.options.behavior?.onFetch(
+      context,
+      this
+    );
+    this.#revertState = this.state;
+    if (this.state.fetchStatus === "idle" || this.state.fetchMeta !== context.fetchOptions?.meta) {
+      this.#dispatch({ type: "fetch", meta: context.fetchOptions?.meta });
+    }
+    const onError = (error) => {
+      if (!(isCancelledError(error) && error.silent)) {
+        this.#dispatch({
+          type: "error",
+          error
+        });
+      }
+      if (!isCancelledError(error)) {
+        this.#cache.config.onError?.(
+          error,
+          this
+        );
+        this.#cache.config.onSettled?.(
+          this.state.data,
+          error,
+          this
+        );
+      }
+      if (!this.isFetchingOptimistic) {
+        this.scheduleGc();
+      }
+      this.isFetchingOptimistic = false;
+    };
+    this.#retryer = createRetryer({
+      initialPromise: fetchOptions?.initialPromise,
+      fn: context.fetchFn,
+      abort: abortController.abort.bind(abortController),
+      onSuccess: (data) => {
+        if (data === void 0) {
+          if (true) {
+            console.error(
+              `Query data cannot be undefined. Please make sure to return a value other than undefined from your query function. Affected query key: ${this.queryHash}`
+            );
+          }
+          onError(new Error(`${this.queryHash} data is undefined`));
+          return;
+        }
+        try {
+          this.setData(data);
+        } catch (error) {
+          onError(error);
+          return;
+        }
+        this.#cache.config.onSuccess?.(data, this);
+        this.#cache.config.onSettled?.(
+          data,
+          this.state.error,
+          this
+        );
+        if (!this.isFetchingOptimistic) {
+          this.scheduleGc();
+        }
+        this.isFetchingOptimistic = false;
+      },
+      onError,
+      onFail: (failureCount, error) => {
+        this.#dispatch({ type: "failed", failureCount, error });
+      },
+      onPause: () => {
+        this.#dispatch({ type: "pause" });
+      },
+      onContinue: () => {
+        this.#dispatch({ type: "continue" });
+      },
+      retry: context.options.retry,
+      retryDelay: context.options.retryDelay,
+      networkMode: context.options.networkMode,
+      canRun: () => true
+    });
+    return this.#retryer.start();
+  }
+  #dispatch(action2) {
+    const reducer = (state) => {
+      switch (action2.type) {
+        case "failed":
+          return {
+            ...state,
+            fetchFailureCount: action2.failureCount,
+            fetchFailureReason: action2.error
+          };
+        case "pause":
+          return {
+            ...state,
+            fetchStatus: "paused"
+          };
+        case "continue":
+          return {
+            ...state,
+            fetchStatus: "fetching"
+          };
+        case "fetch":
+          return {
+            ...state,
+            ...fetchState(state.data, this.options),
+            fetchMeta: action2.meta ?? null
+          };
+        case "success":
+          return {
+            ...state,
+            data: action2.data,
+            dataUpdateCount: state.dataUpdateCount + 1,
+            dataUpdatedAt: action2.dataUpdatedAt ?? Date.now(),
+            error: null,
+            isInvalidated: false,
+            status: "success",
+            ...!action2.manual && {
+              fetchStatus: "idle",
+              fetchFailureCount: 0,
+              fetchFailureReason: null
+            }
+          };
+        case "error":
+          const error = action2.error;
+          if (isCancelledError(error) && error.revert && this.#revertState) {
+            return { ...this.#revertState, fetchStatus: "idle" };
+          }
+          return {
+            ...state,
+            error,
+            errorUpdateCount: state.errorUpdateCount + 1,
+            errorUpdatedAt: Date.now(),
+            fetchFailureCount: state.fetchFailureCount + 1,
+            fetchFailureReason: error,
+            fetchStatus: "idle",
+            status: "error"
+          };
+        case "invalidate":
+          return {
+            ...state,
+            isInvalidated: true
+          };
+        case "setState":
+          return {
+            ...state,
+            ...action2.state
+          };
+      }
+    };
+    this.state = reducer(this.state);
+    notifyManager.batch(() => {
+      this.observers.forEach((observer3) => {
+        observer3.onQueryUpdate();
+      });
+      this.#cache.notify({ query: this, type: "updated", action: action2 });
+    });
+  }
+};
+function fetchState(data, options) {
+  return {
+    fetchFailureCount: 0,
+    fetchFailureReason: null,
+    fetchStatus: canFetch(options.networkMode) ? "fetching" : "paused",
+    ...data === void 0 && {
+      error: null,
+      status: "pending"
+    }
+  };
+}
+function getDefaultState(options) {
+  const data = typeof options.initialData === "function" ? options.initialData() : options.initialData;
+  const hasData = data !== void 0;
+  const initialDataUpdatedAt = hasData ? typeof options.initialDataUpdatedAt === "function" ? options.initialDataUpdatedAt() : options.initialDataUpdatedAt : 0;
+  return {
+    data,
+    dataUpdateCount: 0,
+    dataUpdatedAt: hasData ? initialDataUpdatedAt ?? Date.now() : 0,
+    error: null,
+    errorUpdateCount: 0,
+    errorUpdatedAt: 0,
+    fetchFailureCount: 0,
+    fetchFailureReason: null,
+    fetchMeta: null,
+    isInvalidated: false,
+    status: hasData ? "success" : "pending",
+    fetchStatus: "idle"
+  };
+}
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryCache.js
+var QueryCache = class extends Subscribable {
+  constructor(config = {}) {
+    super();
+    this.config = config;
+    this.#queries = /* @__PURE__ */ new Map();
+  }
+  #queries;
+  build(client, options, state) {
+    const queryKey = options.queryKey;
+    const queryHash = options.queryHash ?? hashQueryKeyByOptions(queryKey, options);
+    let query = this.get(queryHash);
+    if (!query) {
+      query = new Query({
+        cache: this,
+        queryKey,
+        queryHash,
+        options: client.defaultQueryOptions(options),
+        state,
+        defaultOptions: client.getQueryDefaults(queryKey)
+      });
+      this.add(query);
+    }
+    return query;
+  }
+  add(query) {
+    if (!this.#queries.has(query.queryHash)) {
+      this.#queries.set(query.queryHash, query);
+      this.notify({
+        type: "added",
+        query
+      });
+    }
+  }
+  remove(query) {
+    const queryInMap = this.#queries.get(query.queryHash);
+    if (queryInMap) {
+      query.destroy();
+      if (queryInMap === query) {
+        this.#queries.delete(query.queryHash);
+      }
+      this.notify({ type: "removed", query });
+    }
+  }
+  clear() {
+    notifyManager.batch(() => {
+      this.getAll().forEach((query) => {
+        this.remove(query);
+      });
+    });
+  }
+  get(queryHash) {
+    return this.#queries.get(queryHash);
+  }
+  getAll() {
+    return [...this.#queries.values()];
+  }
+  find(filters) {
+    const defaultedFilters = { exact: true, ...filters };
+    return this.getAll().find(
+      (query) => matchQuery(defaultedFilters, query)
+    );
+  }
+  findAll(filters = {}) {
+    const queries = this.getAll();
+    return Object.keys(filters).length > 0 ? queries.filter((query) => matchQuery(filters, query)) : queries;
+  }
+  notify(event) {
+    notifyManager.batch(() => {
+      this.listeners.forEach((listener) => {
+        listener(event);
+      });
+    });
+  }
+  onFocus() {
+    notifyManager.batch(() => {
+      this.getAll().forEach((query) => {
+        query.onFocus();
+      });
+    });
+  }
+  onOnline() {
+    notifyManager.batch(() => {
+      this.getAll().forEach((query) => {
+        query.onOnline();
+      });
+    });
+  }
+};
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutation.js
+var Mutation = class extends Removable {
+  #observers;
+  #mutationCache;
+  #retryer;
+  constructor(config) {
+    super();
+    this.mutationId = config.mutationId;
+    this.#mutationCache = config.mutationCache;
+    this.#observers = [];
+    this.state = config.state || getDefaultState2();
+    this.setOptions(config.options);
+    this.scheduleGc();
+  }
+  setOptions(options) {
+    this.options = options;
+    this.updateGcTime(this.options.gcTime);
+  }
+  get meta() {
+    return this.options.meta;
+  }
+  addObserver(observer3) {
+    if (!this.#observers.includes(observer3)) {
+      this.#observers.push(observer3);
+      this.clearGcTimeout();
+      this.#mutationCache.notify({
+        type: "observerAdded",
+        mutation: this,
+        observer: observer3
+      });
+    }
+  }
+  removeObserver(observer3) {
+    this.#observers = this.#observers.filter((x) => x !== observer3);
+    this.scheduleGc();
+    this.#mutationCache.notify({
+      type: "observerRemoved",
+      mutation: this,
+      observer: observer3
+    });
+  }
+  optionalRemove() {
+    if (!this.#observers.length) {
+      if (this.state.status === "pending") {
+        this.scheduleGc();
+      } else {
+        this.#mutationCache.remove(this);
+      }
+    }
+  }
+  continue() {
+    return this.#retryer?.continue() ?? // continuing a mutation assumes that variables are set, mutation must have been dehydrated before
+    this.execute(this.state.variables);
+  }
+  async execute(variables) {
+    this.#retryer = createRetryer({
+      fn: () => {
+        if (!this.options.mutationFn) {
+          return Promise.reject(new Error("No mutationFn found"));
+        }
+        return this.options.mutationFn(variables);
+      },
+      onFail: (failureCount, error) => {
+        this.#dispatch({ type: "failed", failureCount, error });
+      },
+      onPause: () => {
+        this.#dispatch({ type: "pause" });
+      },
+      onContinue: () => {
+        this.#dispatch({ type: "continue" });
+      },
+      retry: this.options.retry ?? 0,
+      retryDelay: this.options.retryDelay,
+      networkMode: this.options.networkMode,
+      canRun: () => this.#mutationCache.canRun(this)
+    });
+    const restored = this.state.status === "pending";
+    const isPaused = !this.#retryer.canStart();
+    try {
+      if (!restored) {
+        this.#dispatch({ type: "pending", variables, isPaused });
+        await this.#mutationCache.config.onMutate?.(
+          variables,
+          this
+        );
+        const context = await this.options.onMutate?.(variables);
+        if (context !== this.state.context) {
+          this.#dispatch({
+            type: "pending",
+            context,
+            variables,
+            isPaused
+          });
+        }
+      }
+      const data = await this.#retryer.start();
+      await this.#mutationCache.config.onSuccess?.(
+        data,
+        variables,
+        this.state.context,
+        this
+      );
+      await this.options.onSuccess?.(data, variables, this.state.context);
+      await this.#mutationCache.config.onSettled?.(
+        data,
+        null,
+        this.state.variables,
+        this.state.context,
+        this
+      );
+      await this.options.onSettled?.(data, null, variables, this.state.context);
+      this.#dispatch({ type: "success", data });
+      return data;
+    } catch (error) {
+      try {
+        await this.#mutationCache.config.onError?.(
+          error,
+          variables,
+          this.state.context,
+          this
+        );
+        await this.options.onError?.(
+          error,
+          variables,
+          this.state.context
+        );
+        await this.#mutationCache.config.onSettled?.(
+          void 0,
+          error,
+          this.state.variables,
+          this.state.context,
+          this
+        );
+        await this.options.onSettled?.(
+          void 0,
+          error,
+          variables,
+          this.state.context
+        );
+        throw error;
+      } finally {
+        this.#dispatch({ type: "error", error });
+      }
+    } finally {
+      this.#mutationCache.runNext(this);
+    }
+  }
+  #dispatch(action2) {
+    const reducer = (state) => {
+      switch (action2.type) {
+        case "failed":
+          return {
+            ...state,
+            failureCount: action2.failureCount,
+            failureReason: action2.error
+          };
+        case "pause":
+          return {
+            ...state,
+            isPaused: true
+          };
+        case "continue":
+          return {
+            ...state,
+            isPaused: false
+          };
+        case "pending":
+          return {
+            ...state,
+            context: action2.context,
+            data: void 0,
+            failureCount: 0,
+            failureReason: null,
+            error: null,
+            isPaused: action2.isPaused,
+            status: "pending",
+            variables: action2.variables,
+            submittedAt: Date.now()
+          };
+        case "success":
+          return {
+            ...state,
+            data: action2.data,
+            failureCount: 0,
+            failureReason: null,
+            error: null,
+            status: "success",
+            isPaused: false
+          };
+        case "error":
+          return {
+            ...state,
+            data: void 0,
+            error: action2.error,
+            failureCount: state.failureCount + 1,
+            failureReason: action2.error,
+            isPaused: false,
+            status: "error"
+          };
+      }
+    };
+    this.state = reducer(this.state);
+    notifyManager.batch(() => {
+      this.#observers.forEach((observer3) => {
+        observer3.onMutationUpdate(action2);
+      });
+      this.#mutationCache.notify({
+        mutation: this,
+        type: "updated",
+        action: action2
+      });
+    });
+  }
+};
+function getDefaultState2() {
+  return {
+    context: void 0,
+    data: void 0,
+    error: null,
+    failureCount: 0,
+    failureReason: null,
+    isPaused: false,
+    status: "idle",
+    variables: void 0,
+    submittedAt: 0
+  };
+}
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutationCache.js
+var MutationCache = class extends Subscribable {
+  constructor(config = {}) {
+    super();
+    this.config = config;
+    this.#mutations = /* @__PURE__ */ new Map();
+    this.#mutationId = Date.now();
+  }
+  #mutations;
+  #mutationId;
+  build(client, options, state) {
+    const mutation = new Mutation({
+      mutationCache: this,
+      mutationId: ++this.#mutationId,
+      options: client.defaultMutationOptions(options),
+      state
+    });
+    this.add(mutation);
+    return mutation;
+  }
+  add(mutation) {
+    const scope = scopeFor(mutation);
+    const mutations = this.#mutations.get(scope) ?? [];
+    mutations.push(mutation);
+    this.#mutations.set(scope, mutations);
+    this.notify({ type: "added", mutation });
+  }
+  remove(mutation) {
+    const scope = scopeFor(mutation);
+    if (this.#mutations.has(scope)) {
+      const mutations = this.#mutations.get(scope)?.filter((x) => x !== mutation);
+      if (mutations) {
+        if (mutations.length === 0) {
+          this.#mutations.delete(scope);
+        } else {
+          this.#mutations.set(scope, mutations);
+        }
+      }
+    }
+    this.notify({ type: "removed", mutation });
+  }
+  canRun(mutation) {
+    const firstPendingMutation = this.#mutations.get(scopeFor(mutation))?.find((m) => m.state.status === "pending");
+    return !firstPendingMutation || firstPendingMutation === mutation;
+  }
+  runNext(mutation) {
+    const foundMutation = this.#mutations.get(scopeFor(mutation))?.find((m) => m !== mutation && m.state.isPaused);
+    return foundMutation?.continue() ?? Promise.resolve();
+  }
+  clear() {
+    notifyManager.batch(() => {
+      this.getAll().forEach((mutation) => {
+        this.remove(mutation);
+      });
+    });
+  }
+  getAll() {
+    return [...this.#mutations.values()].flat();
+  }
+  find(filters) {
+    const defaultedFilters = { exact: true, ...filters };
+    return this.getAll().find(
+      (mutation) => matchMutation(defaultedFilters, mutation)
+    );
+  }
+  findAll(filters = {}) {
+    return this.getAll().filter((mutation) => matchMutation(filters, mutation));
+  }
+  notify(event) {
+    notifyManager.batch(() => {
+      this.listeners.forEach((listener) => {
+        listener(event);
+      });
+    });
+  }
+  resumePausedMutations() {
+    const pausedMutations = this.getAll().filter((x) => x.state.isPaused);
+    return notifyManager.batch(
+      () => Promise.all(
+        pausedMutations.map((mutation) => mutation.continue().catch(noop3))
+      )
+    );
+  }
+};
+function scopeFor(mutation) {
+  return mutation.options.scope?.id ?? String(mutation.mutationId);
+}
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/infiniteQueryBehavior.js
+function infiniteQueryBehavior(pages) {
+  return {
+    onFetch: (context, query) => {
+      const options = context.options;
+      const direction = context.fetchOptions?.meta?.fetchMore?.direction;
+      const oldPages = context.state.data?.pages || [];
+      const oldPageParams = context.state.data?.pageParams || [];
+      let result = { pages: [], pageParams: [] };
+      let currentPage = 0;
+      const fetchFn = async () => {
+        let cancelled = false;
+        const addSignalProperty = (object2) => {
+          Object.defineProperty(object2, "signal", {
+            enumerable: true,
+            get: () => {
+              if (context.signal.aborted) {
+                cancelled = true;
+              } else {
+                context.signal.addEventListener("abort", () => {
+                  cancelled = true;
+                });
+              }
+              return context.signal;
+            }
+          });
+        };
+        const queryFn = ensureQueryFn(context.options, context.fetchOptions);
+        const fetchPage = async (data, param, previous) => {
+          if (cancelled) {
+            return Promise.reject();
+          }
+          if (param == null && data.pages.length) {
+            return Promise.resolve(data);
+          }
+          const queryFnContext = {
+            queryKey: context.queryKey,
+            pageParam: param,
+            direction: previous ? "backward" : "forward",
+            meta: context.options.meta
+          };
+          addSignalProperty(queryFnContext);
+          const page = await queryFn(
+            queryFnContext
+          );
+          const { maxPages } = context.options;
+          const addTo = previous ? addToStart : addToEnd;
+          return {
+            pages: addTo(data.pages, page, maxPages),
+            pageParams: addTo(data.pageParams, param, maxPages)
+          };
+        };
+        if (direction && oldPages.length) {
+          const previous = direction === "backward";
+          const pageParamFn = previous ? getPreviousPageParam : getNextPageParam;
+          const oldData = {
+            pages: oldPages,
+            pageParams: oldPageParams
+          };
+          const param = pageParamFn(options, oldData);
+          result = await fetchPage(oldData, param, previous);
+        } else {
+          const remainingPages = pages ?? oldPages.length;
+          do {
+            const param = currentPage === 0 ? oldPageParams[0] ?? options.initialPageParam : getNextPageParam(options, result);
+            if (currentPage > 0 && param == null) {
+              break;
+            }
+            result = await fetchPage(result, param);
+            currentPage++;
+          } while (currentPage < remainingPages);
+        }
+        return result;
+      };
+      if (context.options.persister) {
+        context.fetchFn = () => {
+          return context.options.persister?.(
+            fetchFn,
+            {
+              queryKey: context.queryKey,
+              meta: context.options.meta,
+              signal: context.signal
+            },
+            query
+          );
+        };
+      } else {
+        context.fetchFn = fetchFn;
+      }
+    }
+  };
+}
+function getNextPageParam(options, { pages, pageParams }) {
+  const lastIndex = pages.length - 1;
+  return pages.length > 0 ? options.getNextPageParam(
+    pages[lastIndex],
+    pages,
+    pageParams[lastIndex],
+    pageParams
+  ) : void 0;
+}
+function getPreviousPageParam(options, { pages, pageParams }) {
+  return pages.length > 0 ? options.getPreviousPageParam?.(pages[0], pages, pageParams[0], pageParams) : void 0;
+}
+function hasNextPage(options, data) {
+  if (!data)
+    return false;
+  return getNextPageParam(options, data) != null;
+}
+function hasPreviousPage(options, data) {
+  if (!data || !options.getPreviousPageParam)
+    return false;
+  return getPreviousPageParam(options, data) != null;
+}
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryClient.js
+var QueryClient = class {
+  #queryCache;
+  #mutationCache;
+  #defaultOptions;
+  #queryDefaults;
+  #mutationDefaults;
+  #mountCount;
+  #unsubscribeFocus;
+  #unsubscribeOnline;
+  constructor(config = {}) {
+    this.#queryCache = config.queryCache || new QueryCache();
+    this.#mutationCache = config.mutationCache || new MutationCache();
+    this.#defaultOptions = config.defaultOptions || {};
+    this.#queryDefaults = /* @__PURE__ */ new Map();
+    this.#mutationDefaults = /* @__PURE__ */ new Map();
+    this.#mountCount = 0;
+  }
+  mount() {
+    this.#mountCount++;
+    if (this.#mountCount !== 1)
+      return;
+    this.#unsubscribeFocus = focusManager.subscribe(async (focused) => {
+      if (focused) {
+        await this.resumePausedMutations();
+        this.#queryCache.onFocus();
+      }
+    });
+    this.#unsubscribeOnline = onlineManager.subscribe(async (online) => {
+      if (online) {
+        await this.resumePausedMutations();
+        this.#queryCache.onOnline();
+      }
+    });
+  }
+  unmount() {
+    this.#mountCount--;
+    if (this.#mountCount !== 0)
+      return;
+    this.#unsubscribeFocus?.();
+    this.#unsubscribeFocus = void 0;
+    this.#unsubscribeOnline?.();
+    this.#unsubscribeOnline = void 0;
+  }
+  isFetching(filters) {
+    return this.#queryCache.findAll({ ...filters, fetchStatus: "fetching" }).length;
+  }
+  isMutating(filters) {
+    return this.#mutationCache.findAll({ ...filters, status: "pending" }).length;
+  }
+  getQueryData(queryKey) {
+    const options = this.defaultQueryOptions({ queryKey });
+    return this.#queryCache.get(options.queryHash)?.state.data;
+  }
+  ensureQueryData(options) {
+    const cachedData = this.getQueryData(options.queryKey);
+    if (cachedData === void 0)
+      return this.fetchQuery(options);
+    else {
+      const defaultedOptions = this.defaultQueryOptions(options);
+      const query = this.#queryCache.build(this, defaultedOptions);
+      if (options.revalidateIfStale && query.isStaleByTime(resolveStaleTime(defaultedOptions.staleTime, query))) {
+        void this.prefetchQuery(defaultedOptions);
+      }
+      return Promise.resolve(cachedData);
+    }
+  }
+  getQueriesData(filters) {
+    return this.#queryCache.findAll(filters).map(({ queryKey, state }) => {
+      const data = state.data;
+      return [queryKey, data];
+    });
+  }
+  setQueryData(queryKey, updater, options) {
+    const defaultedOptions = this.defaultQueryOptions({ queryKey });
+    const query = this.#queryCache.get(
+      defaultedOptions.queryHash
+    );
+    const prevData = query?.state.data;
+    const data = functionalUpdate(updater, prevData);
+    if (data === void 0) {
+      return void 0;
+    }
+    return this.#queryCache.build(this, defaultedOptions).setData(data, { ...options, manual: true });
+  }
+  setQueriesData(filters, updater, options) {
+    return notifyManager.batch(
+      () => this.#queryCache.findAll(filters).map(({ queryKey }) => [
+        queryKey,
+        this.setQueryData(queryKey, updater, options)
+      ])
+    );
+  }
+  getQueryState(queryKey) {
+    const options = this.defaultQueryOptions({ queryKey });
+    return this.#queryCache.get(options.queryHash)?.state;
+  }
+  removeQueries(filters) {
+    const queryCache = this.#queryCache;
+    notifyManager.batch(() => {
+      queryCache.findAll(filters).forEach((query) => {
+        queryCache.remove(query);
+      });
+    });
+  }
+  resetQueries(filters, options) {
+    const queryCache = this.#queryCache;
+    const refetchFilters = {
+      type: "active",
+      ...filters
+    };
+    return notifyManager.batch(() => {
+      queryCache.findAll(filters).forEach((query) => {
+        query.reset();
+      });
+      return this.refetchQueries(refetchFilters, options);
+    });
+  }
+  cancelQueries(filters = {}, cancelOptions = {}) {
+    const defaultedCancelOptions = { revert: true, ...cancelOptions };
+    const promises = notifyManager.batch(
+      () => this.#queryCache.findAll(filters).map((query) => query.cancel(defaultedCancelOptions))
+    );
+    return Promise.all(promises).then(noop3).catch(noop3);
+  }
+  invalidateQueries(filters = {}, options = {}) {
+    return notifyManager.batch(() => {
+      this.#queryCache.findAll(filters).forEach((query) => {
+        query.invalidate();
+      });
+      if (filters.refetchType === "none") {
+        return Promise.resolve();
+      }
+      const refetchFilters = {
+        ...filters,
+        type: filters.refetchType ?? filters.type ?? "active"
+      };
+      return this.refetchQueries(refetchFilters, options);
+    });
+  }
+  refetchQueries(filters = {}, options) {
+    const fetchOptions = {
+      ...options,
+      cancelRefetch: options?.cancelRefetch ?? true
+    };
+    const promises = notifyManager.batch(
+      () => this.#queryCache.findAll(filters).filter((query) => !query.isDisabled()).map((query) => {
+        let promise = query.fetch(void 0, fetchOptions);
+        if (!fetchOptions.throwOnError) {
+          promise = promise.catch(noop3);
+        }
+        return query.state.fetchStatus === "paused" ? Promise.resolve() : promise;
+      })
+    );
+    return Promise.all(promises).then(noop3);
+  }
+  fetchQuery(options) {
+    const defaultedOptions = this.defaultQueryOptions(options);
+    if (defaultedOptions.retry === void 0) {
+      defaultedOptions.retry = false;
+    }
+    const query = this.#queryCache.build(this, defaultedOptions);
+    return query.isStaleByTime(
+      resolveStaleTime(defaultedOptions.staleTime, query)
+    ) ? query.fetch(defaultedOptions) : Promise.resolve(query.state.data);
+  }
+  prefetchQuery(options) {
+    return this.fetchQuery(options).then(noop3).catch(noop3);
+  }
+  fetchInfiniteQuery(options) {
+    options.behavior = infiniteQueryBehavior(options.pages);
+    return this.fetchQuery(options);
+  }
+  prefetchInfiniteQuery(options) {
+    return this.fetchInfiniteQuery(options).then(noop3).catch(noop3);
+  }
+  ensureInfiniteQueryData(options) {
+    options.behavior = infiniteQueryBehavior(options.pages);
+    return this.ensureQueryData(options);
+  }
+  resumePausedMutations() {
+    if (onlineManager.isOnline()) {
+      return this.#mutationCache.resumePausedMutations();
+    }
+    return Promise.resolve();
+  }
+  getQueryCache() {
+    return this.#queryCache;
+  }
+  getMutationCache() {
+    return this.#mutationCache;
+  }
+  getDefaultOptions() {
+    return this.#defaultOptions;
+  }
+  setDefaultOptions(options) {
+    this.#defaultOptions = options;
+  }
+  setQueryDefaults(queryKey, options) {
+    this.#queryDefaults.set(hashKey(queryKey), {
+      queryKey,
+      defaultOptions: options
+    });
+  }
+  getQueryDefaults(queryKey) {
+    const defaults = [...this.#queryDefaults.values()];
+    let result = {};
+    defaults.forEach((queryDefault) => {
+      if (partialMatchKey(queryKey, queryDefault.queryKey)) {
+        result = { ...result, ...queryDefault.defaultOptions };
+      }
+    });
+    return result;
+  }
+  setMutationDefaults(mutationKey, options) {
+    this.#mutationDefaults.set(hashKey(mutationKey), {
+      mutationKey,
+      defaultOptions: options
+    });
+  }
+  getMutationDefaults(mutationKey) {
+    const defaults = [...this.#mutationDefaults.values()];
+    let result = {};
+    defaults.forEach((queryDefault) => {
+      if (partialMatchKey(mutationKey, queryDefault.mutationKey)) {
+        result = { ...result, ...queryDefault.defaultOptions };
+      }
+    });
+    return result;
+  }
+  defaultQueryOptions(options) {
+    if (options._defaulted) {
+      return options;
+    }
+    const defaultedOptions = {
+      ...this.#defaultOptions.queries,
+      ...this.getQueryDefaults(options.queryKey),
+      ...options,
+      _defaulted: true
+    };
+    if (!defaultedOptions.queryHash) {
+      defaultedOptions.queryHash = hashQueryKeyByOptions(
+        defaultedOptions.queryKey,
+        defaultedOptions
+      );
+    }
+    if (defaultedOptions.refetchOnReconnect === void 0) {
+      defaultedOptions.refetchOnReconnect = defaultedOptions.networkMode !== "always";
+    }
+    if (defaultedOptions.throwOnError === void 0) {
+      defaultedOptions.throwOnError = !!defaultedOptions.suspense;
+    }
+    if (!defaultedOptions.networkMode && defaultedOptions.persister) {
+      defaultedOptions.networkMode = "offlineFirst";
+    }
+    if (defaultedOptions.enabled !== true && defaultedOptions.queryFn === skipToken) {
+      defaultedOptions.enabled = false;
+    }
+    return defaultedOptions;
+  }
+  defaultMutationOptions(options) {
+    if (options?._defaulted) {
+      return options;
+    }
+    return {
+      ...this.#defaultOptions.mutations,
+      ...options?.mutationKey && this.getMutationDefaults(options.mutationKey),
+      ...options,
+      _defaulted: true
+    };
+  }
+  clear() {
+    this.#queryCache.clear();
+    this.#mutationCache.clear();
+  }
+};
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryObserver.js
+var QueryObserver = class extends Subscribable {
+  constructor(client, options) {
+    super();
+    this.options = options;
+    this.#client = client;
+    this.#selectError = null;
+    this.bindMethods();
+    this.setOptions(options);
+  }
+  #client;
+  #currentQuery = void 0;
+  #currentQueryInitialState = void 0;
+  #currentResult = void 0;
+  #currentResultState;
+  #currentResultOptions;
+  #selectError;
+  #selectFn;
+  #selectResult;
+  // This property keeps track of the last query with defined data.
+  // It will be used to pass the previous data and query to the placeholder function between renders.
+  #lastQueryWithDefinedData;
+  #staleTimeoutId;
+  #refetchIntervalId;
+  #currentRefetchInterval;
+  #trackedProps = /* @__PURE__ */ new Set();
+  bindMethods() {
+    this.refetch = this.refetch.bind(this);
+  }
+  onSubscribe() {
+    if (this.listeners.size === 1) {
+      this.#currentQuery.addObserver(this);
+      if (shouldFetchOnMount(this.#currentQuery, this.options)) {
+        this.#executeFetch();
+      } else {
+        this.updateResult();
+      }
+      this.#updateTimers();
+    }
+  }
+  onUnsubscribe() {
+    if (!this.hasListeners()) {
+      this.destroy();
+    }
+  }
+  shouldFetchOnReconnect() {
+    return shouldFetchOn(
+      this.#currentQuery,
+      this.options,
+      this.options.refetchOnReconnect
+    );
+  }
+  shouldFetchOnWindowFocus() {
+    return shouldFetchOn(
+      this.#currentQuery,
+      this.options,
+      this.options.refetchOnWindowFocus
+    );
+  }
+  destroy() {
+    this.listeners = /* @__PURE__ */ new Set();
+    this.#clearStaleTimeout();
+    this.#clearRefetchInterval();
+    this.#currentQuery.removeObserver(this);
+  }
+  setOptions(options, notifyOptions) {
+    const prevOptions = this.options;
+    const prevQuery = this.#currentQuery;
+    this.options = this.#client.defaultQueryOptions(options);
+    if (this.options.enabled !== void 0 && typeof this.options.enabled !== "boolean" && typeof this.options.enabled !== "function" && typeof resolveEnabled(this.options.enabled, this.#currentQuery) !== "boolean") {
+      throw new Error(
+        "Expected enabled to be a boolean or a callback that returns a boolean"
+      );
+    }
+    this.#updateQuery();
+    this.#currentQuery.setOptions(this.options);
+    if (prevOptions._defaulted && !shallowEqualObjects(this.options, prevOptions)) {
+      this.#client.getQueryCache().notify({
+        type: "observerOptionsUpdated",
+        query: this.#currentQuery,
+        observer: this
+      });
+    }
+    const mounted = this.hasListeners();
+    if (mounted && shouldFetchOptionally(
+      this.#currentQuery,
+      prevQuery,
+      this.options,
+      prevOptions
+    )) {
+      this.#executeFetch();
+    }
+    this.updateResult(notifyOptions);
+    if (mounted && (this.#currentQuery !== prevQuery || resolveEnabled(this.options.enabled, this.#currentQuery) !== resolveEnabled(prevOptions.enabled, this.#currentQuery) || resolveStaleTime(this.options.staleTime, this.#currentQuery) !== resolveStaleTime(prevOptions.staleTime, this.#currentQuery))) {
+      this.#updateStaleTimeout();
+    }
+    const nextRefetchInterval = this.#computeRefetchInterval();
+    if (mounted && (this.#currentQuery !== prevQuery || resolveEnabled(this.options.enabled, this.#currentQuery) !== resolveEnabled(prevOptions.enabled, this.#currentQuery) || nextRefetchInterval !== this.#currentRefetchInterval)) {
+      this.#updateRefetchInterval(nextRefetchInterval);
+    }
+  }
+  getOptimisticResult(options) {
+    const query = this.#client.getQueryCache().build(this.#client, options);
+    const result = this.createResult(query, options);
+    if (shouldAssignObserverCurrentProperties(this, result)) {
+      this.#currentResult = result;
+      this.#currentResultOptions = this.options;
+      this.#currentResultState = this.#currentQuery.state;
+    }
+    return result;
+  }
+  getCurrentResult() {
+    return this.#currentResult;
+  }
+  trackResult(result, onPropTracked) {
+    const trackedResult = {};
+    Object.keys(result).forEach((key) => {
+      Object.defineProperty(trackedResult, key, {
+        configurable: false,
+        enumerable: true,
+        get: () => {
+          this.trackProp(key);
+          onPropTracked?.(key);
+          return result[key];
+        }
+      });
+    });
+    return trackedResult;
+  }
+  trackProp(key) {
+    this.#trackedProps.add(key);
+  }
+  getCurrentQuery() {
+    return this.#currentQuery;
+  }
+  refetch({ ...options } = {}) {
+    return this.fetch({
+      ...options
+    });
+  }
+  fetchOptimistic(options) {
+    const defaultedOptions = this.#client.defaultQueryOptions(options);
+    const query = this.#client.getQueryCache().build(this.#client, defaultedOptions);
+    query.isFetchingOptimistic = true;
+    return query.fetch().then(() => this.createResult(query, defaultedOptions));
+  }
+  fetch(fetchOptions) {
+    return this.#executeFetch({
+      ...fetchOptions,
+      cancelRefetch: fetchOptions.cancelRefetch ?? true
+    }).then(() => {
+      this.updateResult();
+      return this.#currentResult;
+    });
+  }
+  #executeFetch(fetchOptions) {
+    this.#updateQuery();
+    let promise = this.#currentQuery.fetch(
+      this.options,
+      fetchOptions
+    );
+    if (!fetchOptions?.throwOnError) {
+      promise = promise.catch(noop3);
+    }
+    return promise;
+  }
+  #updateStaleTimeout() {
+    this.#clearStaleTimeout();
+    const staleTime = resolveStaleTime(
+      this.options.staleTime,
+      this.#currentQuery
+    );
+    if (isServer || this.#currentResult.isStale || !isValidTimeout(staleTime)) {
+      return;
+    }
+    const time = timeUntilStale(this.#currentResult.dataUpdatedAt, staleTime);
+    const timeout = time + 1;
+    this.#staleTimeoutId = setTimeout(() => {
+      if (!this.#currentResult.isStale) {
+        this.updateResult();
+      }
+    }, timeout);
+  }
+  #computeRefetchInterval() {
+    return (typeof this.options.refetchInterval === "function" ? this.options.refetchInterval(this.#currentQuery) : this.options.refetchInterval) ?? false;
+  }
+  #updateRefetchInterval(nextInterval) {
+    this.#clearRefetchInterval();
+    this.#currentRefetchInterval = nextInterval;
+    if (isServer || resolveEnabled(this.options.enabled, this.#currentQuery) === false || !isValidTimeout(this.#currentRefetchInterval) || this.#currentRefetchInterval === 0) {
+      return;
+    }
+    this.#refetchIntervalId = setInterval(() => {
+      if (this.options.refetchIntervalInBackground || focusManager.isFocused()) {
+        this.#executeFetch();
+      }
+    }, this.#currentRefetchInterval);
+  }
+  #updateTimers() {
+    this.#updateStaleTimeout();
+    this.#updateRefetchInterval(this.#computeRefetchInterval());
+  }
+  #clearStaleTimeout() {
+    if (this.#staleTimeoutId) {
+      clearTimeout(this.#staleTimeoutId);
+      this.#staleTimeoutId = void 0;
+    }
+  }
+  #clearRefetchInterval() {
+    if (this.#refetchIntervalId) {
+      clearInterval(this.#refetchIntervalId);
+      this.#refetchIntervalId = void 0;
+    }
+  }
+  createResult(query, options) {
+    const prevQuery = this.#currentQuery;
+    const prevOptions = this.options;
+    const prevResult = this.#currentResult;
+    const prevResultState = this.#currentResultState;
+    const prevResultOptions = this.#currentResultOptions;
+    const queryChange = query !== prevQuery;
+    const queryInitialState = queryChange ? query.state : this.#currentQueryInitialState;
+    const { state } = query;
+    let newState = { ...state };
+    let isPlaceholderData = false;
+    let data;
+    if (options._optimisticResults) {
+      const mounted = this.hasListeners();
+      const fetchOnMount = !mounted && shouldFetchOnMount(query, options);
+      const fetchOptionally = mounted && shouldFetchOptionally(query, prevQuery, options, prevOptions);
+      if (fetchOnMount || fetchOptionally) {
+        newState = {
+          ...newState,
+          ...fetchState(state.data, query.options)
+        };
+      }
+      if (options._optimisticResults === "isRestoring") {
+        newState.fetchStatus = "idle";
+      }
+    }
+    let { error, errorUpdatedAt, status } = newState;
+    if (options.select && newState.data !== void 0) {
+      if (prevResult && newState.data === prevResultState?.data && options.select === this.#selectFn) {
+        data = this.#selectResult;
+      } else {
+        try {
+          this.#selectFn = options.select;
+          data = options.select(newState.data);
+          data = replaceData(prevResult?.data, data, options);
+          this.#selectResult = data;
+          this.#selectError = null;
+        } catch (selectError) {
+          this.#selectError = selectError;
+        }
+      }
+    } else {
+      data = newState.data;
+    }
+    if (options.placeholderData !== void 0 && data === void 0 && status === "pending") {
+      let placeholderData;
+      if (prevResult?.isPlaceholderData && options.placeholderData === prevResultOptions?.placeholderData) {
+        placeholderData = prevResult.data;
+      } else {
+        placeholderData = typeof options.placeholderData === "function" ? options.placeholderData(
+          this.#lastQueryWithDefinedData?.state.data,
+          this.#lastQueryWithDefinedData
+        ) : options.placeholderData;
+        if (options.select && placeholderData !== void 0) {
+          try {
+            placeholderData = options.select(placeholderData);
+            this.#selectError = null;
+          } catch (selectError) {
+            this.#selectError = selectError;
+          }
+        }
+      }
+      if (placeholderData !== void 0) {
+        status = "success";
+        data = replaceData(
+          prevResult?.data,
+          placeholderData,
+          options
+        );
+        isPlaceholderData = true;
+      }
+    }
+    if (this.#selectError) {
+      error = this.#selectError;
+      data = this.#selectResult;
+      errorUpdatedAt = Date.now();
+      status = "error";
+    }
+    const isFetching = newState.fetchStatus === "fetching";
+    const isPending = status === "pending";
+    const isError = status === "error";
+    const isLoading = isPending && isFetching;
+    const hasData = data !== void 0;
+    const result = {
+      status,
+      fetchStatus: newState.fetchStatus,
+      isPending,
+      isSuccess: status === "success",
+      isError,
+      isInitialLoading: isLoading,
+      isLoading,
+      data,
+      dataUpdatedAt: newState.dataUpdatedAt,
+      error,
+      errorUpdatedAt,
+      failureCount: newState.fetchFailureCount,
+      failureReason: newState.fetchFailureReason,
+      errorUpdateCount: newState.errorUpdateCount,
+      isFetched: newState.dataUpdateCount > 0 || newState.errorUpdateCount > 0,
+      isFetchedAfterMount: newState.dataUpdateCount > queryInitialState.dataUpdateCount || newState.errorUpdateCount > queryInitialState.errorUpdateCount,
+      isFetching,
+      isRefetching: isFetching && !isPending,
+      isLoadingError: isError && !hasData,
+      isPaused: newState.fetchStatus === "paused",
+      isPlaceholderData,
+      isRefetchError: isError && hasData,
+      isStale: isStale(query, options),
+      refetch: this.refetch
+    };
+    return result;
+  }
+  updateResult(notifyOptions) {
+    const prevResult = this.#currentResult;
+    const nextResult = this.createResult(this.#currentQuery, this.options);
+    this.#currentResultState = this.#currentQuery.state;
+    this.#currentResultOptions = this.options;
+    if (this.#currentResultState.data !== void 0) {
+      this.#lastQueryWithDefinedData = this.#currentQuery;
+    }
+    if (shallowEqualObjects(nextResult, prevResult)) {
+      return;
+    }
+    this.#currentResult = nextResult;
+    const defaultNotifyOptions = {};
+    const shouldNotifyListeners = () => {
+      if (!prevResult) {
+        return true;
+      }
+      const { notifyOnChangeProps } = this.options;
+      const notifyOnChangePropsValue = typeof notifyOnChangeProps === "function" ? notifyOnChangeProps() : notifyOnChangeProps;
+      if (notifyOnChangePropsValue === "all" || !notifyOnChangePropsValue && !this.#trackedProps.size) {
+        return true;
+      }
+      const includedProps = new Set(
+        notifyOnChangePropsValue ?? this.#trackedProps
+      );
+      if (this.options.throwOnError) {
+        includedProps.add("error");
+      }
+      return Object.keys(this.#currentResult).some((key) => {
+        const typedKey = key;
+        const changed = this.#currentResult[typedKey] !== prevResult[typedKey];
+        return changed && includedProps.has(typedKey);
+      });
+    };
+    if (notifyOptions?.listeners !== false && shouldNotifyListeners()) {
+      defaultNotifyOptions.listeners = true;
+    }
+    this.#notify({ ...defaultNotifyOptions, ...notifyOptions });
+  }
+  #updateQuery() {
+    const query = this.#client.getQueryCache().build(this.#client, this.options);
+    if (query === this.#currentQuery) {
+      return;
+    }
+    const prevQuery = this.#currentQuery;
+    this.#currentQuery = query;
+    this.#currentQueryInitialState = query.state;
+    if (this.hasListeners()) {
+      prevQuery?.removeObserver(this);
+      query.addObserver(this);
+    }
+  }
+  onQueryUpdate() {
+    this.updateResult();
+    if (this.hasListeners()) {
+      this.#updateTimers();
+    }
+  }
+  #notify(notifyOptions) {
+    notifyManager.batch(() => {
+      if (notifyOptions.listeners) {
+        this.listeners.forEach((listener) => {
+          listener(this.#currentResult);
+        });
+      }
+      this.#client.getQueryCache().notify({
+        query: this.#currentQuery,
+        type: "observerResultsUpdated"
+      });
+    });
+  }
+};
+function shouldLoadOnMount(query, options) {
+  return resolveEnabled(options.enabled, query) !== false && query.state.data === void 0 && !(query.state.status === "error" && options.retryOnMount === false);
+}
+function shouldFetchOnMount(query, options) {
+  return shouldLoadOnMount(query, options) || query.state.data !== void 0 && shouldFetchOn(query, options, options.refetchOnMount);
+}
+function shouldFetchOn(query, options, field) {
+  if (resolveEnabled(options.enabled, query) !== false) {
+    const value = typeof field === "function" ? field(query) : field;
+    return value === "always" || value !== false && isStale(query, options);
+  }
+  return false;
+}
+function shouldFetchOptionally(query, prevQuery, options, prevOptions) {
+  return (query !== prevQuery || resolveEnabled(prevOptions.enabled, query) === false) && (!options.suspense || query.state.status !== "error") && isStale(query, options);
+}
+function isStale(query, options) {
+  return resolveEnabled(options.enabled, query) !== false && query.isStaleByTime(resolveStaleTime(options.staleTime, query));
+}
+function shouldAssignObserverCurrentProperties(observer3, optimisticResult) {
+  if (!shallowEqualObjects(observer3.getCurrentResult(), optimisticResult)) {
+    return true;
+  }
+  return false;
+}
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queriesObserver.js
+function difference(array1, array2) {
+  return array1.filter((x) => !array2.includes(x));
+}
+function replaceAt(array2, index, value) {
+  const copy = array2.slice(0);
+  copy[index] = value;
+  return copy;
+}
+var QueriesObserver = class extends Subscribable {
+  #client;
+  #result;
+  #queries;
+  #observers;
+  #combinedResult;
+  #lastCombine;
+  #lastResult;
+  constructor(client, queries, _options) {
+    super();
+    this.#client = client;
+    this.#queries = [];
+    this.#observers = [];
+    this.#result = [];
+    this.setQueries(queries);
+  }
+  onSubscribe() {
+    if (this.listeners.size === 1) {
+      this.#observers.forEach((observer3) => {
+        observer3.subscribe((result) => {
+          this.#onUpdate(observer3, result);
+        });
+      });
+    }
+  }
+  onUnsubscribe() {
+    if (!this.listeners.size) {
+      this.destroy();
+    }
+  }
+  destroy() {
+    this.listeners = /* @__PURE__ */ new Set();
+    this.#observers.forEach((observer3) => {
+      observer3.destroy();
+    });
+  }
+  setQueries(queries, _options, notifyOptions) {
+    this.#queries = queries;
+    notifyManager.batch(() => {
+      const prevObservers = this.#observers;
+      const newObserverMatches = this.#findMatchingObservers(this.#queries);
+      newObserverMatches.forEach(
+        (match) => match.observer.setOptions(match.defaultedQueryOptions, notifyOptions)
+      );
+      const newObservers = newObserverMatches.map((match) => match.observer);
+      const newResult = newObservers.map(
+        (observer3) => observer3.getCurrentResult()
+      );
+      const hasIndexChange = newObservers.some(
+        (observer3, index) => observer3 !== prevObservers[index]
+      );
+      if (prevObservers.length === newObservers.length && !hasIndexChange) {
+        return;
+      }
+      this.#observers = newObservers;
+      this.#result = newResult;
+      if (!this.hasListeners()) {
+        return;
+      }
+      difference(prevObservers, newObservers).forEach((observer3) => {
+        observer3.destroy();
+      });
+      difference(newObservers, prevObservers).forEach((observer3) => {
+        observer3.subscribe((result) => {
+          this.#onUpdate(observer3, result);
+        });
+      });
+      this.#notify();
+    });
+  }
+  getCurrentResult() {
+    return this.#result;
+  }
+  getQueries() {
+    return this.#observers.map((observer3) => observer3.getCurrentQuery());
+  }
+  getObservers() {
+    return this.#observers;
+  }
+  getOptimisticResult(queries, combine) {
+    const matches = this.#findMatchingObservers(queries);
+    const result = matches.map(
+      (match) => match.observer.getOptimisticResult(match.defaultedQueryOptions)
+    );
+    return [
+      result,
+      (r) => {
+        return this.#combineResult(r ?? result, combine);
+      },
+      () => {
+        return matches.map((match, index) => {
+          const observerResult = result[index];
+          return !match.defaultedQueryOptions.notifyOnChangeProps ? match.observer.trackResult(observerResult, (accessedProp) => {
+            matches.forEach((m) => {
+              m.observer.trackProp(accessedProp);
+            });
+          }) : observerResult;
+        });
+      }
+    ];
+  }
+  #combineResult(input, combine) {
+    if (combine) {
+      if (!this.#combinedResult || this.#result !== this.#lastResult || combine !== this.#lastCombine) {
+        this.#lastCombine = combine;
+        this.#lastResult = this.#result;
+        this.#combinedResult = replaceEqualDeep(
+          this.#combinedResult,
+          combine(input)
+        );
+      }
+      return this.#combinedResult;
+    }
+    return input;
+  }
+  #findMatchingObservers(queries) {
+    const prevObservers = this.#observers;
+    const prevObserversMap = new Map(
+      prevObservers.map((observer3) => [observer3.options.queryHash, observer3])
+    );
+    const defaultedQueryOptions = queries.map(
+      (options) => this.#client.defaultQueryOptions(options)
+    );
+    const matchingObservers = defaultedQueryOptions.flatMap((defaultedOptions) => {
+      const match = prevObserversMap.get(defaultedOptions.queryHash);
+      if (match != null) {
+        return [{ defaultedQueryOptions: defaultedOptions, observer: match }];
+      }
+      return [];
+    });
+    const matchedQueryHashes = new Set(
+      matchingObservers.map((match) => match.defaultedQueryOptions.queryHash)
+    );
+    const unmatchedQueries = defaultedQueryOptions.filter(
+      (defaultedOptions) => !matchedQueryHashes.has(defaultedOptions.queryHash)
+    );
+    const getObserver = (options) => {
+      const defaultedOptions = this.#client.defaultQueryOptions(options);
+      const currentObserver = this.#observers.find(
+        (o) => o.options.queryHash === defaultedOptions.queryHash
+      );
+      return currentObserver ?? new QueryObserver(this.#client, defaultedOptions);
+    };
+    const newOrReusedObservers = unmatchedQueries.map((options) => {
+      return {
+        defaultedQueryOptions: options,
+        observer: getObserver(options)
+      };
+    });
+    const sortMatchesByOrderOfQueries = (a, b) => defaultedQueryOptions.indexOf(a.defaultedQueryOptions) - defaultedQueryOptions.indexOf(b.defaultedQueryOptions);
+    return matchingObservers.concat(newOrReusedObservers).sort(sortMatchesByOrderOfQueries);
+  }
+  #onUpdate(observer3, result) {
+    const index = this.#observers.indexOf(observer3);
+    if (index !== -1) {
+      this.#result = replaceAt(this.#result, index, result);
+      this.#notify();
+    }
+  }
+  #notify() {
+    notifyManager.batch(() => {
+      this.listeners.forEach((listener) => {
+        listener(this.#result);
+      });
+    });
+  }
+};
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/infiniteQueryObserver.js
+var InfiniteQueryObserver = class extends QueryObserver {
+  constructor(client, options) {
+    super(client, options);
+  }
+  bindMethods() {
+    super.bindMethods();
+    this.fetchNextPage = this.fetchNextPage.bind(this);
+    this.fetchPreviousPage = this.fetchPreviousPage.bind(this);
+  }
+  setOptions(options, notifyOptions) {
+    super.setOptions(
+      {
+        ...options,
+        behavior: infiniteQueryBehavior()
+      },
+      notifyOptions
+    );
+  }
+  getOptimisticResult(options) {
+    options.behavior = infiniteQueryBehavior();
+    return super.getOptimisticResult(options);
+  }
+  fetchNextPage(options) {
+    return this.fetch({
+      ...options,
+      meta: {
+        fetchMore: { direction: "forward" }
+      }
+    });
+  }
+  fetchPreviousPage(options) {
+    return this.fetch({
+      ...options,
+      meta: {
+        fetchMore: { direction: "backward" }
+      }
+    });
+  }
+  createResult(query, options) {
+    const { state } = query;
+    const parentResult = super.createResult(query, options);
+    const { isFetching, isRefetching, isError, isRefetchError } = parentResult;
+    const fetchDirection = state.fetchMeta?.fetchMore?.direction;
+    const isFetchNextPageError = isError && fetchDirection === "forward";
+    const isFetchingNextPage = isFetching && fetchDirection === "forward";
+    const isFetchPreviousPageError = isError && fetchDirection === "backward";
+    const isFetchingPreviousPage = isFetching && fetchDirection === "backward";
+    const result = {
+      ...parentResult,
+      fetchNextPage: this.fetchNextPage,
+      fetchPreviousPage: this.fetchPreviousPage,
+      hasNextPage: hasNextPage(options, state.data),
+      hasPreviousPage: hasPreviousPage(options, state.data),
+      isFetchNextPageError,
+      isFetchingNextPage,
+      isFetchPreviousPageError,
+      isFetchingPreviousPage,
+      isRefetchError: isRefetchError && !isFetchNextPageError && !isFetchPreviousPageError,
+      isRefetching: isRefetching && !isFetchingNextPage && !isFetchingPreviousPage
+    };
+    return result;
+  }
+};
+
+// ../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutationObserver.js
+var MutationObserver = class extends Subscribable {
+  #client;
+  #currentResult = void 0;
+  #currentMutation;
+  #mutateOptions;
+  constructor(client, options) {
+    super();
+    this.#client = client;
+    this.setOptions(options);
+    this.bindMethods();
+    this.#updateResult();
+  }
+  bindMethods() {
+    this.mutate = this.mutate.bind(this);
+    this.reset = this.reset.bind(this);
+  }
+  setOptions(options) {
+    const prevOptions = this.options;
+    this.options = this.#client.defaultMutationOptions(options);
+    if (!shallowEqualObjects(this.options, prevOptions)) {
+      this.#client.getMutationCache().notify({
+        type: "observerOptionsUpdated",
+        mutation: this.#currentMutation,
+        observer: this
+      });
+    }
+    if (prevOptions?.mutationKey && this.options.mutationKey && hashKey(prevOptions.mutationKey) !== hashKey(this.options.mutationKey)) {
+      this.reset();
+    } else if (this.#currentMutation?.state.status === "pending") {
+      this.#currentMutation.setOptions(this.options);
+    }
+  }
+  onUnsubscribe() {
+    if (!this.hasListeners()) {
+      this.#currentMutation?.removeObserver(this);
+    }
+  }
+  onMutationUpdate(action2) {
+    this.#updateResult();
+    this.#notify(action2);
+  }
+  getCurrentResult() {
+    return this.#currentResult;
+  }
+  reset() {
+    this.#currentMutation?.removeObserver(this);
+    this.#currentMutation = void 0;
+    this.#updateResult();
+    this.#notify();
+  }
+  mutate(variables, options) {
+    this.#mutateOptions = options;
+    this.#currentMutation?.removeObserver(this);
+    this.#currentMutation = this.#client.getMutationCache().build(this.#client, this.options);
+    this.#currentMutation.addObserver(this);
+    return this.#currentMutation.execute(variables);
+  }
+  #updateResult() {
+    const state = this.#currentMutation?.state ?? getDefaultState2();
+    this.#currentResult = {
+      ...state,
+      isPending: state.status === "pending",
+      isSuccess: state.status === "success",
+      isError: state.status === "error",
+      isIdle: state.status === "idle",
+      mutate: this.mutate,
+      reset: this.reset
+    };
+  }
+  #notify(action2) {
+    notifyManager.batch(() => {
+      if (this.#mutateOptions && this.hasListeners()) {
+        const variables = this.#currentResult.variables;
+        const context = this.#currentResult.context;
+        if (action2?.type === "success") {
+          this.#mutateOptions.onSuccess?.(action2.data, variables, context);
+          this.#mutateOptions.onSettled?.(action2.data, null, variables, context);
+        } else if (action2?.type === "error") {
+          this.#mutateOptions.onError?.(action2.error, variables, context);
+          this.#mutateOptions.onSettled?.(
+            void 0,
+            action2.error,
+            variables,
+            context
+          );
+        }
+      }
+      this.listeners.forEach((listener) => {
+        listener(this.#currentResult);
+      });
+    });
+  }
+};
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useQueries.js
+var React9 = __toESM(require_react(), 1);
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js
+var React5 = __toESM(require_react(), 1);
+var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
+var QueryClientContext = React5.createContext(
+  void 0
+);
+var useQueryClient = (queryClient2) => {
+  const client = React5.useContext(QueryClientContext);
+  if (queryClient2) {
+    return queryClient2;
+  }
+  if (!client) {
+    throw new Error("No QueryClient set, use QueryClientProvider to set one");
+  }
+  return client;
+};
+var QueryClientProvider = ({
+  client,
+  children
+}) => {
+  React5.useEffect(() => {
+    client.mount();
+    return () => {
+      client.unmount();
+    };
+  }, [client]);
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(QueryClientContext.Provider, { value: client, children });
+};
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/isRestoring.js
+var React6 = __toESM(require_react(), 1);
+var IsRestoringContext = React6.createContext(false);
+var useIsRestoring = () => React6.useContext(IsRestoringContext);
+var IsRestoringProvider = IsRestoringContext.Provider;
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.js
+var React7 = __toESM(require_react(), 1);
+var import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1);
+function createValue() {
+  let isReset = false;
+  return {
+    clearReset: () => {
+      isReset = false;
+    },
+    reset: () => {
+      isReset = true;
+    },
+    isReset: () => {
+      return isReset;
+    }
+  };
+}
+var QueryErrorResetBoundaryContext = React7.createContext(createValue());
+var useQueryErrorResetBoundary = () => React7.useContext(QueryErrorResetBoundaryContext);
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/errorBoundaryUtils.js
+var React8 = __toESM(require_react(), 1);
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/utils.js
+function shouldThrowError(throwError, params) {
+  if (typeof throwError === "function") {
+    return throwError(...params);
+  }
+  return !!throwError;
+}
+function noop4() {
+}
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/errorBoundaryUtils.js
+var ensurePreventErrorBoundaryRetry = (options, errorResetBoundary) => {
+  if (options.suspense || options.throwOnError) {
+    if (!errorResetBoundary.isReset()) {
+      options.retryOnMount = false;
+    }
+  }
+};
+var useClearResetErrorBoundary = (errorResetBoundary) => {
+  React8.useEffect(() => {
+    errorResetBoundary.clearReset();
+  }, [errorResetBoundary]);
+};
+var getHasError = ({
+  result,
+  errorResetBoundary,
+  throwOnError,
+  query
+}) => {
+  return result.isError && !errorResetBoundary.isReset() && !result.isFetching && query && shouldThrowError(throwOnError, [result.error, query]);
+};
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/suspense.js
+var defaultThrowOnError = (_error, query) => query.state.data === void 0;
+var ensureSuspenseTimers = (defaultedOptions) => {
+  if (defaultedOptions.suspense) {
+    if (typeof defaultedOptions.staleTime !== "number") {
+      defaultedOptions.staleTime = 1e3;
+    }
+    if (typeof defaultedOptions.gcTime === "number") {
+      defaultedOptions.gcTime = Math.max(defaultedOptions.gcTime, 1e3);
+    }
+  }
+};
+var willFetch = (result, isRestoring) => result.isLoading && result.isFetching && !isRestoring;
+var shouldSuspend = (defaultedOptions, result) => defaultedOptions?.suspense && result.isPending;
+var fetchOptimistic = (defaultedOptions, observer3, errorResetBoundary) => observer3.fetchOptimistic(defaultedOptions).catch(() => {
+  errorResetBoundary.clearReset();
+});
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useQueries.js
+function useQueries({
+  queries,
+  ...options
+}, queryClient2) {
+  const client = useQueryClient(queryClient2);
+  const isRestoring = useIsRestoring();
+  const errorResetBoundary = useQueryErrorResetBoundary();
+  const defaultedQueries = React9.useMemo(
+    () => queries.map((opts) => {
+      const defaultedOptions = client.defaultQueryOptions(
+        opts
+      );
+      defaultedOptions._optimisticResults = isRestoring ? "isRestoring" : "optimistic";
+      return defaultedOptions;
+    }),
+    [queries, client, isRestoring]
+  );
+  defaultedQueries.forEach((query) => {
+    ensureSuspenseTimers(query);
+    ensurePreventErrorBoundaryRetry(query, errorResetBoundary);
+  });
+  useClearResetErrorBoundary(errorResetBoundary);
+  const [observer3] = React9.useState(
+    () => new QueriesObserver(
+      client,
+      defaultedQueries,
+      options
+    )
+  );
+  const [optimisticResult, getCombinedResult, trackResult] = observer3.getOptimisticResult(
+    defaultedQueries,
+    options.combine
+  );
+  React9.useSyncExternalStore(
+    React9.useCallback(
+      (onStoreChange) => isRestoring ? () => void 0 : observer3.subscribe(notifyManager.batchCalls(onStoreChange)),
+      [observer3, isRestoring]
+    ),
+    () => observer3.getCurrentResult(),
+    () => observer3.getCurrentResult()
+  );
+  React9.useEffect(() => {
+    observer3.setQueries(
+      defaultedQueries,
+      options,
+      {
+        listeners: false
+      }
+    );
+  }, [defaultedQueries, options, observer3]);
+  const shouldAtLeastOneSuspend = optimisticResult.some(
+    (result, index) => shouldSuspend(defaultedQueries[index], result)
+  );
+  const suspensePromises = shouldAtLeastOneSuspend ? optimisticResult.flatMap((result, index) => {
+    const opts = defaultedQueries[index];
+    if (opts) {
+      const queryObserver = new QueryObserver(client, opts);
+      if (shouldSuspend(opts, result)) {
+        return fetchOptimistic(opts, queryObserver, errorResetBoundary);
+      } else if (willFetch(result, isRestoring)) {
+        void fetchOptimistic(opts, queryObserver, errorResetBoundary);
+      }
+    }
+    return [];
+  }) : [];
+  if (suspensePromises.length > 0) {
+    throw Promise.all(suspensePromises);
+  }
+  const firstSingleResultWhichShouldThrow = optimisticResult.find(
+    (result, index) => {
+      const query = defaultedQueries[index];
+      return query && getHasError({
+        result,
+        errorResetBoundary,
+        throwOnError: query.throwOnError,
+        query: client.getQueryCache().get(query.queryHash)
+      });
+    }
+  );
+  if (firstSingleResultWhichShouldThrow?.error) {
+    throw firstSingleResultWhichShouldThrow.error;
+  }
+  return getCombinedResult(trackResult());
+}
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useBaseQuery.js
+var React10 = __toESM(require_react(), 1);
+function useBaseQuery(options, Observer, queryClient2) {
+  if (true) {
+    if (typeof options !== "object" || Array.isArray(options)) {
+      throw new Error(
+        'Bad argument type. Starting with v5, only the "Object" form is allowed when calling query related functions. Please use the error stack to find the culprit call. More info here: https://tanstack.com/query/latest/docs/react/guides/migrating-to-v5#supports-a-single-signature-one-object'
+      );
+    }
+  }
+  const client = useQueryClient(queryClient2);
+  const isRestoring = useIsRestoring();
+  const errorResetBoundary = useQueryErrorResetBoundary();
+  const defaultedOptions = client.defaultQueryOptions(options);
+  client.getDefaultOptions().queries?._experimental_beforeQuery?.(
+    defaultedOptions
+  );
+  defaultedOptions._optimisticResults = isRestoring ? "isRestoring" : "optimistic";
+  ensureSuspenseTimers(defaultedOptions);
+  ensurePreventErrorBoundaryRetry(defaultedOptions, errorResetBoundary);
+  useClearResetErrorBoundary(errorResetBoundary);
+  const [observer3] = React10.useState(
+    () => new Observer(
+      client,
+      defaultedOptions
+    )
+  );
+  const result = observer3.getOptimisticResult(defaultedOptions);
+  React10.useSyncExternalStore(
+    React10.useCallback(
+      (onStoreChange) => {
+        const unsubscribe = isRestoring ? () => void 0 : observer3.subscribe(notifyManager.batchCalls(onStoreChange));
+        observer3.updateResult();
+        return unsubscribe;
+      },
+      [observer3, isRestoring]
+    ),
+    () => observer3.getCurrentResult(),
+    () => observer3.getCurrentResult()
+  );
+  React10.useEffect(() => {
+    observer3.setOptions(defaultedOptions, { listeners: false });
+  }, [defaultedOptions, observer3]);
+  if (shouldSuspend(defaultedOptions, result)) {
+    throw fetchOptimistic(defaultedOptions, observer3, errorResetBoundary);
+  }
+  if (getHasError({
+    result,
+    errorResetBoundary,
+    throwOnError: defaultedOptions.throwOnError,
+    query: client.getQueryCache().get(defaultedOptions.queryHash)
+  })) {
+    throw result.error;
+  }
+  ;
+  client.getDefaultOptions().queries?._experimental_afterQuery?.(
+    defaultedOptions,
+    result
+  );
+  return !defaultedOptions.notifyOnChangeProps ? observer3.trackResult(result) : result;
+}
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useQuery.js
+function useQuery(options, queryClient2) {
+  return useBaseQuery(options, QueryObserver, queryClient2);
+}
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useSuspenseQuery.js
+function useSuspenseQuery(options, queryClient2) {
+  if (true) {
+    if (options.queryFn === skipToken) {
+      console.error("skipToken is not allowed for useSuspenseQuery");
+    }
+  }
+  return useBaseQuery(
+    {
+      ...options,
+      enabled: true,
+      suspense: true,
+      throwOnError: defaultThrowOnError,
+      placeholderData: void 0
+    },
+    QueryObserver,
+    queryClient2
+  );
+}
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useSuspenseInfiniteQuery.js
+function useSuspenseInfiniteQuery(options, queryClient2) {
+  if (true) {
+    if (options.queryFn === skipToken) {
+      console.error("skipToken is not allowed for useSuspenseInfiniteQuery");
+    }
+  }
+  return useBaseQuery(
+    {
+      ...options,
+      enabled: true,
+      suspense: true,
+      throwOnError: defaultThrowOnError
+    },
+    InfiniteQueryObserver,
+    queryClient2
+  );
+}
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useSuspenseQueries.js
+function useSuspenseQueries(options, queryClient2) {
+  return useQueries(
+    {
+      ...options,
+      queries: options.queries.map((query) => {
+        if (true) {
+          if (query.queryFn === skipToken) {
+            console.error("skipToken is not allowed for useSuspenseQueries");
+          }
+        }
+        return {
+          ...query,
+          suspense: true,
+          throwOnError: defaultThrowOnError,
+          enabled: true,
+          placeholderData: void 0
+        };
+      })
+    },
+    queryClient2
+  );
+}
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/usePrefetchQuery.js
+function usePrefetchQuery(options, queryClient2) {
+  const client = useQueryClient(queryClient2);
+  if (!client.getQueryState(options.queryKey)) {
+    client.prefetchQuery(options);
+  }
+}
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/usePrefetchInfiniteQuery.js
+function usePrefetchInfiniteQuery(options, queryClient2) {
+  const client = useQueryClient(queryClient2);
+  if (!client.getQueryState(options.queryKey)) {
+    client.prefetchInfiniteQuery(options);
+  }
+}
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useMutation.js
+var React11 = __toESM(require_react(), 1);
+function useMutation(options, queryClient2) {
+  const client = useQueryClient(queryClient2);
+  const [observer3] = React11.useState(
+    () => new MutationObserver(
+      client,
+      options
+    )
+  );
+  React11.useEffect(() => {
+    observer3.setOptions(options);
+  }, [observer3, options]);
+  const result = React11.useSyncExternalStore(
+    React11.useCallback(
+      (onStoreChange) => observer3.subscribe(notifyManager.batchCalls(onStoreChange)),
+      [observer3]
+    ),
+    () => observer3.getCurrentResult(),
+    () => observer3.getCurrentResult()
+  );
+  const mutate = React11.useCallback(
+    (variables, mutateOptions) => {
+      observer3.mutate(variables, mutateOptions).catch(noop4);
+    },
+    [observer3]
+  );
+  if (result.error && shouldThrowError(observer3.options.throwOnError, [result.error])) {
+    throw result.error;
+  }
+  return { ...result, mutate, mutateAsync: result.mutate };
+}
+
+// ../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useInfiniteQuery.js
+function useInfiniteQuery(options, queryClient2) {
+  return useBaseQuery(
+    options,
+    InfiniteQueryObserver,
+    queryClient2
+  );
+}
+
+// ../editor/pages/ReactQuery.tsx
+var queryClient = new QueryClient();
+function Example() {
+  const { isPending, error, data } = useQuery({
+    queryKey: ["repoData"],
+    queryFn: () => fetch("https://api.github.com/repos/TanStack/query").then(
+      (res) => res.json()
+    )
+  });
+  if (isPending)
+    return "Loading...";
+  if (error)
+    return "An error has occurred: " + error.message;
+  return /* @__PURE__ */ import_react9.default.createElement("div", null, /* @__PURE__ */ import_react9.default.createElement("h1", null, data.name), /* @__PURE__ */ import_react9.default.createElement("p", null, data.description), /* @__PURE__ */ import_react9.default.createElement("strong", null, "\u{1F440} ", data.subscribers_count), " ", /* @__PURE__ */ import_react9.default.createElement("strong", null, "\u2728 ", data.stargazers_count), " ", /* @__PURE__ */ import_react9.default.createElement("strong", null, "\u{1F374} ", data.forks_count));
+}
+function Page() {
+  return /* @__PURE__ */ import_react9.default.createElement(QueryClientProvider, { client: queryClient }, /* @__PURE__ */ import_react9.default.createElement(Example, null));
+}
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/observable.mjs
+function observable2(subscribe) {
+  const self2 = {
+    subscribe(observer3) {
+      let teardownRef = null;
+      let isDone = false;
+      let unsubscribed = false;
+      let teardownImmediately = false;
+      function unsubscribe() {
+        if (teardownRef === null) {
+          teardownImmediately = true;
+          return;
+        }
+        if (unsubscribed) {
+          return;
+        }
+        unsubscribed = true;
+        if (typeof teardownRef === "function") {
+          teardownRef();
+        } else if (teardownRef) {
+          teardownRef.unsubscribe();
+        }
+      }
+      teardownRef = subscribe({
+        next(value) {
+          if (isDone) {
+            return;
+          }
+          observer3.next?.(value);
+        },
+        error(err) {
+          if (isDone) {
+            return;
+          }
+          isDone = true;
+          observer3.error?.(err);
+          unsubscribe();
+        },
+        complete() {
+          if (isDone) {
+            return;
+          }
+          isDone = true;
+          observer3.complete?.();
+          unsubscribe();
+        }
+      });
+      if (teardownImmediately) {
+        unsubscribe();
+      }
+      return {
+        unsubscribe
+      };
+    },
+    pipe(...operations) {
+      return operations.reduce(pipeReducer, self2);
+    }
+  };
+  return self2;
+}
+function pipeReducer(prev, fn) {
+  return fn(prev);
+}
+function observableToPromise(observable3) {
+  const ac = new AbortController();
+  const promise = new Promise((resolve, reject) => {
+    let isDone = false;
+    function onDone() {
+      if (isDone) {
+        return;
+      }
+      isDone = true;
+      obs$.unsubscribe();
+    }
+    ac.signal.addEventListener("abort", () => {
+      reject(ac.signal.reason);
+    });
+    const obs$ = observable3.subscribe({
+      next(data) {
+        isDone = true;
+        resolve(data);
+        onDone();
+      },
+      error(data) {
+        reject(data);
+      },
+      complete() {
+        ac.abort();
+        onDone();
+      }
+    });
+  });
+  return promise;
+}
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/operators.mjs
+function share(_opts) {
+  return (source) => {
+    let refCount = 0;
+    let subscription = null;
+    const observers = [];
+    function startIfNeeded() {
+      if (subscription) {
+        return;
+      }
+      subscription = source.subscribe({
+        next(value) {
+          for (const observer3 of observers) {
+            observer3.next?.(value);
+          }
+        },
+        error(error) {
+          for (const observer3 of observers) {
+            observer3.error?.(error);
+          }
+        },
+        complete() {
+          for (const observer3 of observers) {
+            observer3.complete?.();
+          }
+        }
+      });
+    }
+    function resetIfNeeded() {
+      if (refCount === 0 && subscription) {
+        const _sub = subscription;
+        subscription = null;
+        _sub.unsubscribe();
+      }
+    }
+    return observable2((subscriber) => {
+      refCount++;
+      observers.push(subscriber);
+      startIfNeeded();
+      return {
+        unsubscribe() {
+          refCount--;
+          resetIfNeeded();
+          const index = observers.findIndex((v) => v === subscriber);
+          if (index > -1) {
+            observers.splice(index, 1);
+          }
+        }
+      };
+    });
+  };
+}
+
+// ../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/createChain.mjs
+function createChain(opts) {
+  return observable2((observer3) => {
+    function execute(index = 0, op = opts.op) {
+      const next = opts.links[index];
+      if (!next) {
+        throw new Error("No more links to execute - did you forget to add an ending link?");
+      }
+      const subscription = next({
+        op,
+        next(nextOp) {
+          const nextObserver = execute(index + 1, nextOp);
+          return nextObserver;
+        }
+      });
+      return subscription;
+    }
+    const obs$ = execute();
+    return obs$.subscribe(observer3);
+  });
+}
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/createProxy.mjs
+var _memo;
+var _cacheKey;
+var noop5 = () => {
+};
+var freezeIfAvailable = (obj) => {
+  if (Object.freeze) {
+    Object.freeze(obj);
+  }
+};
+function createInnerProxy(callback, path, memo3) {
+  const cacheKey = path.join(".");
+  (_memo = memo3)[_cacheKey = cacheKey] ?? (_memo[_cacheKey] = new Proxy(noop5, {
+    get(_obj, key) {
+      if (typeof key !== "string" || key === "then") {
+        return void 0;
+      }
+      return createInnerProxy(callback, [
+        ...path,
+        key
+      ], memo3);
+    },
+    apply(_1, _22, args) {
+      const lastOfPath = path[path.length - 1];
+      let opts = {
+        args,
+        path
+      };
+      if (lastOfPath === "call") {
+        opts = {
+          args: args.length >= 2 ? [
+            args[1]
+          ] : [],
+          path: path.slice(0, -1)
+        };
+      } else if (lastOfPath === "apply") {
+        opts = {
+          args: args.length >= 2 ? args[1] : [],
+          path: path.slice(0, -1)
+        };
+      }
+      freezeIfAvailable(opts.args);
+      freezeIfAvailable(opts.path);
+      return callback(opts);
+    }
+  }));
+  return memo3[cacheKey];
+}
+var createRecursiveProxy = (callback) => createInnerProxy(callback, [], /* @__PURE__ */ Object.create(null));
+var createFlatProxy = (callback) => {
+  return new Proxy(noop5, {
+    get(_obj, name) {
+      if (typeof name !== "string" || name === "then") {
+        return void 0;
+      }
+      return callback(name);
+    }
+  });
+};
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/formatter.mjs
+var defaultFormatter = ({ shape }) => {
+  return shape;
+};
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs
+var unsetMarker = Symbol("unsetMarker");
+function mergeWithoutOverrides(obj1, ...objs) {
+  const newObj = Object.assign(/* @__PURE__ */ Object.create(null), obj1);
+  for (const overrides of objs) {
+    for (const key in overrides) {
+      if (key in newObj && newObj[key] !== overrides[key]) {
+        throw new Error(`Duplicate key ${key}`);
+      }
+      newObj[key] = overrides[key];
+    }
+  }
+  return newObj;
+}
+function isObject2(value) {
+  return !!value && !Array.isArray(value) && typeof value === "object";
+}
+function isFunction2(fn) {
+  return typeof fn === "function";
+}
+function omitPrototype(obj) {
+  return Object.assign(/* @__PURE__ */ Object.create(null), obj);
+}
+var asyncIteratorsSupported = typeof Symbol === "function" && !!Symbol.asyncIterator;
+function isAsyncIterable(value) {
+  return asyncIteratorsSupported && isObject2(value) && Symbol.asyncIterator in value;
+}
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/TRPCError.mjs
+var UnknownCauseError = class extends Error {
+};
+function getCauseFromUnknown(cause) {
+  if (cause instanceof Error) {
+    return cause;
+  }
+  const type = typeof cause;
+  if (type === "undefined" || type === "function" || cause === null) {
+    return void 0;
+  }
+  if (type !== "object") {
+    return new Error(String(cause));
+  }
+  if (isObject2(cause)) {
+    const err = new UnknownCauseError();
+    for (const key in cause) {
+      err[key] = cause[key];
+    }
+    return err;
+  }
+  return void 0;
+}
+function getTRPCErrorFromUnknown(cause) {
+  if (cause instanceof TRPCError) {
+    return cause;
+  }
+  if (cause instanceof Error && cause.name === "TRPCError") {
+    return cause;
+  }
+  const trpcError = new TRPCError({
+    code: "INTERNAL_SERVER_ERROR",
+    cause
+  });
+  if (cause instanceof Error && cause.stack) {
+    trpcError.stack = cause.stack;
+  }
+  return trpcError;
+}
+var TRPCError = class extends Error {
+  constructor(opts) {
+    const cause = getCauseFromUnknown(opts.cause);
+    const message = opts.message ?? cause?.message ?? opts.code;
+    super(message, {
+      cause
+    });
+    this.code = opts.code;
+    this.name = "TRPCError";
+    if (!this.cause) {
+      this.cause = cause;
+    }
+  }
+};
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/utils/createReadableStream.mjs
+var cancelledStreamSymbol = Symbol("cancelledReadableStream");
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/tracked.mjs
+var trackedSymbol = Symbol("TrackedEnvelope");
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/transformer.mjs
+function getDataTransformer(transformer) {
+  if ("input" in transformer) {
+    return transformer;
+  }
+  return {
+    input: transformer,
+    output: transformer
+  };
+}
+var defaultTransformer = {
+  input: {
+    serialize: (obj) => obj,
+    deserialize: (obj) => obj
+  },
+  output: {
+    serialize: (obj) => obj,
+    deserialize: (obj) => obj
+  }
+};
+function transformResultInner(response, transformer) {
+  if ("error" in response) {
+    const error = transformer.deserialize(response.error);
+    return {
+      ok: false,
+      error: {
+        ...response,
+        error
+      }
+    };
+  }
+  const result = {
+    ...response.result,
+    ...(!response.result.type || response.result.type === "data") && {
+      type: "data",
+      data: transformer.deserialize(response.result.data)
+    }
+  };
+  return {
+    ok: true,
+    result
+  };
+}
+var TransformResultError = class extends Error {
+  constructor() {
+    super("Unable to transform response from server");
+  }
+};
+function transformResult(response, transformer) {
+  let result;
+  try {
+    result = transformResultInner(response, transformer);
+  } catch (err) {
+    throw new TransformResultError();
+  }
+  if (!result.ok && (!isObject2(result.error.error) || typeof result.error.error["code"] !== "number")) {
+    throw new TransformResultError();
+  }
+  if (result.ok && !isObject2(result.result)) {
+    throw new TransformResultError();
+  }
+  return result;
+}
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/middleware.mjs
+var middlewareMarker = "middlewareMarker";
+function createMiddlewareFactory() {
+  function createMiddlewareInner(middlewares) {
+    return {
+      _middlewares: middlewares,
+      unstable_pipe(middlewareBuilderOrFn) {
+        const pipedMiddleware = "_middlewares" in middlewareBuilderOrFn ? middlewareBuilderOrFn._middlewares : [
+          middlewareBuilderOrFn
+        ];
+        return createMiddlewareInner([
+          ...middlewares,
+          ...pipedMiddleware
+        ]);
+      }
+    };
+  }
+  function createMiddleware(fn) {
+    return createMiddlewareInner([
+      fn
+    ]);
+  }
+  return createMiddleware;
+}
+function createInputMiddleware(parse) {
+  const inputMiddleware = async function inputValidatorMiddleware(opts) {
+    let parsedInput;
+    const rawInput = await opts.getRawInput();
+    try {
+      parsedInput = await parse(rawInput);
+    } catch (cause) {
+      throw new TRPCError({
+        code: "BAD_REQUEST",
+        cause
+      });
+    }
+    const combinedInput = isObject2(opts.input) && isObject2(parsedInput) ? {
+      ...opts.input,
+      ...parsedInput
+    } : parsedInput;
+    return opts.next({
+      input: combinedInput
+    });
+  };
+  inputMiddleware._type = "input";
+  return inputMiddleware;
+}
+function createOutputMiddleware(parse) {
+  const outputMiddleware = async function outputValidatorMiddleware({ next }) {
+    const result = await next();
+    if (!result.ok) {
+      return result;
+    }
+    try {
+      const data = await parse(result.data);
+      return {
+        ...result,
+        data
+      };
+    } catch (cause) {
+      throw new TRPCError({
+        message: "Output validation failed",
+        code: "INTERNAL_SERVER_ERROR",
+        cause
+      });
+    }
+  };
+  outputMiddleware._type = "output";
+  return outputMiddleware;
+}
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/parser.mjs
+function getParseFn(procedureParser) {
+  const parser = procedureParser;
+  if (typeof parser === "function" && typeof parser.assert === "function") {
+    return parser.assert.bind(parser);
+  }
+  if (typeof parser === "function") {
+    return parser;
+  }
+  if (typeof parser.parseAsync === "function") {
+    return parser.parseAsync.bind(parser);
+  }
+  if (typeof parser.parse === "function") {
+    return parser.parse.bind(parser);
+  }
+  if (typeof parser.validateSync === "function") {
+    return parser.validateSync.bind(parser);
+  }
+  if (typeof parser.create === "function") {
+    return parser.create.bind(parser);
+  }
+  if (typeof parser.assert === "function") {
+    return (value) => {
+      parser.assert(value);
+      return value;
+    };
+  }
+  throw new Error("Could not find a validator fn");
+}
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs
+function createNewBuilder(def1, def2) {
+  const { middlewares = [], inputs, meta, ...rest } = def2;
+  return createBuilder({
+    ...mergeWithoutOverrides(def1, rest),
+    inputs: [
+      ...def1.inputs,
+      ...inputs ?? []
+    ],
+    middlewares: [
+      ...def1.middlewares,
+      ...middlewares
+    ],
+    meta: def1.meta && meta ? {
+      ...def1.meta,
+      ...meta
+    } : meta ?? def1.meta
+  });
+}
+function createBuilder(initDef = {}) {
+  const _def = {
+    procedure: true,
+    inputs: [],
+    middlewares: [],
+    ...initDef
+  };
+  const builder = {
+    _def,
+    input(input) {
+      const parser = getParseFn(input);
+      return createNewBuilder(_def, {
+        inputs: [
+          input
+        ],
+        middlewares: [
+          createInputMiddleware(parser)
+        ]
+      });
+    },
+    output(output) {
+      const parser = getParseFn(output);
+      return createNewBuilder(_def, {
+        output,
+        middlewares: [
+          createOutputMiddleware(parser)
+        ]
+      });
+    },
+    meta(meta) {
+      return createNewBuilder(_def, {
+        meta
+      });
+    },
+    use(middlewareBuilderOrFn) {
+      const middlewares = "_middlewares" in middlewareBuilderOrFn ? middlewareBuilderOrFn._middlewares : [
+        middlewareBuilderOrFn
+      ];
+      return createNewBuilder(_def, {
+        middlewares
+      });
+    },
+    unstable_concat(builder2) {
+      return createNewBuilder(_def, builder2._def);
+    },
+    query(resolver) {
+      return createResolver({
+        ..._def,
+        type: "query"
+      }, resolver);
+    },
+    mutation(resolver) {
+      return createResolver({
+        ..._def,
+        type: "mutation"
+      }, resolver);
+    },
+    subscription(resolver) {
+      return createResolver({
+        ..._def,
+        type: "subscription"
+      }, resolver);
+    },
+    experimental_caller(caller) {
+      return createNewBuilder(_def, {
+        caller
+      });
+    }
+  };
+  return builder;
+}
+function createResolver(_defIn, resolver) {
+  const finalBuilder = createNewBuilder(_defIn, {
+    resolver,
+    middlewares: [
+      async function resolveMiddleware(opts) {
+        const data = await resolver(opts);
+        return {
+          marker: middlewareMarker,
+          ok: true,
+          data,
+          ctx: opts.ctx
+        };
+      }
+    ]
+  });
+  const _def = {
+    ...finalBuilder._def,
+    type: _defIn.type,
+    experimental_caller: Boolean(finalBuilder._def.caller),
+    meta: finalBuilder._def.meta,
+    $types: null
+  };
+  const invoke = createProcedureCaller(finalBuilder._def);
+  const callerOverride = finalBuilder._def.caller;
+  if (!callerOverride) {
+    return invoke;
+  }
+  const callerWrapper = async (...args) => {
+    return await callerOverride({
+      args,
+      invoke,
+      _def
+    });
+  };
+  callerWrapper._def = _def;
+  return callerWrapper;
+}
+var codeblock = `
+This is a client-only function.
+If you want to call this function on the server, see https://trpc.io/docs/v11/server/server-side-calls
+`.trim();
+async function callRecursive(index, _def, opts) {
+  try {
+    const middleware = _def.middlewares[index];
+    const result = await middleware({
+      ...opts,
+      meta: _def.meta,
+      input: opts.input,
+      next(_nextOpts) {
+        const nextOpts = _nextOpts;
+        return callRecursive(index + 1, _def, {
+          ...opts,
+          ctx: nextOpts?.ctx ? {
+            ...opts.ctx,
+            ...nextOpts.ctx
+          } : opts.ctx,
+          input: nextOpts && "input" in nextOpts ? nextOpts.input : opts.input,
+          getRawInput: nextOpts?.getRawInput ?? opts.getRawInput
+        });
+      }
+    });
+    return result;
+  } catch (cause) {
+    return {
+      ok: false,
+      error: getTRPCErrorFromUnknown(cause),
+      marker: middlewareMarker
+    };
+  }
+}
+function createProcedureCaller(_def) {
+  async function procedure(opts) {
+    if (!opts || !("getRawInput" in opts)) {
+      throw new Error(codeblock);
+    }
+    const result = await callRecursive(0, _def, opts);
+    if (!result) {
+      throw new TRPCError({
+        code: "INTERNAL_SERVER_ERROR",
+        message: "No result from middlewares - did you forget to `return next()`?"
+      });
+    }
+    if (!result.ok) {
+      throw result.error;
+    }
+    return result.data;
+  }
+  procedure._def = _def;
+  return procedure;
+}
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/rootConfig.mjs
+var isServerDefault = typeof window === "undefined" || "Deno" in window || // eslint-disable-next-line @typescript-eslint/dot-notation
+globalThis.process?.env?.["NODE_ENV"] === "test" || !!globalThis.process?.env?.["JEST_WORKER_ID"] || !!globalThis.process?.env?.["VITEST_WORKER_ID"];
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/router.mjs
+function isRouter(procedureOrRouter) {
+  return procedureOrRouter._def && "router" in procedureOrRouter._def;
+}
+var emptyRouter = {
+  _ctx: null,
+  _errorShape: null,
+  _meta: null,
+  queries: {},
+  mutations: {},
+  subscriptions: {},
+  errorFormatter: defaultFormatter,
+  transformer: defaultTransformer
+};
+var reservedWords = [
+  /**
+  * Then is a reserved word because otherwise we can't return a promise that returns a Proxy
+  * since JS will think that `.then` is something that exists
+  */
+  "then",
+  /**
+  * `fn.call()` and `fn.apply()` are reserved words because otherwise we can't call a function using `.call` or `.apply`
+  */
+  "call",
+  "apply"
+];
+function createRouterFactory(config) {
+  function createRouterInner(input) {
+    const reservedWordsUsed = new Set(Object.keys(input).filter((v) => reservedWords.includes(v)));
+    if (reservedWordsUsed.size > 0) {
+      throw new Error("Reserved words used in `router({})` call: " + Array.from(reservedWordsUsed).join(", "));
+    }
+    const procedures = omitPrototype({});
+    function step(from, path = []) {
+      const aggregate = omitPrototype({});
+      for (const [key, item] of Object.entries(from ?? {})) {
+        if (isRouter(item)) {
+          aggregate[key] = step(item._def.record, [
+            ...path,
+            key
+          ]);
+          continue;
+        }
+        if (!isProcedure(item)) {
+          aggregate[key] = step(item, [
+            ...path,
+            key
+          ]);
+          continue;
+        }
+        const newPath = [
+          ...path,
+          key
+        ].join(".");
+        if (procedures[newPath]) {
+          throw new Error(`Duplicate key: ${newPath}`);
+        }
+        procedures[newPath] = item;
+        aggregate[key] = item;
+      }
+      return aggregate;
+    }
+    const record = step(input);
+    const _def = {
+      _config: config,
+      router: true,
+      procedures,
+      ...emptyRouter,
+      record
+    };
+    return {
+      ...record,
+      _def,
+      createCaller: createCallerFactory()({
+        _def
+      })
+    };
+  }
+  return createRouterInner;
+}
+function isProcedure(procedureOrRouter) {
+  return typeof procedureOrRouter === "function";
+}
+function createCallerFactory() {
+  return function createCallerInner(router2) {
+    const _def = router2._def;
+    return function createCaller(ctxOrCallback, opts) {
+      return createRecursiveProxy(async ({ path, args }) => {
+        const fullPath = path.join(".");
+        if (path.length === 1 && path[0] === "_def") {
+          return _def;
+        }
+        const procedure = _def.procedures[fullPath];
+        let ctx = void 0;
+        try {
+          ctx = isFunction2(ctxOrCallback) ? await Promise.resolve(ctxOrCallback()) : ctxOrCallback;
+          return await procedure({
+            path: fullPath,
+            getRawInput: async () => args[0],
+            ctx,
+            type: procedure._def.type,
+            signal: opts?.signal
+          });
+        } catch (cause) {
+          opts?.onError?.({
+            ctx,
+            error: getTRPCErrorFromUnknown(cause),
+            input: args[0],
+            path: fullPath,
+            type: procedure._def.type
+          });
+          throw cause;
+        }
+      });
+    };
+  };
+}
+function mergeRouters(...routerList) {
+  const record = mergeWithoutOverrides({}, ...routerList.map((r) => r._def.record));
+  const errorFormatter = routerList.reduce((currentErrorFormatter, nextRouter) => {
+    if (nextRouter._def._config.errorFormatter && nextRouter._def._config.errorFormatter !== defaultFormatter) {
+      if (currentErrorFormatter !== defaultFormatter && currentErrorFormatter !== nextRouter._def._config.errorFormatter) {
+        throw new Error("You seem to have several error formatters");
+      }
+      return nextRouter._def._config.errorFormatter;
+    }
+    return currentErrorFormatter;
+  }, defaultFormatter);
+  const transformer = routerList.reduce((prev, current) => {
+    if (current._def._config.transformer && current._def._config.transformer !== defaultTransformer) {
+      if (prev !== defaultTransformer && prev !== current._def._config.transformer) {
+        throw new Error("You seem to have several transformers");
+      }
+      return current._def._config.transformer;
+    }
+    return prev;
+  }, defaultTransformer);
+  const router2 = createRouterFactory({
+    errorFormatter,
+    transformer,
+    isDev: routerList.every((r) => r._def._config.isDev),
+    allowOutsideOfServer: routerList.every((r) => r._def._config.allowOutsideOfServer),
+    isServer: routerList.every((r) => r._def._config.isServer),
+    $types: routerList[0]?._def._config.$types
+  })(record);
+  return router2;
+}
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/initTRPC.mjs
+var TRPCBuilder = class {
+  /**
+  * Add a context shape as a generic to the root object
+  * @link https://trpc.io/docs/v11/server/context
+  */
+  context() {
+    return new TRPCBuilder();
+  }
+  /**
+  * Add a meta shape as a generic to the root object
+  * @link https://trpc.io/docs/v11/quickstart
+  */
+  meta() {
+    return new TRPCBuilder();
+  }
+  /**
+  * Create the root object
+  * @link https://trpc.io/docs/v11/server/routers#initialize-trpc
+  */
+  create(opts) {
+    const config = {
+      transformer: getDataTransformer(opts?.transformer ?? defaultTransformer),
+      isDev: opts?.isDev ?? // eslint-disable-next-line @typescript-eslint/dot-notation
+      globalThis.process?.env["NODE_ENV"] !== "production",
+      allowOutsideOfServer: opts?.allowOutsideOfServer ?? false,
+      errorFormatter: opts?.errorFormatter ?? defaultFormatter,
+      isServer: opts?.isServer ?? isServerDefault,
+      /**
+      * These are just types, they can't be used at runtime
+      * @internal
+      */
+      $types: null,
+      experimental: opts?.experimental ?? {}
+    };
+    {
+      const isServer2 = opts?.isServer ?? isServerDefault;
+      if (!isServer2 && opts?.allowOutsideOfServer !== true) {
+        throw new Error(`You're trying to use @trpc/server in a non-server environment. This is not supported by default.`);
+      }
+    }
+    return {
+      /**
+      * Your router config
+      * @internal
+      */
+      _config: config,
+      /**
+      * Builder object for creating procedures
+      * @link https://trpc.io/docs/v11/server/procedures
+      */
+      procedure: createBuilder({
+        meta: opts?.defaultMeta
+      }),
+      /**
+      * Create reusable middlewares
+      * @link https://trpc.io/docs/v11/server/middlewares
+      */
+      middleware: createMiddlewareFactory(),
+      /**
+      * Create a router
+      * @link https://trpc.io/docs/v11/server/routers
+      */
+      router: createRouterFactory(config),
+      /**
+      * Merge Routers
+      * @link https://trpc.io/docs/v11/server/merging-routers
+      */
+      mergeRouters,
+      /**
+      * Create a server-side caller for a router
+      * @link https://trpc.io/docs/v11/server/server-side-calls
+      */
+      createCallerFactory: createCallerFactory()
+    };
+  }
+};
+var initTRPC = new TRPCBuilder();
+
+// ../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/types.mjs
+var ERROR_SYMBOL = Symbol("TypeError");
+
+// ../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/TRPCClientError.mjs
+function isTRPCClientError(cause) {
+  return cause instanceof TRPCClientError || /**
+  * @deprecated
+  * Delete in next major
+  */
+  cause instanceof Error && cause.name === "TRPCClientError";
+}
+function isTRPCErrorResponse(obj) {
+  return isObject2(obj) && isObject2(obj["error"]) && typeof obj["error"]["code"] === "number" && typeof obj["error"]["message"] === "string";
+}
+function getMessageFromUnknownError(err, fallback) {
+  if (typeof err === "string") {
+    return err;
+  }
+  if (isObject2(err) && typeof err["message"] === "string") {
+    return err["message"];
+  }
+  return fallback;
+}
+var TRPCClientError = class extends Error {
+  static from(_cause, opts = {}) {
+    const cause = _cause;
+    if (isTRPCClientError(cause)) {
+      if (opts.meta) {
+        cause.meta = {
+          ...cause.meta,
+          ...opts.meta
+        };
+      }
+      return cause;
+    }
+    if (isTRPCErrorResponse(cause)) {
+      return new TRPCClientError(cause.error.message, {
+        ...opts,
+        result: cause
+      });
+    }
+    return new TRPCClientError(getMessageFromUnknownError(cause, "Unknown error"), {
+      ...opts,
+      cause
+    });
+  }
+  constructor(message, opts) {
+    const cause = opts?.cause;
+    super(message, {
+      cause
+    });
+    this.meta = opts?.meta;
+    this.cause = cause;
+    this.shape = opts?.result?.error;
+    this.data = opts?.result?.error.data;
+    this.name = "TRPCClientError";
+    Object.setPrototypeOf(this, TRPCClientError.prototype);
+  }
+};
+
+// ../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/TRPCUntypedClient.mjs
+var TRPCUntypedClient = class {
+  $request(opts) {
+    const chain$ = createChain({
+      links: this.links,
+      op: {
+        ...opts,
+        context: opts.context ?? {},
+        id: ++this.requestId
+      }
+    });
+    return chain$.pipe(share());
+  }
+  async requestAsPromise(opts) {
+    try {
+      const req$ = this.$request(opts);
+      const envelope = await observableToPromise(req$);
+      const data = envelope.result.data;
+      return data;
+    } catch (err) {
+      throw TRPCClientError.from(err);
+    }
+  }
+  query(path, input, opts) {
+    return this.requestAsPromise({
+      type: "query",
+      path,
+      input,
+      context: opts?.context,
+      signal: opts?.signal
+    });
+  }
+  mutation(path, input, opts) {
+    return this.requestAsPromise({
+      type: "mutation",
+      path,
+      input,
+      context: opts?.context,
+      signal: opts?.signal
+    });
+  }
+  subscription(path, input, opts) {
+    const observable$ = this.$request({
+      type: "subscription",
+      path,
+      input,
+      context: opts?.context,
+      signal: null
+    });
+    return observable$.subscribe({
+      next(envelope) {
+        if (envelope.result.type === "started") {
+          opts.onStarted?.({
+            context: envelope.context
+          });
+        } else if (envelope.result.type === "stopped") {
+          opts.onStopped?.();
+        } else {
+          opts.onData?.(envelope.result.data);
+        }
+      },
+      error(err) {
+        opts.onError?.(err);
+      },
+      complete() {
+        opts.onComplete?.();
+      }
+    });
+  }
+  constructor(opts) {
+    this.requestId = 0;
+    this.runtime = {};
+    this.links = opts.links.map((link) => link(this.runtime));
+  }
+};
+
+// ../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/createTRPCUntypedClient.mjs
+function createTRPCUntypedClient(opts) {
+  return new TRPCUntypedClient(opts);
+}
+
+// ../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/createTRPCClient.mjs
+var clientCallTypeMap = {
+  query: "query",
+  mutate: "mutation",
+  subscribe: "subscription"
+};
+var clientCallTypeToProcedureType = (clientCallType) => {
+  return clientCallTypeMap[clientCallType];
+};
+function createTRPCClientProxy(client) {
+  const proxy = createRecursiveProxy(({ path, args }) => {
+    const pathCopy = [
+      ...path
+    ];
+    const procedureType = clientCallTypeToProcedureType(pathCopy.pop());
+    const fullPath = pathCopy.join(".");
+    return client[procedureType](fullPath, ...args);
+  });
+  return createFlatProxy((key) => {
+    if (client.hasOwnProperty(key)) {
+      return client[key];
+    }
+    if (key === "__untypedClient") {
+      return client;
+    }
+    return proxy[key];
+  });
+}
+function createTRPCClient(opts) {
+  const client = new TRPCUntypedClient(opts);
+  const proxy = createTRPCClientProxy(client);
+  return proxy;
+}
+function getUntypedClient(client) {
+  return client.__untypedClient;
+}
+
+// ../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/getFetch.mjs
+var isFunction3 = (fn) => typeof fn === "function";
+function getFetch(customFetchImpl) {
+  if (customFetchImpl) {
+    return customFetchImpl;
+  }
+  if (typeof window !== "undefined" && isFunction3(window.fetch)) {
+    return window.fetch;
+  }
+  if (typeof globalThis !== "undefined" && isFunction3(globalThis.fetch)) {
+    return globalThis.fetch;
+  }
+  throw new Error("No fetch implementation found");
+}
+
+// ../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/dataLoader.mjs
+var throwFatalError = () => {
+  throw new Error("Something went wrong. Please submit an issue at https://github.com/trpc/trpc/issues/new");
+};
+function dataLoader(batchLoader) {
+  let pendingItems = null;
+  let dispatchTimer = null;
+  const destroyTimerAndPendingItems = () => {
+    clearTimeout(dispatchTimer);
+    dispatchTimer = null;
+    pendingItems = null;
+  };
+  function groupItems(items) {
+    const groupedItems = [
+      []
+    ];
+    let index = 0;
+    while (true) {
+      const item = items[index];
+      if (!item) {
+        break;
+      }
+      const lastGroup = groupedItems[groupedItems.length - 1];
+      if (item.aborted) {
+        item.reject?.(new Error("Aborted"));
+        index++;
+        continue;
+      }
+      const isValid = batchLoader.validate(lastGroup.concat(item).map((it) => it.key));
+      if (isValid) {
+        lastGroup.push(item);
+        index++;
+        continue;
+      }
+      if (lastGroup.length === 0) {
+        item.reject?.(new Error("Input is too big for a single dispatch"));
+        index++;
+        continue;
+      }
+      groupedItems.push([]);
+    }
+    return groupedItems;
+  }
+  function dispatch() {
+    const groupedItems = groupItems(pendingItems);
+    destroyTimerAndPendingItems();
+    for (const items of groupedItems) {
+      if (!items.length) {
+        continue;
+      }
+      const batch = {
+        items
+      };
+      for (const item of items) {
+        item.batch = batch;
+      }
+      const promise = batchLoader.fetch(batch.items.map((_item) => _item.key));
+      promise.then(async (result) => {
+        await Promise.all(result.map(async (valueOrPromise, index) => {
+          const item = batch.items[index];
+          try {
+            const value = await Promise.resolve(valueOrPromise);
+            item.resolve?.(value);
+          } catch (cause) {
+            item.reject?.(cause);
+          }
+          item.batch = null;
+          item.reject = null;
+          item.resolve = null;
+        }));
+        for (const item of batch.items) {
+          item.reject?.(new Error("Missing result"));
+          item.batch = null;
+        }
+      }).catch((cause) => {
+        for (const item of batch.items) {
+          item.reject?.(cause);
+          item.batch = null;
+        }
+      });
+    }
+  }
+  function load(key) {
+    const item = {
+      aborted: false,
+      key,
+      batch: null,
+      resolve: throwFatalError,
+      reject: throwFatalError
+    };
+    const promise = new Promise((resolve, reject) => {
+      item.reject = reject;
+      item.resolve = resolve;
+      if (!pendingItems) {
+        pendingItems = [];
+      }
+      pendingItems.push(item);
+    });
+    if (!dispatchTimer) {
+      dispatchTimer = setTimeout(dispatch);
+    }
+    return promise;
+  }
+  return {
+    load
+  };
+}
+
+// ../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/transformer.mjs
+function getTransformer(transformer) {
+  const _transformer = transformer;
+  if (!_transformer) {
+    return {
+      input: {
+        serialize: (data) => data,
+        deserialize: (data) => data
+      },
+      output: {
+        serialize: (data) => data,
+        deserialize: (data) => data
+      }
+    };
+  }
+  if ("input" in _transformer) {
+    return _transformer;
+  }
+  return {
+    input: _transformer,
+    output: _transformer
+  };
+}
+
+// ../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/httpUtils.mjs
+function resolveHTTPLinkOptions(opts) {
+  return {
+    url: opts.url.toString(),
+    fetch: opts.fetch,
+    transformer: getTransformer(opts.transformer),
+    methodOverride: opts.methodOverride
+  };
+}
+function arrayToDict(array2) {
+  const dict = {};
+  for (let index = 0; index < array2.length; index++) {
+    const element = array2[index];
+    dict[index] = element;
+  }
+  return dict;
+}
+var METHOD = {
+  query: "GET",
+  mutation: "POST",
+  subscription: "PATCH"
+};
+function getInput(opts) {
+  return "input" in opts ? opts.transformer.input.serialize(opts.input) : arrayToDict(opts.inputs.map((_input) => opts.transformer.input.serialize(_input)));
+}
+var getUrl = (opts) => {
+  const parts = opts.url.split("?");
+  const base = parts[0].replace(/\/$/, "");
+  let url = base + "/" + opts.path;
+  const queryParts = [];
+  if (parts[1]) {
+    queryParts.push(parts[1]);
+  }
+  if ("inputs" in opts) {
+    queryParts.push("batch=1");
+  }
+  if (opts.type === "query" || opts.type === "subscription") {
+    const input = getInput(opts);
+    if (input !== void 0 && opts.methodOverride !== "POST") {
+      queryParts.push(`input=${encodeURIComponent(JSON.stringify(input))}`);
+    }
+  }
+  if (queryParts.length) {
+    url += "?" + queryParts.join("&");
+  }
+  return url;
+};
+var getBody = (opts) => {
+  if (opts.type === "query" && opts.methodOverride !== "POST") {
+    return void 0;
+  }
+  const input = getInput(opts);
+  return input !== void 0 ? JSON.stringify(input) : void 0;
+};
+var jsonHttpRequester = (opts) => {
+  return httpRequest({
+    ...opts,
+    contentTypeHeader: "application/json",
+    getUrl,
+    getBody
+  });
+};
+var AbortError = class extends Error {
+  constructor() {
+    const name = "AbortError";
+    super(name);
+    this.name = name;
+    this.message = name;
+  }
+};
+var throwIfAborted = (signal) => {
+  if (!signal?.aborted) {
+    return;
+  }
+  signal.throwIfAborted?.();
+  if (typeof DOMException !== "undefined") {
+    throw new DOMException("AbortError", "AbortError");
+  }
+  throw new AbortError();
+};
+async function fetchHTTPResponse(opts) {
+  throwIfAborted(opts.signal);
+  const url = opts.getUrl(opts);
+  const body = opts.getBody(opts);
+  const { type } = opts;
+  const resolvedHeaders = await (async () => {
+    const heads = await opts.headers();
+    if (Symbol.iterator in heads) {
+      return Object.fromEntries(heads);
+    }
+    return heads;
+  })();
+  const headers = {
+    ...opts.contentTypeHeader ? {
+      "content-type": opts.contentTypeHeader
+    } : {},
+    ...opts.trpcAcceptHeader ? {
+      "trpc-accept": opts.trpcAcceptHeader
+    } : void 0,
+    ...resolvedHeaders
+  };
+  return getFetch(opts.fetch)(url, {
+    method: opts.methodOverride ?? METHOD[type],
+    signal: opts.signal,
+    body,
+    headers
+  });
+}
+async function httpRequest(opts) {
+  const meta = {};
+  const res = await fetchHTTPResponse(opts);
+  meta.response = res;
+  const json2 = await res.json();
+  meta.responseJSON = json2;
+  return {
+    json: json2,
+    meta
+  };
+}
+function mergeAbortSignals(opts) {
+  const ac = new AbortController();
+  if (opts.some((o) => !o.signal)) {
+    return ac;
+  }
+  const count = opts.length;
+  let abortedCount = 0;
+  const onAbort = () => {
+    if (++abortedCount === count) {
+      ac.abort();
+    }
+  };
+  for (const o of opts) {
+    const signal = o.signal;
+    if (signal.aborted) {
+      onAbort();
+    } else {
+      signal.addEventListener("abort", onAbort, {
+        once: true
+      });
+    }
+  }
+  return ac;
+}
+
+// ../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/httpBatchLink.mjs
+function httpBatchLink(opts) {
+  const resolvedOpts = resolveHTTPLinkOptions(opts);
+  const maxURLLength = opts.maxURLLength ?? Infinity;
+  return () => {
+    const batchLoader = (type) => {
+      return {
+        validate(batchOps) {
+          if (maxURLLength === Infinity) {
+            return true;
+          }
+          const path = batchOps.map((op) => op.path).join(",");
+          const inputs = batchOps.map((op) => op.input);
+          const url = getUrl({
+            ...resolvedOpts,
+            type,
+            path,
+            inputs,
+            signal: null
+          });
+          return url.length <= maxURLLength;
+        },
+        async fetch(batchOps) {
+          const path = batchOps.map((op) => op.path).join(",");
+          const inputs = batchOps.map((op) => op.input);
+          const ac = mergeAbortSignals(batchOps);
+          const res = await jsonHttpRequester({
+            ...resolvedOpts,
+            path,
+            inputs,
+            type,
+            headers() {
+              if (!opts.headers) {
+                return {};
+              }
+              if (typeof opts.headers === "function") {
+                return opts.headers({
+                  opList: batchOps
+                });
+              }
+              return opts.headers;
+            },
+            signal: ac.signal
+          });
+          const resJSON = Array.isArray(res.json) ? res.json : batchOps.map(() => res.json);
+          const result = resJSON.map((item) => ({
+            meta: res.meta,
+            json: item
+          }));
+          return result;
+        }
+      };
+    };
+    const query = dataLoader(batchLoader("query"));
+    const mutation = dataLoader(batchLoader("mutation"));
+    const loaders = {
+      query,
+      mutation
+    };
+    return ({ op }) => {
+      return observable2((observer3) => {
+        if (op.type === "subscription") {
+          throw new Error("Subscriptions are unsupported by `httpLink` - use `httpSubscriptionLink` or `wsLink`");
+        }
+        const loader = loaders[op.type];
+        const promise = loader.load(op);
+        let _res = void 0;
+        promise.then((res) => {
+          _res = res;
+          const transformed = transformResult(res.json, resolvedOpts.transformer.output);
+          if (!transformed.ok) {
+            observer3.error(TRPCClientError.from(transformed.error, {
+              meta: res.meta
+            }));
+            return;
+          }
+          observer3.next({
+            context: res.meta,
+            result: transformed.result
+          });
+          observer3.complete();
+        }).catch((err) => {
+          observer3.error(TRPCClientError.from(err, {
+            meta: _res?.meta
+          }));
+        });
+        return () => {
+        };
+      });
+    };
+  };
+}
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/getQueryKey.mjs
+function getQueryKeyInternal(path, input, type) {
+  const splitPath = path.flatMap((part) => part.split("."));
+  if (!input && (!type || type === "any")) {
+    return splitPath.length ? [
+      splitPath
+    ] : [];
+  }
+  if (type === "infinite" && isObject2(input) && ("direction" in input || "cursor" in input)) {
+    const { cursor: _14, direction: __, ...inputWithoutCursorAndDirection } = input;
+    return [
+      splitPath,
+      {
+        input: inputWithoutCursorAndDirection,
+        type: "infinite"
+      }
+    ];
+  }
+  return [
+    splitPath,
+    {
+      ...typeof input !== "undefined" && input !== skipToken && {
+        input
+      },
+      ...type && type !== "any" && {
+        type
+      }
+    }
+  ];
+}
+function getMutationKeyInternal(path) {
+  return getQueryKeyInternal(path, void 0, "any");
+}
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/createTRPCReact.mjs
+var React16 = __toESM(require_react(), 1);
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/decorationProxy.mjs
+function createReactDecoration(hooks) {
+  return createRecursiveProxy(({ path, args }) => {
+    const pathCopy = [
+      ...path
+    ];
+    const lastArg = pathCopy.pop();
+    if (lastArg === "useMutation") {
+      return hooks[lastArg](pathCopy, ...args);
+    }
+    if (lastArg === "_def") {
+      return {
+        path: pathCopy
+      };
+    }
+    const [input, ...rest] = args;
+    const opts = rest[0] || {};
+    return hooks[lastArg](pathCopy, input, opts);
+  });
+}
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/context.mjs
+var React13 = __toESM(require_react(), 1);
+var contextProps = [
+  "client",
+  "ssrContext",
+  "ssrState",
+  "abortOnUnmount"
+];
+var TRPCContext = React13.createContext?.(null);
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/utilsProxy.mjs
+var getQueryType = (utilName) => {
+  switch (utilName) {
+    case "fetch":
+    case "ensureData":
+    case "prefetch":
+    case "getData":
+    case "setData":
+    case "setQueriesData":
+      return "query";
+    case "fetchInfinite":
+    case "prefetchInfinite":
+    case "getInfiniteData":
+    case "setInfiniteData":
+      return "infinite";
+    case "setMutationDefaults":
+    case "getMutationDefaults":
+    case "isMutating":
+    case "cancel":
+    case "invalidate":
+    case "refetch":
+    case "reset":
+      return "any";
+  }
+};
+function createRecursiveUtilsProxy(context) {
+  return createRecursiveProxy((opts) => {
+    const path = [
+      ...opts.path
+    ];
+    const utilName = path.pop();
+    const args = [
+      ...opts.args
+    ];
+    const input = args.shift();
+    const queryType = getQueryType(utilName);
+    const queryKey = getQueryKeyInternal(path, input, queryType);
+    const contextMap = {
+      /**
+      * DecorateQueryProcedure
+      */
+      fetch: () => context.fetchQuery(queryKey, ...args),
+      fetchInfinite: () => context.fetchInfiniteQuery(queryKey, args[0]),
+      prefetch: () => context.prefetchQuery(queryKey, ...args),
+      prefetchInfinite: () => context.prefetchInfiniteQuery(queryKey, args[0]),
+      ensureData: () => context.ensureQueryData(queryKey, ...args),
+      invalidate: () => context.invalidateQueries(queryKey, ...args),
+      reset: () => context.resetQueries(queryKey, ...args),
+      refetch: () => context.refetchQueries(queryKey, ...args),
+      cancel: () => context.cancelQuery(queryKey, ...args),
+      setData: () => {
+        context.setQueryData(queryKey, args[0], args[1]);
+      },
+      setQueriesData: () => context.setQueriesData(queryKey, args[0], args[1], args[2]),
+      setInfiniteData: () => {
+        context.setInfiniteQueryData(queryKey, args[0], args[1]);
+      },
+      getData: () => context.getQueryData(queryKey),
+      getInfiniteData: () => context.getInfiniteQueryData(queryKey),
+      /**
+      * DecorateMutationProcedure
+      */
+      setMutationDefaults: () => context.setMutationDefaults(getMutationKeyInternal(path), input),
+      getMutationDefaults: () => context.getMutationDefaults(getMutationKeyInternal(path)),
+      isMutating: () => context.isMutating({
+        mutationKey: getMutationKeyInternal(path)
+      })
+    };
+    return contextMap[utilName]();
+  });
+}
+function createReactQueryUtils(context) {
+  const clientProxy = createTRPCClientProxy(context.client);
+  const proxy = createRecursiveUtilsProxy(context);
+  return createFlatProxy((key) => {
+    const contextName = key;
+    if (contextName === "client") {
+      return clientProxy;
+    }
+    if (contextProps.includes(contextName)) {
+      return context[contextName];
+    }
+    return proxy[key];
+  });
+}
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/hooks/createHooksInternal.mjs
+var React15 = __toESM(require_react(), 1);
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/getClientArgs.mjs
+function getClientArgs(queryKey, opts, infiniteParams) {
+  const path = queryKey[0];
+  let input = queryKey[1]?.input;
+  if (infiniteParams) {
+    input = {
+      ...input ?? {},
+      ...infiniteParams.pageParam ? {
+        cursor: infiniteParams.pageParam
+      } : {},
+      direction: infiniteParams.direction
+    };
+  }
+  return [
+    path.join("."),
+    input,
+    opts?.trpc
+  ];
+}
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/useHookResult.mjs
+var React14 = __toESM(require_react(), 1);
+function useHookResult(value) {
+  const path = value.path.join(".");
+  return React14.useMemo(() => ({
+    path
+  }), [
+    path
+  ]);
+}
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/utils/createUtilityFunctions.mjs
+function createUtilityFunctions(opts) {
+  const { client, queryClient: queryClient2 } = opts;
+  const untypedClient = client instanceof TRPCUntypedClient ? client : getUntypedClient(client);
+  return {
+    fetchQuery: (queryKey, opts2) => {
+      return queryClient2.fetchQuery({
+        ...opts2,
+        queryKey,
+        queryFn: () => untypedClient.query(...getClientArgs(queryKey, opts2))
+      });
+    },
+    fetchInfiniteQuery: (queryKey, opts2) => {
+      return queryClient2.fetchInfiniteQuery({
+        ...opts2,
+        queryKey,
+        queryFn: ({ pageParam, direction }) => {
+          return untypedClient.query(...getClientArgs(queryKey, opts2, {
+            pageParam,
+            direction
+          }));
+        },
+        initialPageParam: opts2?.initialCursor ?? null
+      });
+    },
+    prefetchQuery: (queryKey, opts2) => {
+      return queryClient2.prefetchQuery({
+        ...opts2,
+        queryKey,
+        queryFn: () => untypedClient.query(...getClientArgs(queryKey, opts2))
+      });
+    },
+    prefetchInfiniteQuery: (queryKey, opts2) => {
+      return queryClient2.prefetchInfiniteQuery({
+        ...opts2,
+        queryKey,
+        queryFn: ({ pageParam, direction }) => {
+          return untypedClient.query(...getClientArgs(queryKey, opts2, {
+            pageParam,
+            direction
+          }));
+        },
+        initialPageParam: opts2?.initialCursor ?? null
+      });
+    },
+    ensureQueryData: (queryKey, opts2) => {
+      return queryClient2.ensureQueryData({
+        ...opts2,
+        queryKey,
+        queryFn: () => untypedClient.query(...getClientArgs(queryKey, opts2))
+      });
+    },
+    invalidateQueries: (queryKey, filters, options) => {
+      return queryClient2.invalidateQueries({
+        ...filters,
+        queryKey
+      }, options);
+    },
+    resetQueries: (queryKey, filters, options) => {
+      return queryClient2.resetQueries({
+        ...filters,
+        queryKey
+      }, options);
+    },
+    refetchQueries: (queryKey, filters, options) => {
+      return queryClient2.refetchQueries({
+        ...filters,
+        queryKey
+      }, options);
+    },
+    cancelQuery: (queryKey, options) => {
+      return queryClient2.cancelQueries({
+        queryKey
+      }, options);
+    },
+    setQueryData: (queryKey, updater, options) => {
+      return queryClient2.setQueryData(queryKey, updater, options);
+    },
+    // eslint-disable-next-line max-params
+    setQueriesData: (queryKey, filters, updater, options) => {
+      return queryClient2.setQueriesData({
+        ...filters,
+        queryKey
+      }, updater, options);
+    },
+    getQueryData: (queryKey) => {
+      return queryClient2.getQueryData(queryKey);
+    },
+    setInfiniteQueryData: (queryKey, updater, options) => {
+      return queryClient2.setQueryData(queryKey, updater, options);
+    },
+    getInfiniteQueryData: (queryKey) => {
+      return queryClient2.getQueryData(queryKey);
+    },
+    setMutationDefaults: (mutationKey, options) => {
+      const path = mutationKey[0];
+      const canonicalMutationFn = (input) => {
+        return untypedClient.mutation(...getClientArgs([
+          path,
+          {
+            input
+          }
+        ], opts));
+      };
+      return queryClient2.setMutationDefaults(mutationKey, typeof options === "function" ? options({
+        canonicalMutationFn
+      }) : options);
+    },
+    getMutationDefaults: (mutationKey) => {
+      return queryClient2.getMutationDefaults(mutationKey);
+    },
+    isMutating: (filters) => {
+      return queryClient2.isMutating({
+        ...filters,
+        exact: true
+      });
+    }
+  };
+}
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/useQueriesProxy.mjs
+function createUseQueries(client) {
+  return createRecursiveProxy((opts) => {
+    const arrayPath = opts.path;
+    const dotPath = arrayPath.join(".");
+    const [input, _opts] = opts.args;
+    const options = {
+      queryKey: getQueryKeyInternal(arrayPath, input, "query"),
+      queryFn: () => {
+        return client.query(dotPath, input, _opts?.trpc);
+      },
+      ..._opts
+    };
+    return options;
+  });
+}
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/hooks/createHooksInternal.mjs
+function createRootHooks(config) {
+  const mutationSuccessOverride = config?.overrides?.useMutation?.onSuccess ?? ((options) => options.originalFn());
+  const Context = config?.context ?? TRPCContext;
+  const createClient = (opts) => {
+    return createTRPCUntypedClient(opts);
+  };
+  const TRPCProvider = (props) => {
+    const { abortOnUnmount = false, client, queryClient: queryClient2, ssrContext } = props;
+    const [ssrState, setSSRState] = React15.useState(props.ssrState ?? false);
+    const fns = React15.useMemo(() => createUtilityFunctions({
+      client,
+      queryClient: queryClient2
+    }), [
+      client,
+      queryClient2
+    ]);
+    const contextValue = React15.useMemo(() => ({
+      abortOnUnmount,
+      queryClient: queryClient2,
+      client,
+      ssrContext: ssrContext ?? null,
+      ssrState,
+      ...fns
+    }), [
+      abortOnUnmount,
+      client,
+      fns,
+      queryClient2,
+      ssrContext,
+      ssrState
+    ]);
+    React15.useEffect(() => {
+      setSSRState((state) => state ? "mounted" : false);
+    }, []);
+    return /* @__PURE__ */ React15.createElement(Context.Provider, {
+      value: contextValue
+    }, props.children);
+  };
+  function useContext7() {
+    const context = React15.useContext(Context);
+    if (!context) {
+      throw new Error("Unable to find tRPC Context. Did you forget to wrap your App inside `withTRPC` HoC?");
+    }
+    return context;
+  }
+  function useSSRQueryOptionsIfNeeded(queryKey, opts) {
+    const { queryClient: queryClient2, ssrState } = useContext7();
+    return ssrState && ssrState !== "mounted" && queryClient2.getQueryCache().find({
+      queryKey
+    })?.state.status === "error" ? {
+      retryOnMount: false,
+      ...opts
+    } : opts;
+  }
+  function useQuery$1(path, input, opts) {
+    const context = useContext7();
+    const { abortOnUnmount, client, ssrState, queryClient: queryClient2, prefetchQuery } = context;
+    const queryKey = getQueryKeyInternal(path, input, "query");
+    const defaultOpts = queryClient2.getQueryDefaults(queryKey);
+    const isInputSkipToken = input === skipToken;
+    if (typeof window === "undefined" && ssrState === "prepass" && opts?.trpc?.ssr !== false && (opts?.enabled ?? defaultOpts?.enabled) !== false && !isInputSkipToken && !queryClient2.getQueryCache().find({
+      queryKey
+    })) {
+      void prefetchQuery(queryKey, opts);
+    }
+    const ssrOpts = useSSRQueryOptionsIfNeeded(queryKey, {
+      ...defaultOpts,
+      ...opts
+    });
+    const shouldAbortOnUnmount = opts?.trpc?.abortOnUnmount ?? config?.abortOnUnmount ?? abortOnUnmount;
+    const hook = useQuery({
+      ...ssrOpts,
+      queryKey,
+      queryFn: isInputSkipToken ? input : async (queryFunctionContext) => {
+        const actualOpts = {
+          ...ssrOpts,
+          trpc: {
+            ...ssrOpts?.trpc,
+            ...shouldAbortOnUnmount ? {
+              signal: queryFunctionContext.signal
+            } : {
+              signal: null
+            }
+          }
+        };
+        const result = await client.query(...getClientArgs(queryKey, actualOpts));
+        if (isAsyncIterable(result)) {
+          const queryCache = queryClient2.getQueryCache();
+          const query = queryCache.build(queryFunctionContext.queryKey, {
+            queryKey
+          });
+          query.setState({
+            data: [],
+            status: "success"
+          });
+          const aggregate = [];
+          for await (const value of result) {
+            aggregate.push(value);
+            query.setState({
+              data: [
+                ...aggregate
+              ]
+            });
+          }
+          return aggregate;
+        }
+        return result;
+      }
+    }, queryClient2);
+    hook.trpc = useHookResult({
+      path
+    });
+    return hook;
+  }
+  function usePrefetchQuery$1(path, input, opts) {
+    const context = useContext7();
+    const queryKey = getQueryKeyInternal(path, input, "query");
+    const isInputSkipToken = input === skipToken;
+    const shouldAbortOnUnmount = opts?.trpc?.abortOnUnmount ?? config?.abortOnUnmount ?? context.abortOnUnmount;
+    usePrefetchQuery({
+      ...opts,
+      queryKey,
+      queryFn: isInputSkipToken ? input : (queryFunctionContext) => {
+        const actualOpts = {
+          trpc: {
+            ...shouldAbortOnUnmount ? {
+              signal: queryFunctionContext.signal
+            } : {}
+          }
+        };
+        return context.client.query(...getClientArgs(queryKey, actualOpts));
+      }
+    });
+  }
+  function useSuspenseQuery$1(path, input, opts) {
+    const context = useContext7();
+    const queryKey = getQueryKeyInternal(path, input, "query");
+    const shouldAbortOnUnmount = opts?.trpc?.abortOnUnmount ?? config?.abortOnUnmount ?? context.abortOnUnmount;
+    const hook = useSuspenseQuery({
+      ...opts,
+      queryKey,
+      queryFn: (queryFunctionContext) => {
+        const actualOpts = {
+          trpc: {
+            ...shouldAbortOnUnmount ? {
+              signal: queryFunctionContext.signal
+            } : {
+              signal: null
+            }
+          }
+        };
+        return context.client.query(...getClientArgs(queryKey, actualOpts));
+      }
+    }, context.queryClient);
+    hook.trpc = useHookResult({
+      path
+    });
+    return [
+      hook.data,
+      hook
+    ];
+  }
+  function useMutation$1(path, opts) {
+    const { client, queryClient: queryClient2 } = useContext7();
+    const mutationKey = getMutationKeyInternal(path);
+    const defaultOpts = queryClient2.defaultMutationOptions(queryClient2.getMutationDefaults(mutationKey));
+    const hook = useMutation({
+      ...opts,
+      mutationKey,
+      mutationFn: (input) => {
+        return client.mutation(...getClientArgs([
+          path,
+          {
+            input
+          }
+        ], opts));
+      },
+      onSuccess(...args) {
+        const originalFn = () => opts?.onSuccess?.(...args) ?? defaultOpts?.onSuccess?.(...args);
+        return mutationSuccessOverride({
+          originalFn,
+          queryClient: queryClient2,
+          meta: opts?.meta ?? defaultOpts?.meta ?? {}
+        });
+      }
+    }, queryClient2);
+    hook.trpc = useHookResult({
+      path
+    });
+    return hook;
+  }
+  function useSubscription(path, input, opts) {
+    const enabled = opts?.enabled ?? input !== skipToken;
+    const queryKey = hashKey(getQueryKeyInternal(path, input, "any"));
+    const { client } = useContext7();
+    const optsRef = React15.useRef(opts);
+    optsRef.current = opts;
+    React15.useEffect(() => {
+      if (!enabled) {
+        return;
+      }
+      let isStopped = false;
+      const subscription = client.subscription(path.join("."), input ?? void 0, {
+        onStarted: () => {
+          if (!isStopped) {
+            optsRef.current.onStarted?.();
+          }
+        },
+        onData: (data) => {
+          if (!isStopped) {
+            optsRef.current.onData(data);
+          }
+        },
+        onError: (err) => {
+          if (!isStopped) {
+            optsRef.current.onError?.(err);
+          }
+        }
+      });
+      return () => {
+        isStopped = true;
+        subscription.unsubscribe();
+      };
+    }, [
+      queryKey,
+      enabled
+    ]);
+  }
+  function useInfiniteQuery$1(path, input, opts) {
+    const { client, ssrState, prefetchInfiniteQuery, queryClient: queryClient2, abortOnUnmount } = useContext7();
+    const queryKey = getQueryKeyInternal(path, input, "infinite");
+    const defaultOpts = queryClient2.getQueryDefaults(queryKey);
+    const isInputSkipToken = input === skipToken;
+    if (typeof window === "undefined" && ssrState === "prepass" && opts?.trpc?.ssr !== false && (opts?.enabled ?? defaultOpts?.enabled) !== false && !isInputSkipToken && !queryClient2.getQueryCache().find({
+      queryKey
+    })) {
+      void prefetchInfiniteQuery(queryKey, {
+        ...defaultOpts,
+        ...opts
+      });
+    }
+    const ssrOpts = useSSRQueryOptionsIfNeeded(queryKey, {
+      ...defaultOpts,
+      ...opts
+    });
+    const shouldAbortOnUnmount = opts?.trpc?.abortOnUnmount ?? abortOnUnmount;
+    const hook = useInfiniteQuery({
+      ...ssrOpts,
+      initialPageParam: opts.initialCursor ?? null,
+      persister: opts.persister,
+      queryKey,
+      queryFn: isInputSkipToken ? input : (queryFunctionContext) => {
+        const actualOpts = {
+          ...ssrOpts,
+          trpc: {
+            ...ssrOpts?.trpc,
+            ...shouldAbortOnUnmount ? {
+              signal: queryFunctionContext.signal
+            } : {
+              signal: null
+            }
+          }
+        };
+        return client.query(...getClientArgs(queryKey, actualOpts, {
+          pageParam: queryFunctionContext.pageParam ?? opts.initialCursor,
+          direction: queryFunctionContext.direction
+        }));
+      }
+    }, queryClient2);
+    hook.trpc = useHookResult({
+      path
+    });
+    return hook;
+  }
+  function usePrefetchInfiniteQuery$1(path, input, opts) {
+    const context = useContext7();
+    const queryKey = getQueryKeyInternal(path, input, "infinite");
+    const defaultOpts = context.queryClient.getQueryDefaults(queryKey);
+    const isInputSkipToken = input === skipToken;
+    const ssrOpts = useSSRQueryOptionsIfNeeded(queryKey, {
+      ...defaultOpts,
+      ...opts
+    });
+    const shouldAbortOnUnmount = opts?.trpc?.abortOnUnmount ?? context.abortOnUnmount;
+    usePrefetchInfiniteQuery({
+      ...opts,
+      initialPageParam: opts.initialCursor ?? null,
+      queryKey,
+      queryFn: isInputSkipToken ? input : (queryFunctionContext) => {
+        const actualOpts = {
+          ...ssrOpts,
+          trpc: {
+            ...ssrOpts?.trpc,
+            ...shouldAbortOnUnmount ? {
+              signal: queryFunctionContext.signal
+            } : {}
+          }
+        };
+        return context.client.query(...getClientArgs(queryKey, actualOpts, {
+          pageParam: queryFunctionContext.pageParam ?? opts.initialCursor,
+          direction: queryFunctionContext.direction
+        }));
+      }
+    });
+  }
+  function useSuspenseInfiniteQuery$1(path, input, opts) {
+    const context = useContext7();
+    const queryKey = getQueryKeyInternal(path, input, "infinite");
+    const defaultOpts = context.queryClient.getQueryDefaults(queryKey);
+    const ssrOpts = useSSRQueryOptionsIfNeeded(queryKey, {
+      ...defaultOpts,
+      ...opts
+    });
+    const shouldAbortOnUnmount = opts?.trpc?.abortOnUnmount ?? context.abortOnUnmount;
+    const hook = useSuspenseInfiniteQuery({
+      ...opts,
+      initialPageParam: opts.initialCursor ?? null,
+      queryKey,
+      queryFn: (queryFunctionContext) => {
+        const actualOpts = {
+          ...ssrOpts,
+          trpc: {
+            ...ssrOpts?.trpc,
+            ...shouldAbortOnUnmount ? {
+              signal: queryFunctionContext.signal
+            } : {}
+          }
+        };
+        return context.client.query(...getClientArgs(queryKey, actualOpts, {
+          pageParam: queryFunctionContext.pageParam ?? opts.initialCursor,
+          direction: queryFunctionContext.direction
+        }));
+      }
+    }, context.queryClient);
+    hook.trpc = useHookResult({
+      path
+    });
+    return [
+      hook.data,
+      hook
+    ];
+  }
+  const useQueries$1 = (queriesCallback) => {
+    const { ssrState, queryClient: queryClient2, prefetchQuery, client } = useContext7();
+    const proxy = createUseQueries(client);
+    const queries = queriesCallback(proxy);
+    if (typeof window === "undefined" && ssrState === "prepass") {
+      for (const query of queries) {
+        const queryOption = query;
+        if (queryOption.trpc?.ssr !== false && !queryClient2.getQueryCache().find({
+          queryKey: queryOption.queryKey
+        })) {
+          void prefetchQuery(queryOption.queryKey, queryOption);
+        }
+      }
+    }
+    return useQueries({
+      queries: queries.map((query) => ({
+        ...query,
+        queryKey: query.queryKey
+      }))
+    }, queryClient2);
+  };
+  const useSuspenseQueries$1 = (queriesCallback) => {
+    const { queryClient: queryClient2, client } = useContext7();
+    const proxy = createUseQueries(client);
+    const queries = queriesCallback(proxy);
+    const hook = useSuspenseQueries({
+      queries: queries.map((query) => ({
+        ...query,
+        queryKey: query.queryKey
+      }))
+    }, queryClient2);
+    return [
+      hook.map((h) => h.data),
+      hook
+    ];
+  };
+  return {
+    Provider: TRPCProvider,
+    createClient,
+    useContext: useContext7,
+    useUtils: useContext7,
+    useQuery: useQuery$1,
+    usePrefetchQuery: usePrefetchQuery$1,
+    useSuspenseQuery: useSuspenseQuery$1,
+    useQueries: useQueries$1,
+    useSuspenseQueries: useSuspenseQueries$1,
+    useMutation: useMutation$1,
+    useSubscription,
+    useInfiniteQuery: useInfiniteQuery$1,
+    usePrefetchInfiniteQuery: usePrefetchInfiniteQuery$1,
+    useSuspenseInfiniteQuery: useSuspenseInfiniteQuery$1
+  };
+}
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/createTRPCReact.mjs
+function createHooksInternal(trpc3) {
+  const proxy = createReactDecoration(trpc3);
+  return createFlatProxy((key) => {
+    if (key === "useContext" || key === "useUtils") {
+      return () => {
+        const context = trpc3.useUtils();
+        return React16.useMemo(() => {
+          return createReactQueryUtils(context);
+        }, [
+          context
+        ]);
+      };
+    }
+    if (trpc3.hasOwnProperty(key)) {
+      return trpc3[key];
+    }
+    return proxy[key];
+  });
+}
+function createTRPCReact(opts) {
+  const hooks = createRootHooks(opts);
+  const proxy = createHooksInternal(hooks);
+  return proxy;
+}
+
+// ../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/createTRPCQueryUtils.mjs
+var import_react10 = __toESM(require_react(), 1);
+
+// ../editor/utils/react_query_trpc_client.ts
+var trpc = createTRPCReact();
+
+// ../editor/pages/React_Query_Trpc.tsx
+var import_react11 = __toESM(require_react());
+function MyComponent() {
+  const userQuery = trpc.gettodos.useQuery();
+  return /* @__PURE__ */ import_react11.default.createElement("div", null, /* @__PURE__ */ import_react11.default.createElement("p", null, userQuery.data ? import_react11.useState.data : "Loading"));
+}
+function Page2() {
+  const [queryClient2] = (0, import_react11.useState)(() => new QueryClient());
+  const [trpcClient] = (0, import_react11.useState)(
+    () => trpc.createClient({
+      links: [
+        httpBatchLink({
+          url: "/api"
+          // You can pass any HTTP headers you wish here
+        })
+      ]
+    })
+  );
+  return /* @__PURE__ */ import_react11.default.createElement(trpc.Provider, { client: trpcClient, queryClient: queryClient2 }, /* @__PURE__ */ import_react11.default.createElement(QueryClientProvider, { client: queryClient2 }, /* @__PURE__ */ import_react11.default.createElement(MyComponent, null)));
+}
+
+// ../editor/utils/trpc_client.ts
+var trpc2 = createTRPCClient({
+  links: [
+    httpBatchLink({
+      url: "/api"
+      // You can pass any HTTP headers you wish here
+    })
+  ]
+});
+
 // ../editor/app.tsx
 var router = createBrowserRouter([
   {
     path: "/",
-    element: /* @__PURE__ */ import_react9.default.createElement("div", null, /* @__PURE__ */ import_react9.default.createElement("h1", null, "Hello World"), /* @__PURE__ */ import_react9.default.createElement(Link, { to: "timer" }, "Timer"))
+    element: /* @__PURE__ */ import_react12.default.createElement("div", { style: { display: "flex", gap: "10px" } }, /* @__PURE__ */ import_react12.default.createElement(Link, { to: "timer" }, "Timer"), /* @__PURE__ */ import_react12.default.createElement(Link, { to: "reactquery" }, "React Query"), /* @__PURE__ */ import_react12.default.createElement(Link, { to: "reactquery2" }, "React Query 2"))
   },
   {
     path: "timer",
-    element: /* @__PURE__ */ import_react9.default.createElement(Timers, null)
+    element: /* @__PURE__ */ import_react12.default.createElement(Timers, null)
+  },
+  {
+    path: "reactquery",
+    element: /* @__PURE__ */ import_react12.default.createElement(Page, null)
+  },
+  {
+    path: "reactquery2",
+    element: /* @__PURE__ */ import_react12.default.createElement(Page2, null)
   }
 ]);
-import_client.default.createRoot(document.getElementById("app")).render(
-  /* @__PURE__ */ import_react9.default.createElement(RouterProvider, { router })
+async function test() {
+  const result = await trpc2.user.gettodo.query();
+  console.log("rtrpc esults", result);
+}
+test();
+console.log(window.location.hostname);
+import_client7.default.createRoot(document.getElementById("app")).render(
+  /* @__PURE__ */ import_react12.default.createElement(RouterProvider, { router })
 );
 /*! Bundled license information:
 
@@ -34093,6 +40187,17 @@ use-sync-external-store/cjs/use-sync-external-store-shim.development.js:
    * LICENSE file in the root directory of this source tree.
    *)
 
+react/cjs/react-jsx-runtime.development.js:
+  (**
+   * @license React
+   * react-jsx-runtime.development.js
+   *
+   * Copyright (c) Facebook, Inc. and its affiliates.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE file in the root directory of this source tree.
+   *)
+
 @remix-run/router/dist/router.js:
   (**
    * @remix-run/router v1.19.2
@@ -34128,5 +40233,26 @@ react-router-dom/dist/index.js:
    *
    * @license MIT
    *)
+
+@trpc/server/dist/unstable-core-do-not-import/rpc/parseTRPCMessage.mjs:
+  (* istanbul ignore next -- @preserve *)
+
+@trpc/server/dist/unstable-core-do-not-import/rpc/parseTRPCMessage.mjs:
+  (* istanbul ignore next -- @preserve *)
+
+@trpc/server/dist/unstable-core-do-not-import/rpc/parseTRPCMessage.mjs:
+  (* istanbul ignore next -- @preserve *)
+
+@trpc/server/dist/unstable-core-do-not-import/rpc/parseTRPCMessage.mjs:
+  (* istanbul ignore next -- @preserve *)
+
+@trpc/server/dist/unstable-core-do-not-import/rpc/parseTRPCMessage.mjs:
+  (* istanbul ignore next -- @preserve *)
+
+@trpc/client/dist/links/httpBatchLink.mjs:
+  (* istanbul ignore if -- @preserve *)
+
+@trpc/react-query/dist/shared/hooks/createHooksInternal.mjs:
+  (* istanbul ignore next -- @preserve *)
 */
 //# sourceMappingURL=app.js.map

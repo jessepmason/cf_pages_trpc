@@ -498,8 +498,2225 @@
       ],
       "format": "esm"
     },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/subscribable.js": {
+      "bytes": 522,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js": {
+      "bytes": 6655,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/focusManager.js": {
+      "bytes": 1596,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/subscribable.js",
+          "kind": "import-statement",
+          "original": "./subscribable.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/onlineManager.js": {
+      "bytes": 1483,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/subscribable.js",
+          "kind": "import-statement",
+          "original": "./subscribable.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/retryer.js": {
+      "bytes": 3726,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/focusManager.js",
+          "kind": "import-statement",
+          "original": "./focusManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/onlineManager.js",
+          "kind": "import-statement",
+          "original": "./onlineManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/notifyManager.js": {
+      "bytes": 1915,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/removable.js": {
+      "bytes": 686,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/query.js": {
+      "bytes": 11127,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/notifyManager.js",
+          "kind": "import-statement",
+          "original": "./notifyManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/retryer.js",
+          "kind": "import-statement",
+          "original": "./retryer.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/removable.js",
+          "kind": "import-statement",
+          "original": "./removable.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryCache.js": {
+      "bytes": 2421,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/query.js",
+          "kind": "import-statement",
+          "original": "./query.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/notifyManager.js",
+          "kind": "import-statement",
+          "original": "./notifyManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/subscribable.js",
+          "kind": "import-statement",
+          "original": "./subscribable.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutation.js": {
+      "bytes": 6178,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/notifyManager.js",
+          "kind": "import-statement",
+          "original": "./notifyManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/removable.js",
+          "kind": "import-statement",
+          "original": "./removable.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/retryer.js",
+          "kind": "import-statement",
+          "original": "./retryer.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutationCache.js": {
+      "bytes": 2850,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/notifyManager.js",
+          "kind": "import-statement",
+          "original": "./notifyManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutation.js",
+          "kind": "import-statement",
+          "original": "./mutation.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/subscribable.js",
+          "kind": "import-statement",
+          "original": "./subscribable.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/infiniteQueryBehavior.js": {
+      "bytes": 4067,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryClient.js": {
+      "bytes": 9264,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryCache.js",
+          "kind": "import-statement",
+          "original": "./queryCache.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutationCache.js",
+          "kind": "import-statement",
+          "original": "./mutationCache.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/focusManager.js",
+          "kind": "import-statement",
+          "original": "./focusManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/onlineManager.js",
+          "kind": "import-statement",
+          "original": "./onlineManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/notifyManager.js",
+          "kind": "import-statement",
+          "original": "./notifyManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/infiniteQueryBehavior.js",
+          "kind": "import-statement",
+          "original": "./infiniteQueryBehavior.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryObserver.js": {
+      "bytes": 15174,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/notifyManager.js",
+          "kind": "import-statement",
+          "original": "./notifyManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/focusManager.js",
+          "kind": "import-statement",
+          "original": "./focusManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/subscribable.js",
+          "kind": "import-statement",
+          "original": "./subscribable.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/query.js",
+          "kind": "import-statement",
+          "original": "./query.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queriesObserver.js": {
+      "bytes": 5859,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/notifyManager.js",
+          "kind": "import-statement",
+          "original": "./notifyManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryObserver.js",
+          "kind": "import-statement",
+          "original": "./queryObserver.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/subscribable.js",
+          "kind": "import-statement",
+          "original": "./subscribable.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/infiniteQueryObserver.js": {
+      "bytes": 2314,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryObserver.js",
+          "kind": "import-statement",
+          "original": "./queryObserver.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/infiniteQueryBehavior.js",
+          "kind": "import-statement",
+          "original": "./infiniteQueryBehavior.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutationObserver.js": {
+      "bytes": 3237,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutation.js",
+          "kind": "import-statement",
+          "original": "./mutation.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/notifyManager.js",
+          "kind": "import-statement",
+          "original": "./notifyManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/subscribable.js",
+          "kind": "import-statement",
+          "original": "./subscribable.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/hydration.js": {
+      "bytes": 3989,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/types.js": {
+      "bytes": 33,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js": {
+      "bytes": 1486,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/retryer.js",
+          "kind": "import-statement",
+          "original": "./retryer.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryCache.js",
+          "kind": "import-statement",
+          "original": "./queryCache.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryClient.js",
+          "kind": "import-statement",
+          "original": "./queryClient.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryObserver.js",
+          "kind": "import-statement",
+          "original": "./queryObserver.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queriesObserver.js",
+          "kind": "import-statement",
+          "original": "./queriesObserver.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/infiniteQueryObserver.js",
+          "kind": "import-statement",
+          "original": "./infiniteQueryObserver.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutationCache.js",
+          "kind": "import-statement",
+          "original": "./mutationCache.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutationObserver.js",
+          "kind": "import-statement",
+          "original": "./mutationObserver.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/notifyManager.js",
+          "kind": "import-statement",
+          "original": "./notifyManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/focusManager.js",
+          "kind": "import-statement",
+          "original": "./focusManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/onlineManager.js",
+          "kind": "import-statement",
+          "original": "./onlineManager.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/retryer.js",
+          "kind": "import-statement",
+          "original": "./retryer.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/hydration.js",
+          "kind": "import-statement",
+          "original": "./hydration.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/types.js",
+          "kind": "import-statement",
+          "original": "./types.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/query.js",
+          "kind": "import-statement",
+          "original": "./query.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutation.js",
+          "kind": "import-statement",
+          "original": "./mutation.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/types.js": {
+      "bytes": 33,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/react@18.3.1/node_modules/react/cjs/react-jsx-runtime.development.js": {
+      "bytes": 42700,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "require-call",
+          "original": "react"
+        }
+      ],
+      "format": "cjs"
+    },
+    "../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js": {
+      "bytes": 214,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/cjs/react-jsx-runtime.development.js",
+          "kind": "require-call",
+          "original": "./cjs/react-jsx-runtime.development.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js": {
+      "bytes": 823,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/isRestoring.js": {
+      "bytes": 333,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.js": {
+      "bytes": 884,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/utils.js": {
+      "bytes": 261,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/errorBoundaryUtils.js": {
+      "bytes": 860,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/suspense.js": {
+      "bytes": 930,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useQueries.js": {
+      "bytes": 3297,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/query-core"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js",
+          "kind": "import-statement",
+          "original": "./QueryClientProvider.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/isRestoring.js",
+          "kind": "import-statement",
+          "original": "./isRestoring.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.js",
+          "kind": "import-statement",
+          "original": "./QueryErrorResetBoundary.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/errorBoundaryUtils.js",
+          "kind": "import-statement",
+          "original": "./errorBoundaryUtils.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/suspense.js",
+          "kind": "import-statement",
+          "original": "./suspense.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useBaseQuery.js": {
+      "bytes": 2867,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/query-core"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.js",
+          "kind": "import-statement",
+          "original": "./QueryErrorResetBoundary.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js",
+          "kind": "import-statement",
+          "original": "./QueryClientProvider.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/isRestoring.js",
+          "kind": "import-statement",
+          "original": "./isRestoring.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/errorBoundaryUtils.js",
+          "kind": "import-statement",
+          "original": "./errorBoundaryUtils.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/suspense.js",
+          "kind": "import-statement",
+          "original": "./suspense.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useQuery.js": {
+      "bytes": 301,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/query-core"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useBaseQuery.js",
+          "kind": "import-statement",
+          "original": "./useBaseQuery.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useSuspenseQuery.js": {
+      "bytes": 713,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/query-core"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useBaseQuery.js",
+          "kind": "import-statement",
+          "original": "./useBaseQuery.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/suspense.js",
+          "kind": "import-statement",
+          "original": "./suspense.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useSuspenseInfiniteQuery.js": {
+      "bytes": 738,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/query-core"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useBaseQuery.js",
+          "kind": "import-statement",
+          "original": "./useBaseQuery.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/suspense.js",
+          "kind": "import-statement",
+          "original": "./suspense.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useSuspenseQueries.js": {
+      "bytes": 832,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/query-core"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useQueries.js",
+          "kind": "import-statement",
+          "original": "./useQueries.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/suspense.js",
+          "kind": "import-statement",
+          "original": "./suspense.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/usePrefetchQuery.js": {
+      "bytes": 348,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js",
+          "kind": "import-statement",
+          "original": "./QueryClientProvider.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/usePrefetchInfiniteQuery.js": {
+      "bytes": 388,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js",
+          "kind": "import-statement",
+          "original": "./QueryClientProvider.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/queryOptions.js": {
+      "bytes": 143,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/infiniteQueryOptions.js": {
+      "bytes": 175,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/HydrationBoundary.js": {
+      "bytes": 2007,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/query-core"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js",
+          "kind": "import-statement",
+          "original": "./QueryClientProvider.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useIsFetching.js": {
+      "bytes": 647,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/query-core"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js",
+          "kind": "import-statement",
+          "original": "./QueryClientProvider.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useMutationState.js": {
+      "bytes": 1529,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/query-core"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js",
+          "kind": "import-statement",
+          "original": "./QueryClientProvider.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useMutation.js": {
+      "bytes": 1203,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/query-core"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js",
+          "kind": "import-statement",
+          "original": "./QueryClientProvider.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useInfiniteQuery.js": {
+      "bytes": 365,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/query-core"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useBaseQuery.js",
+          "kind": "import-statement",
+          "original": "./useBaseQuery.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/index.js": {
+      "bytes": 1684,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/query-core"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/types.js",
+          "kind": "import-statement",
+          "original": "./types.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useQueries.js",
+          "kind": "import-statement",
+          "original": "./useQueries.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useQuery.js",
+          "kind": "import-statement",
+          "original": "./useQuery.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useSuspenseQuery.js",
+          "kind": "import-statement",
+          "original": "./useSuspenseQuery.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useSuspenseInfiniteQuery.js",
+          "kind": "import-statement",
+          "original": "./useSuspenseInfiniteQuery.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useSuspenseQueries.js",
+          "kind": "import-statement",
+          "original": "./useSuspenseQueries.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/usePrefetchQuery.js",
+          "kind": "import-statement",
+          "original": "./usePrefetchQuery.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/usePrefetchInfiniteQuery.js",
+          "kind": "import-statement",
+          "original": "./usePrefetchInfiniteQuery.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/queryOptions.js",
+          "kind": "import-statement",
+          "original": "./queryOptions.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/infiniteQueryOptions.js",
+          "kind": "import-statement",
+          "original": "./infiniteQueryOptions.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js",
+          "kind": "import-statement",
+          "original": "./QueryClientProvider.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/HydrationBoundary.js",
+          "kind": "import-statement",
+          "original": "./HydrationBoundary.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.js",
+          "kind": "import-statement",
+          "original": "./QueryErrorResetBoundary.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useIsFetching.js",
+          "kind": "import-statement",
+          "original": "./useIsFetching.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useMutationState.js",
+          "kind": "import-statement",
+          "original": "./useMutationState.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useMutation.js",
+          "kind": "import-statement",
+          "original": "./useMutation.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useInfiniteQuery.js",
+          "kind": "import-statement",
+          "original": "./useInfiniteQuery.js"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/isRestoring.js",
+          "kind": "import-statement",
+          "original": "./isRestoring.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "../editor/pages/ReactQuery.tsx": {
+      "bytes": 956,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/react-query"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/observable.mjs": {
+      "bytes": 4203,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/operators.mjs": {
+      "bytes": 2801,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/observable.mjs",
+          "kind": "import-statement",
+          "original": "./observable.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/index.mjs": {
+      "bytes": 133,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/observable.mjs",
+          "kind": "import-statement",
+          "original": "./observable.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/operators.mjs",
+          "kind": "import-statement",
+          "original": "./operators.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/createChain.mjs": {
+      "bytes": 760,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/observable"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/createProxy.mjs": {
+      "bytes": 2381,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/formatter.mjs": {
+      "bytes": 92,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/rpc/codes.mjs": {
+      "bytes": 1677,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs": {
+      "bytes": 1307,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/getHTTPStatusCode.mjs": {
+      "bytes": 1591,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/rpc/codes.mjs",
+          "kind": "import-statement",
+          "original": "../rpc/codes.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "../utils.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/getErrorShape.mjs": {
+      "bytes": 766,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/getHTTPStatusCode.mjs",
+          "kind": "import-statement",
+          "original": "../http/getHTTPStatusCode.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/rpc/codes.mjs",
+          "kind": "import-statement",
+          "original": "../rpc/codes.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/TRPCError.mjs": {
+      "bytes": 1839,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "../utils.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/batchStreamFormatter.mjs": {
+      "bytes": 705,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/parseConnectionParams.mjs": {
+      "bytes": 1252,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/TRPCError.mjs",
+          "kind": "import-statement",
+          "original": "../error/TRPCError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "../utils.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/contentType.mjs": {
+      "bytes": 7781,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/TRPCError.mjs",
+          "kind": "import-statement",
+          "original": "../error/TRPCError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "../utils.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/parseConnectionParams.mjs",
+          "kind": "import-statement",
+          "original": "./parseConnectionParams.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/contentTypeParsers.mjs": {
+      "bytes": 308,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/formDataToObject.mjs": {
+      "bytes": 1091,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/utils/createDeferred.mjs": {
+      "bytes": 1034,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/utils/createReadableStream.mjs": {
+      "bytes": 831,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/utils/createDeferred.mjs",
+          "kind": "import-statement",
+          "original": "./createDeferred.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/jsonl.mjs": {
+      "bytes": 17759,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/TRPCError.mjs",
+          "kind": "import-statement",
+          "original": "../error/TRPCError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "../utils.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/utils/createDeferred.mjs",
+          "kind": "import-statement",
+          "original": "./utils/createDeferred.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/utils/createReadableStream.mjs",
+          "kind": "import-statement",
+          "original": "./utils/createReadableStream.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/tracked.mjs": {
+      "bytes": 843,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/sse.mjs": {
+      "bytes": 6171,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/TRPCError.mjs",
+          "kind": "import-statement",
+          "original": "../error/TRPCError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "../utils.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/tracked.mjs",
+          "kind": "import-statement",
+          "original": "./tracked.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/utils/createDeferred.mjs",
+          "kind": "import-statement",
+          "original": "./utils/createDeferred.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/utils/createReadableStream.mjs",
+          "kind": "import-statement",
+          "original": "./utils/createReadableStream.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/transformer.mjs": {
+      "bytes": 2866,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "./utils.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/resolveResponse.mjs": {
+      "bytes": 18149,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/observable.mjs",
+          "kind": "import-statement",
+          "original": "../../observable/observable.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/getErrorShape.mjs",
+          "kind": "import-statement",
+          "original": "../error/getErrorShape.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/TRPCError.mjs",
+          "kind": "import-statement",
+          "original": "../error/TRPCError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/jsonl.mjs",
+          "kind": "import-statement",
+          "original": "../stream/jsonl.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/sse.mjs",
+          "kind": "import-statement",
+          "original": "../stream/sse.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/transformer.mjs",
+          "kind": "import-statement",
+          "original": "../transformer.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "../utils.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/contentType.mjs",
+          "kind": "import-statement",
+          "original": "./contentType.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/getHTTPStatusCode.mjs",
+          "kind": "import-statement",
+          "original": "./getHTTPStatusCode.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/toURL.mjs": {
+      "bytes": 178,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/middleware.mjs": {
+      "bytes": 2825,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/TRPCError.mjs",
+          "kind": "import-statement",
+          "original": "./error/TRPCError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "./utils.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/parser.mjs": {
+      "bytes": 1322,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs": {
+      "bytes": 6004,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/TRPCError.mjs",
+          "kind": "import-statement",
+          "original": "./error/TRPCError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/middleware.mjs",
+          "kind": "import-statement",
+          "original": "./middleware.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/parser.mjs",
+          "kind": "import-statement",
+          "original": "./parser.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "./utils.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/rootConfig.mjs": {
+      "bytes": 373,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/router.mjs": {
+      "bytes": 6663,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/createProxy.mjs",
+          "kind": "import-statement",
+          "original": "./createProxy.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/formatter.mjs",
+          "kind": "import-statement",
+          "original": "./error/formatter.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/TRPCError.mjs",
+          "kind": "import-statement",
+          "original": "./error/TRPCError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/transformer.mjs",
+          "kind": "import-statement",
+          "original": "./transformer.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "./utils.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/initTRPC.mjs": {
+      "bytes": 2998,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/formatter.mjs",
+          "kind": "import-statement",
+          "original": "./error/formatter.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/middleware.mjs",
+          "kind": "import-statement",
+          "original": "./middleware.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs",
+          "kind": "import-statement",
+          "original": "./procedureBuilder.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/rootConfig.mjs",
+          "kind": "import-statement",
+          "original": "./rootConfig.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/router.mjs",
+          "kind": "import-statement",
+          "original": "./router.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/transformer.mjs",
+          "kind": "import-statement",
+          "original": "./transformer.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedure.mjs": {
+      "bytes": 104,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/rpc/parseTRPCMessage.mjs": {
+      "bytes": 1807,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedure.mjs",
+          "kind": "import-statement",
+          "original": "../procedure.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "../utils.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/types.mjs": {
+      "bytes": 248,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs": {
+      "bytes": 2929,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/createProxy.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/createProxy.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/formatter.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/error/formatter.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/getErrorShape.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/error/getErrorShape.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/TRPCError.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/error/TRPCError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/batchStreamFormatter.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/http/batchStreamFormatter.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/contentType.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/http/contentType.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/contentTypeParsers.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/http/contentTypeParsers.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/formDataToObject.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/http/formDataToObject.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/getHTTPStatusCode.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/http/getHTTPStatusCode.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/parseConnectionParams.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/http/parseConnectionParams.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/resolveResponse.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/http/resolveResponse.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/toURL.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/http/toURL.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/initTRPC.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/initTRPC.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/middleware.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/middleware.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/parser.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/parser.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedure.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/procedure.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/procedureBuilder.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/rootConfig.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/rootConfig.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/router.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/router.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/rpc/codes.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/rpc/codes.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/rpc/parseTRPCMessage.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/rpc/parseTRPCMessage.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/jsonl.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/stream/jsonl.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/sse.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/stream/sse.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/tracked.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/stream/tracked.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/utils/createDeferred.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/stream/utils/createDeferred.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/transformer.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/transformer.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/types.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/types.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs",
+          "kind": "import-statement",
+          "original": "./unstable-core-do-not-import/utils.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/TRPCClientError.mjs": {
+      "bytes": 1968,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/TRPCUntypedClient.mjs": {
+      "bytes": 2339,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/observable"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/createChain.mjs",
+          "kind": "import-statement",
+          "original": "../links/internals/createChain.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/TRPCClientError.mjs",
+          "kind": "import-statement",
+          "original": "../TRPCClientError.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/createTRPCUntypedClient.mjs": {
+      "bytes": 211,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/TRPCUntypedClient.mjs",
+          "kind": "import-statement",
+          "original": "./internals/TRPCUntypedClient.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/createTRPCClient.mjs": {
+      "bytes": 1394,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/TRPCUntypedClient.mjs",
+          "kind": "import-statement",
+          "original": "./internals/TRPCUntypedClient.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/getFetch.mjs": {
+      "bytes": 451,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/contentTypes.mjs": {
+      "bytes": 391,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/dataLoader.mjs": {
+      "bytes": 4109,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/transformer.mjs": {
+      "bytes": 594,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/httpUtils.mjs": {
+      "bytes": 4692,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/getFetch.mjs",
+          "kind": "import-statement",
+          "original": "../../getFetch.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/transformer.mjs",
+          "kind": "import-statement",
+          "original": "../../internals/transformer.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/httpBatchLink.mjs": {
+      "bytes": 4185,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/observable"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/dataLoader.mjs",
+          "kind": "import-statement",
+          "original": "../internals/dataLoader.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/TRPCClientError.mjs",
+          "kind": "import-statement",
+          "original": "../TRPCClientError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/httpUtils.mjs",
+          "kind": "import-statement",
+          "original": "./internals/httpUtils.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/httpBatchStreamLink.mjs": {
+      "bytes": 6096,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/observable"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/dataLoader.mjs",
+          "kind": "import-statement",
+          "original": "../internals/dataLoader.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/TRPCClientError.mjs",
+          "kind": "import-statement",
+          "original": "../TRPCClientError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/httpUtils.mjs",
+          "kind": "import-statement",
+          "original": "./internals/httpUtils.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/httpLink.mjs": {
+      "bytes": 3407,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/observable"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/TRPCClientError.mjs",
+          "kind": "import-statement",
+          "original": "../TRPCClientError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/httpUtils.mjs",
+          "kind": "import-statement",
+          "original": "./internals/httpUtils.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/contentTypes.mjs",
+          "kind": "import-statement",
+          "original": "./internals/contentTypes.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/loggerLink.mjs": {
+      "bytes": 5520,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/observable"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/splitLink.mjs": {
+      "bytes": 725,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/observable"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/createChain.mjs",
+          "kind": "import-statement",
+          "original": "./internals/createChain.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/urlWithConnectionParams.mjs": {
+      "bytes": 181,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/wsLink.mjs": {
+      "bytes": 15487,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/observable"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/TRPCClientError.mjs",
+          "kind": "import-statement",
+          "original": "../TRPCClientError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/transformer.mjs",
+          "kind": "import-statement",
+          "original": "../internals/transformer.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/urlWithConnectionParams.mjs",
+          "kind": "import-statement",
+          "original": "./internals/urlWithConnectionParams.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/httpSubscriptionLink.mjs": {
+      "bytes": 4034,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/observable"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/TRPCClientError.mjs",
+          "kind": "import-statement",
+          "original": "../TRPCClientError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/transformer.mjs",
+          "kind": "import-statement",
+          "original": "../internals/transformer.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/httpUtils.mjs",
+          "kind": "import-statement",
+          "original": "./internals/httpUtils.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/urlWithConnectionParams.mjs",
+          "kind": "import-statement",
+          "original": "./internals/urlWithConnectionParams.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/index.mjs": {
+      "bytes": 954,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/createTRPCUntypedClient.mjs",
+          "kind": "import-statement",
+          "original": "./createTRPCUntypedClient.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/createTRPCClient.mjs",
+          "kind": "import-statement",
+          "original": "./createTRPCClient.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/getFetch.mjs",
+          "kind": "import-statement",
+          "original": "./getFetch.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/TRPCClientError.mjs",
+          "kind": "import-statement",
+          "original": "./TRPCClientError.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/contentTypes.mjs",
+          "kind": "import-statement",
+          "original": "./links/internals/contentTypes.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/httpBatchLink.mjs",
+          "kind": "import-statement",
+          "original": "./links/httpBatchLink.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/httpBatchStreamLink.mjs",
+          "kind": "import-statement",
+          "original": "./links/httpBatchStreamLink.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/httpLink.mjs",
+          "kind": "import-statement",
+          "original": "./links/httpLink.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/loggerLink.mjs",
+          "kind": "import-statement",
+          "original": "./links/loggerLink.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/splitLink.mjs",
+          "kind": "import-statement",
+          "original": "./links/splitLink.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/wsLink.mjs",
+          "kind": "import-statement",
+          "original": "./links/wsLink.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/httpSubscriptionLink.mjs",
+          "kind": "import-statement",
+          "original": "./links/httpSubscriptionLink.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/TRPCUntypedClient.mjs",
+          "kind": "import-statement",
+          "original": "./internals/TRPCUntypedClient.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/getQueryKey.mjs": {
+      "bytes": 2679,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/react-query"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/decorationProxy.mjs": {
+      "bytes": 876,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/context.mjs": {
+      "bytes": 216,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/utilsProxy.mjs": {
+      "bytes": 3654,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/client"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/context.mjs",
+          "kind": "import-statement",
+          "original": "../../internals/context.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/getQueryKey.mjs",
+          "kind": "import-statement",
+          "original": "../../internals/getQueryKey.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/getClientArgs.mjs": {
+      "bytes": 501,
+      "imports": [],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/useHookResult.mjs": {
+      "bytes": 272,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/utils/createUtilityFunctions.mjs": {
+      "bytes": 4668,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/client"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/getClientArgs.mjs",
+          "kind": "import-statement",
+          "original": "../internals/getClientArgs.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/useQueriesProxy.mjs": {
+      "bytes": 717,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/getQueryKey.mjs",
+          "kind": "import-statement",
+          "original": "../../internals/getQueryKey.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/hooks/createHooksInternal.mjs": {
+      "bytes": 16773,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/react-query"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/client"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        },
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/context.mjs",
+          "kind": "import-statement",
+          "original": "../../internals/context.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/getClientArgs.mjs",
+          "kind": "import-statement",
+          "original": "../../internals/getClientArgs.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/getQueryKey.mjs",
+          "kind": "import-statement",
+          "original": "../../internals/getQueryKey.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/useHookResult.mjs",
+          "kind": "import-statement",
+          "original": "../../internals/useHookResult.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/utils/createUtilityFunctions.mjs",
+          "kind": "import-statement",
+          "original": "../../utils/createUtilityFunctions.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/useQueriesProxy.mjs",
+          "kind": "import-statement",
+          "original": "../proxy/useQueriesProxy.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/createTRPCReact.mjs": {
+      "bytes": 1238,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        },
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/decorationProxy.mjs",
+          "kind": "import-statement",
+          "original": "./shared/proxy/decorationProxy.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/utilsProxy.mjs",
+          "kind": "import-statement",
+          "original": "./shared/proxy/utilsProxy.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/react-query"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/hooks/createHooksInternal.mjs",
+          "kind": "import-statement",
+          "original": "./shared/hooks/createHooksInternal.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/context.mjs",
+          "kind": "import-statement",
+          "original": "./internals/context.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/createTRPCQueryUtils.mjs": {
+      "bytes": 468,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/server/unstable-core-do-not-import"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/utilsProxy.mjs",
+          "kind": "import-statement",
+          "original": "./shared/proxy/utilsProxy.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/react-query"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/client"
+        },
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/context.mjs",
+          "kind": "import-statement",
+          "original": "./internals/context.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/utils/createUtilityFunctions.mjs",
+          "kind": "import-statement",
+          "original": "./utils/createUtilityFunctions.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/index.mjs": {
+      "bytes": 229,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/client"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/getQueryKey.mjs",
+          "kind": "import-statement",
+          "original": "./internals/getQueryKey.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/createTRPCReact.mjs",
+          "kind": "import-statement",
+          "original": "./createTRPCReact.mjs"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/createTRPCQueryUtils.mjs",
+          "kind": "import-statement",
+          "original": "./createTRPCQueryUtils.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "../editor/utils/react_query_trpc_client.ts": {
+      "bytes": 163,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/react-query"
+        }
+      ],
+      "format": "esm"
+    },
+    "../editor/pages/React_Query_Trpc.tsx": {
+      "bytes": 1029,
+      "imports": [
+        {
+          "path": "../editor/utils/react_query_trpc_client.ts",
+          "kind": "import-statement",
+          "original": "../utils/react_query_trpc_client"
+        },
+        {
+          "path": "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/index.js",
+          "kind": "import-statement",
+          "original": "@tanstack/react-query"
+        },
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/client"
+        },
+        {
+          "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "../editor/utils/trpc_client.ts": {
+      "bytes": 330,
+      "imports": [
+        {
+          "path": "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/index.mjs",
+          "kind": "import-statement",
+          "original": "@trpc/client"
+        }
+      ],
+      "format": "esm"
+    },
     "../editor/app.tsx": {
-      "bytes": 643,
+      "bytes": 1375,
       "imports": [
         {
           "path": "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js",
@@ -530,6 +2747,21 @@
           "path": "../editor/pages/Counter.tsx",
           "kind": "import-statement",
           "original": "./pages/Counter"
+        },
+        {
+          "path": "../editor/pages/ReactQuery.tsx",
+          "kind": "import-statement",
+          "original": "./pages/ReactQuery"
+        },
+        {
+          "path": "../editor/pages/React_Query_Trpc.tsx",
+          "kind": "import-statement",
+          "original": "./pages/React_Query_Trpc"
+        },
+        {
+          "path": "../editor/utils/trpc_client.ts",
+          "kind": "import-statement",
+          "original": "./utils/trpc_client"
         }
       ],
       "format": "esm"
@@ -540,7 +2772,7 @@
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 2658375
+      "bytes": 3090702
     },
     "dist/public/app.js": {
       "imports": [],
@@ -548,7 +2780,7 @@
       "entryPoint": "../editor/app.tsx",
       "inputs": {
         "../node_modules/.pnpm/react@18.3.1/node_modules/react/cjs/react.development.js": {
-          "bytesInOutput": 77158
+          "bytesInOutput": 77160
         },
         "../node_modules/.pnpm/react@18.3.1/node_modules/react/index.js": {
           "bytesInOutput": 262
@@ -560,7 +2792,7 @@
           "bytesInOutput": 278
         },
         "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/cjs/react-dom.development.js": {
-          "bytesInOutput": 910409
+          "bytesInOutput": 910414
         },
         "../node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/index.js": {
           "bytesInOutput": 309
@@ -569,13 +2801,19 @@
           "bytesInOutput": 830
         },
         "../node_modules/.pnpm/use-sync-external-store@1.2.2_react@18.3.1/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js": {
-          "bytesInOutput": 5132
+          "bytesInOutput": 5143
         },
         "../node_modules/.pnpm/use-sync-external-store@1.2.2_react@18.3.1/node_modules/use-sync-external-store/shim/index.js": {
           "bytesInOutput": 337
         },
+        "../node_modules/.pnpm/react@18.3.1/node_modules/react/cjs/react-jsx-runtime.development.js": {
+          "bytesInOutput": 36510
+        },
+        "../node_modules/.pnpm/react@18.3.1/node_modules/react/jsx-runtime.js": {
+          "bytesInOutput": 286
+        },
         "../editor/app.tsx": {
-          "bytesInOutput": 663
+          "bytesInOutput": 1213
         },
         "../node_modules/.pnpm/react-router-dom@6.26.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/react-router-dom/dist/index.js": {
           "bytesInOutput": 31421
@@ -584,13 +2822,13 @@
           "bytesInOutput": 24650
         },
         "../node_modules/.pnpm/@remix-run+router@1.19.2/node_modules/@remix-run/router/dist/router.js": {
-          "bytesInOutput": 117299
+          "bytesInOutput": 117310
         },
         "../editor/pages/Counter.tsx": {
           "bytesInOutput": 2453
         },
         "../node_modules/.pnpm/mobx@6.13.2/node_modules/mobx/dist/mobx.esm.js": {
-          "bytesInOutput": 151397
+          "bytesInOutput": 151398
         },
         "../node_modules/.pnpm/mobx-react@9.1.1_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react/dist/mobxreact.esm.js": {
           "bytesInOutput": 12025
@@ -636,9 +2874,252 @@
         },
         "../node_modules/.pnpm/mobx-react-lite@4.0.7_mobx@6.13.2_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/mobx-react-lite/es/useAsObservableSource.js": {
           "bytesInOutput": 46
+        },
+        "../editor/pages/ReactQuery.tsx": {
+          "bytesInOutput": 1157
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/subscribable.js": {
+          "bytesInOutput": 432
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/utils.js": {
+          "bytesInOutput": 6101
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/focusManager.js": {
+          "bytesInOutput": 1401
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/onlineManager.js": {
+          "bytesInOutput": 1284
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/retryer.js": {
+          "bytesInOutput": 3451
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/notifyManager.js": {
+          "bytesInOutput": 1799
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/removable.js": {
+          "bytesInOutput": 550
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/query.js": {
+          "bytesInOutput": 10767
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryCache.js": {
+          "bytesInOutput": 2135
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutation.js": {
+          "bytesInOutput": 5990
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutationCache.js": {
+          "bytesInOutput": 2564
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/infiniteQueryBehavior.js": {
+          "bytesInOutput": 3852
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryClient.js": {
+          "bytesInOutput": 8720
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queryObserver.js": {
+          "bytesInOutput": 14730
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/queriesObserver.js": {
+          "bytesInOutput": 5582
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/infiniteQueryObserver.js": {
+          "bytesInOutput": 2041
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/mutationObserver.js": {
+          "bytesInOutput": 2935
+        },
+        "../node_modules/.pnpm/@tanstack+query-core@5.56.2/node_modules/@tanstack/query-core/build/modern/index.js": {
+          "bytesInOutput": 0
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/index.js": {
+          "bytesInOutput": 0
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useQueries.js": {
+          "bytesInOutput": 2719
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js": {
+          "bytesInOutput": 715
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/isRestoring.js": {
+          "bytesInOutput": 217
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.js": {
+          "bytesInOutput": 484
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/errorBoundaryUtils.js": {
+          "bytesInOutput": 643
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/utils.js": {
+          "bytesInOutput": 174
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/suspense.js": {
+          "bytesInOutput": 770
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useBaseQuery.js": {
+          "bytesInOutput": 2308
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useQuery.js": {
+          "bytesInOutput": 106
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useSuspenseQuery.js": {
+          "bytesInOutput": 397
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useSuspenseInfiniteQuery.js": {
+          "bytesInOutput": 390
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useSuspenseQueries.js": {
+          "bytesInOutput": 529
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/usePrefetchQuery.js": {
+          "bytesInOutput": 188
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/usePrefetchInfiniteQuery.js": {
+          "bytesInOutput": 204
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useMutation.js": {
+          "bytesInOutput": 951
+        },
+        "../node_modules/.pnpm/@tanstack+react-query@5.56.2_react@18.3.1/node_modules/@tanstack/react-query/build/modern/useInfiniteQuery.js": {
+          "bytesInOutput": 138
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/observable.mjs": {
+          "bytesInOutput": 2021
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/index.mjs": {
+          "bytesInOutput": 0
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/observable/operators.mjs": {
+          "bytesInOutput": 1216
+        },
+        "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/createChain.mjs": {
+          "bytesInOutput": 559
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/createProxy.mjs": {
+          "bytesInOutput": 1444
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import.mjs": {
+          "bytesInOutput": 0
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/formatter.mjs": {
+          "bytesInOutput": 59
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/utils.mjs": {
+          "bytesInOutput": 889
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/error/TRPCError.mjs": {
+          "bytesInOutput": 1218
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/utils/createReadableStream.mjs": {
+          "bytesInOutput": 63
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/stream/tracked.mjs": {
+          "bytesInOutput": 47
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/transformer.mjs": {
+          "bytesInOutput": 1413
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/middleware.mjs": {
+          "bytesInOutput": 1779
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/parser.mjs": {
+          "bytesInOutput": 806
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs": {
+          "bytesInOutput": 4292
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/rootConfig.mjs": {
+          "bytesInOutput": 285
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/router.mjs": {
+          "bytesInOutput": 4658
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/initTRPC.mjs": {
+          "bytesInOutput": 2280
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/rpc/parseTRPCMessage.mjs": {
+          "bytesInOutput": 0
+        },
+        "../node_modules/.pnpm/@trpc+server@11.0.0-rc.532/node_modules/@trpc/server/dist/unstable-core-do-not-import/types.mjs": {
+          "bytesInOutput": 40
+        },
+        "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/TRPCClientError.mjs": {
+          "bytesInOutput": 1486
+        },
+        "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/TRPCUntypedClient.mjs": {
+          "bytesInOutput": 1698
+        },
+        "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/createTRPCUntypedClient.mjs": {
+          "bytesInOutput": 81
+        },
+        "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/index.mjs": {
+          "bytesInOutput": 0
+        },
+        "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/createTRPCClient.mjs": {
+          "bytesInOutput": 936
+        },
+        "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/getFetch.mjs": {
+          "bytesInOutput": 406
+        },
+        "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/dataLoader.mjs": {
+          "bytesInOutput": 2778
+        },
+        "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/internals/transformer.mjs": {
+          "bytesInOutput": 442
+        },
+        "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/internals/httpUtils.mjs": {
+          "bytesInOutput": 3473
+        },
+        "../node_modules/.pnpm/@trpc+client@11.0.0-rc.532_@trpc+server@11.0.0-rc.532/node_modules/@trpc/client/dist/links/httpBatchLink.mjs": {
+          "bytesInOutput": 2778
+        },
+        "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/index.mjs": {
+          "bytesInOutput": 0
+        },
+        "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/getQueryKey.mjs": {
+          "bytesInOutput": 815
+        },
+        "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/createTRPCReact.mjs": {
+          "bytesInOutput": 659
+        },
+        "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/decorationProxy.mjs": {
+          "bytesInOutput": 471
+        },
+        "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/context.mjs": {
+          "bytesInOutput": 177
+        },
+        "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/utilsProxy.mjs": {
+          "bytesInOutput": 2777
+        },
+        "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/hooks/createHooksInternal.mjs": {
+          "bytesInOutput": 12886
+        },
+        "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/getClientArgs.mjs": {
+          "bytesInOutput": 389
+        },
+        "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/internals/useHookResult.mjs": {
+          "bytesInOutput": 180
+        },
+        "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/utils/createUtilityFunctions.mjs": {
+          "bytesInOutput": 3602
+        },
+        "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/shared/proxy/useQueriesProxy.mjs": {
+          "bytesInOutput": 416
+        },
+        "../node_modules/.pnpm/@trpc+react-query@11.0.0-rc.532_@tanstack+react-query@5.56.2_react@18.3.1__@trpc+client@11.0._xja5fmyc6hi4s7w2v3ujsaprh4/node_modules/@trpc/react-query/dist/createTRPCQueryUtils.mjs": {
+          "bytesInOutput": 50
+        },
+        "../editor/utils/react_query_trpc_client.ts": {
+          "bytesInOutput": 30
+        },
+        "../editor/pages/React_Query_Trpc.tsx": {
+          "bytesInOutput": 956
+        },
+        "../editor/utils/trpc_client.ts": {
+          "bytesInOutput": 148
         }
       },
-      "bytes": 1370439
+      "bytes": 1566923
     }
   }
 }

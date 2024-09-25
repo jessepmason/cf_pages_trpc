@@ -11,17 +11,29 @@
     "build:client": "esbuild --bundle ../editor/app.tsx --format=esm --sourcemap --minify --metafile=dist/public/meta.json --outfile=dist/public/app.js",
     "build:server": "esbuild --bundle src/server.ts --format=esm --outfile=dist/_worker.js",
     "deploy": "wrangler pages publish dist",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "db:generate": "pnpm drizzle-kit generate",
+    "db:migrate:local": "wrangler d1 migrations apply prod-d1-drizzle --local",
+    "db:migrate:remote": "wrangler d1 execute prod-d1-drizzle --remote --file=./d1/migrations/0000_careful_blindfold.sql",
+    "db:studio:local": "LOCAL_DB_PATH=.wrangler/state/v3/d1/miniflare-D1DatabaseObject/2a9e1b73d8bb2ad546f5eef241345b298b1cbbb0525dbaf15f9c253fd285928d.sqlite drizzle-kit studio",
+    "db:studio:remote": "drizzle-kit studio",
+    "db:migrate:local2": "LOCAL_DB_PATH=.wrangler/state/v3/d1/miniflare-D1DatabaseObject/2a9e1b73d8bb2ad546f5eef241345b298b1cbbb0525dbaf15f9c253fd285928d.sqlite drizzle-kit migrate"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@trpc/server": "^10.45.2",
-    "npm-run-all": "^4.1.5"
+    "@trpc/server": "next",
+    "@trpc/client": "next",
+    "@trpc/react-query": "next",
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.24.2",
+    "drizzle-orm": "^0.33.0",
+    "npm-run-all": "^4.1.5",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240909.0",
+    "better-sqlite3": "^11.3.0",
     "wrangler": "^3.78.2"
   }
 }

@@ -3,5 +3,11 @@ name = "cf-pages-trpc"
 pages_build_output_dir = "dist"
 compatibility_date = "2024-09-14"
 
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "prod-d1-drizzle"
+database_id = "9e8cb786-8be9-4171-81cc-b2949273c596"
+migrations_dir = "d1/migrations"
 [env]
 production = { }
